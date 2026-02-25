@@ -34,11 +34,14 @@ python scripts/sycophancy_dataset.py all --model llama-70b-3.3
 ```
 
 ### Extract Activations
-
+For bigger models:
 ```bash
 python extract_feats.py --model llama-70b-3.3 --layers sparse
 ```
-
+For smaller models:
+```bash
+python extract_feats.py --model llama-8b --layers all
+```
 ### Train & Test Probes
 
 ```bash
@@ -46,7 +49,7 @@ cd scripts
 ./train_test_probes_main.sh
 ```
 
-This shell script calls `train_test_probes.py`.
+This shell script calls `train_test_probes.py` to train and test probes.
 
 ### Analysis
 See the following scripts and notebooks for various analysis:
