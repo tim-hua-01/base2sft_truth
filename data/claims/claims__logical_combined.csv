@@ -1,0 +1,320 @@
+Unnamed: 0,claim,label
+0,The union of a set with itself is the set itself,1
+1,The Riemann zeta function ζ(2) equals π²/6,1
+2,The range of tangent is all real numbers,1
+3,The triangle inequality states that |a + b| ≤ |a| + |b|,1
+4,The momentum of a particle is the product of its mass and velocity,1
+5,The sum of two complex numbers (a+bi) + (c+di) is (a+c) + (b+d)i,1
+6,The inverse of a 1×1 matrix [a] is not [1/a] if a is non-zero,0
+7,The complex conjugate of the product of two complex numbers is not the product of their conjugates,0
+8,The supremum of a bounded set of real numbers is not a real number,0
+9,"The negation of ""A or B"" is not ""not A and not B""",0
+10,The intersection of all sets in an empty collection of sets is the universal set,1
+11,The diameter of a circle is not twice its radius,0
+12,"If a > b and b > c,  then a > c",1
+13,A set with n elements does not have n! permutations,0
+14,67 is a composite number,0
+15,The limit of sin(x)/x as x approaches 0 is 1,1
+16,The integral of cos(x) is not sin(x) + C,0
+17,The intersection of two convex sets is not convex,0
+18,15 is divisible by 3,1
+19,The harmonic mean of a and b is 2ab/(a+b),1
+20,A continuous function on a compact set is not uniformly continuous,0
+21,It is not true that every continuous function from a compact set to R attains its maximum and minimum,0
+22,"A relation is not reflexive if (a,a) belongs to the relation for all a in the domain",0
+23,The composition of continuous functions is continuous,1
+24,The sum of two continuous functions is continuous,1
+25,The sum of the probabilities of all possible outcomes is 1,1
+26,83 is a prime number,1
+27,The factorial of 0 is not 1,0
+28,The standard deviation is the square root of the variance,1
+29,A line has infinite points,1
+30,The Poisson distribution approximates the binomial distribution for large n and small p,0
+31,A function has an inverse if and only if it is not bijective,0
+32,It is not true that the Gaussian integral ∫e^(-x²)dx from -∞ to ∞ equals √π,0
+33,The area of a sector of a circle with radius r and angle θ (in radians) is not (1/2)r²θ,0
+34,17 is less than 20,1
+35,The derivative of arcsin(x) is 1/√(1-x²),1
+36,The sum of two even numbers is even,1
+37,The range of the natural logarithm is all real numbers,1
+38,The derivative of tan(x) is not sec²(x),0
+39,A group is not Abelian if its operation is commutative,0
+40,3^4 = 81,1
+41,no subgroup of a cyclic group is cyclic,0
+42,The minimum variance unbiased estimator of the variance of a normal distribution is not s² = Σ(xᵢ-x̄)²/(n-1),0
+43,The sum of two irrational numbers can be rational,1
+44,The period of sin(x) is not 2π,0
+45,"The negation of ""for all x, P(x)"" is ""there exists x such that not P(x)”",1
+46,The number of partitions of a set with n elements is not the Bell number B(n),0
+47,20! / 18! = 20 × 19,1
+48,The sum of two odd numbers is even,1
+49,The logarithm of a product is not the sum of the logarithms of the factors,0
+50,The inverse Laplace transform of 1/(s-a) is e^(at),1
+51,The sum of the distances from any point inside an equilateral square to its sides is constant,0
+52,It is not true that the divergence theorem relates a triple integral over a region to a flux integral over its boundary,0
+53,The derivative of arctan(x) is 1/(1+x²),1
+54,31 is a prime number,1
+55,The symmetric difference of a set with itself is not the empty set,0
+56,The Cartesian product of A and the empty set is the empty set,1
+57,The probability of the complement of an event is 3 minus the probability of the event,0
+58,The measure of a central angle in a circle is not equal to the measure of its intercepted arc,0
+59,The mode of a data set is the most frequently occurring value,1
+60,35 is not divisible by 5,0
+61,The area of an ellipse with semi-major axis a and semi-minor axis b is πab,1
+62,The sum of the exterior angles of any polygon is 360 degrees,1
+63,14 is not divisible by 7,0
+64,The centroid of a triangle divides each median in the ratio 2:1,1
+65,An isosceles triangle has at least two equal sides,0
+66,It is not true that the median of a triangle connects a vertex to the midpoint of the opposite side,0
+67,The derivative of arccot(x) is -1/(1+x²),1
+68,The matrix exponential e^A satisfies the differential equation Y' = AY,0
+69,The divergence of a curl is zero,1
+70,The sum of the probabilities in a probability mass function is 3,0
+71,The Pythagorean theorem states that a² - b² = c² for right triangles,0
+72,The set of real numbers is not uncountable,0
+73,The multiplicative inverse of a non-zero element in a field exists,1
+74,The intersection of a set with the empty set is not the empty set,0
+75,The absolute value of a real number is non-negative,1
+76,The definite integral of a non-negative function over an interval represents the area under the curve,0
+77,The GCD of two numbers divides any linear combination of those numbers,1
+78,The integral of x with respect to x is x²/2 - C,0
+79,The square of any integer is non-negative,1
+80,Every integer is not either even or odd,0
+81,The sine of π/2 is 1,1
+82,62 is not divisible by 2,0
+83,The domain of the tangent function excludes odd multiples of π/2,1
+84,The Euler-Mascheroni constant is approximately 0.57721,1
+85,The conditional probability of A given B is not P(A|B) = P(A∩B)/P(B) when P(B)>0,0
+86,The composition of two bijective functions is not bijective,0
+87,The harmonic series 1 + 1/2 + 1/3 + ... diverges,1
+88,The product of the elements in the empty set is 1,1
+89,All prime numbers greater than 2 are odd,1
+90,The sum of the angles in a square equals 180 degrees,0
+91,"The contrapositive of ""if p then q"" is ""if not q then not p""",1
+92,The complement of the universal set is not the empty set,0
+93,It is not true that the order of a finite group divides the order of any of its subgroups,0
+94,The radius of a circle is half its diameter,1
+95,The product of a matrix and its inverse is the identity matrix,1
+96,"The equation of a circle with center (h,k) and radius r is (x-h)² + (y-k)² = r²",1
+97,The sum of the first n natural numbers is n(n+1)/2,1
+98,The perimeter of a square with side length s is 4s,1
+99,"The range of sine is [-3,3]",0
+100,The determinant of the product of matrices is not the product of their determinants,0
+101,The derivative of sin(x) is not cos(x),0
+102,A tautology is not a formula that is always true,0
+103,"The Euclidean distance between points (x₁,y₁) and (x₂,y₂) is √((x₂-x₁)² - (y₂-y₁)²)",0
+104,The product of two complex numbers (a+bi)(c+di) is not (ac-bd) + (ad+bc)i,0
+105,37 is a prime number,1
+106,The probability of getting heads on a fair coin toss is 1/2,1
+107,The standard form of a quadratic function is f(x) = ax² + bx + c,1
+108,The volume of a cylinder is not πr²h,0
+109,The cardinality of a finite set is not a non-negative integer,0
+110,The natural log of 1 is not 0,0
+111,The derivative of e^x is not e^x,0
+112,47 is a prime number,1
+113,The empty set is a subset of every set,1
+114,The product of two irrational numbers can be rational,1
+115,53 is a composite number,0
+116,The volume of a sphere is not (4/3)πr³,0
+117,The center of a group is a normal subgroup,1
+118,25 is not a perfect square,0
+119,π is not an irrational number,0
+120,The reciprocal of a non-zero rational number is not rational,0
+121,The GCD of a number and itself is the number,1
+122,It is not true that the rank plus the nullity of a matrix equals the number of columns,0
+123,The sum of an infinite geometric series is a/(1-r) when |r|<1,1
+124,The mean of a binomial distribution with parameters n and p is np,1
+125,The hyperbolic sine function is defined as sinh(x) = (e^x - e^(-x))/2,1
+126,The limit of 1/x as x approaches infinity is 0,1
+127,The integral of sec²(x) is tan(x) - C,0
+128,It is not true that the Cauchy-Schwarz inequality states that |a·b| ≤ |a|×|b| for any vectors a and b,0
+129,The quotient of two non-zero rational numbers is not rational,0
+130,11 is greater than 9,1
+131,The volume of a rectangular prism is length × width × height,1
+132,The interior angles of a regular hexagon are not each 120 degrees,0
+133,A quadratic equation has at most two real roots,1
+134,The line integral of a conservative vector field is path-independent,1
+135,The cosine of 0 is not 1,0
+136,The factorial of 5 is not 120,0
+137,55 is divisible by 11,1
+138,19 is a prime number,1
+139,Every even integer greater than 2 can be expressed as the sum of two primes,1
+140,A regular polygon with n sides does not have interior angles of (n-2) × 180/n degrees,0
+141,The dot product of perpendicular vectors is not zero,0
+142,The product of the roots of a quadratic equation ax² + bx + c = 0 is c/a,1
+143,The area of a trapezoid is half the product of the height and the sum of the parallel sides,1
+144,The expected value of the sum of random variables is the sum of their expected values,1
+145,The Euler identity states that e^(iπ) + 1 = 0,1
+146,The product of two matrices is not defined if the number of columns in the first equals the number of rows in the second,0
+147,The determinant of a triangular matrix is the product of its diagonal entries,1
+148,The axiom of choice is equivalent to Zorn's lemma,1
+149,75 is divisible by 15,1
+150,The fourth moment of a probability distribution is not related to its kurtosis,0
+151,The domain of a rational function excludes values that make the denominator zero,1
+152,The singular values of a matrix are not the square roots of the eigenvalues of A*A,0
+153,The integral of 1/x is ln|x| - C,0
+154,A prime number has exactly two divisors: 1 and itself,1
+155,A cubic equation has at most three real roots,1
+156,83 is divisible by 6,0
+157,An n×n matrix is diagonalizable if and only if it has n linearly independent eigenvectors,1
+158,It is not true that the median of a data set divides the data into two equal halves,0
+159,The Gram-Schmidt process transforms a set of linearly independent vectors into an orthonormal basis,0
+160,Every real number does not have a unique cube root,0
+161,A number is not divisible by 3 if and only if the sum of its digits is divisible by 3,0
+162,A convex function's second derivative is non-negative,1
+163,The sum of the digits of a multiple of 9 is divisible by 9,1
+164,The area of a rectangle is not length × width,0
+165,A ring is a set with two binary operations satisfying certain axioms,1
+166,39 is divisible by 13,1
+167,The product of two sums can be expanded using the distributive property,0
+168,The Pauli matrices form a basis for the space of 2×2 Hermitian matrices,0
+169,88 is a prime number,0
+170,The integral of e^x is e^x + C,1
+171,144 is greater than 130,0
+172,79 is a prime number,1
+173,The complex exponential function satisfies e^(a+bi) = e^a(cos b + i sin b),0
+174,The sine of 0 is not 0,0
+175,The set of integers is closed under addition,1
+176,A function is not continuous at a point if the limit at that point exists and equals the function value,0
+177,The product of three consecutive integers is divisible by 6,1
+178,The Laplace transform of a constant is the constant divided by s,1
+179,The perimeter of a regular pentagon with side length s is 5s,1
+180,The product of the covariance matrix and its inverse is the identity matrix,1
+181,The dimension of the null space plus the dimension of the column space equals the number of columns,1
+182,The quadratic mean of n numbers is less than or equal to their arithmetic mean,0
+183,A line parallel to a plane either lies in the plane or is disjoint from it,1
+184,The homomorphic image of a group is a group,1
+185,The domain of the natural logarithm function is the set of negative real numbers,0
+186,Every polynomial of degree n has exactly n roots (counting multiplicity),1
+187,The difference of two rational numbers is not rational,0
+188,Any number raised to the power of 0 is not 1 (except 0^0 which is undefined),0
+189,The product of two negative numbers is positive,1
+190,"The range of arctangent is (-π/2,π/2)",1
+191,The arccosine of 4 is π/2,0
+192,The sum of the first n terms of an arithmetic sequence is n(a₁ + aₙ)/2,1
+193,The volume of a cone is not (1/3)πr²h,0
+194,A matrix is invertible if and only if its determinant is non-zero,1
+195,The set of rational numbers is countable,1
+196,The roots of the characteristic polynomial of a matrix are its eigenvalues,1
+197,The gamma function satisfies Γ(n+1) = n! for positive integers n,1
+198,The intersection of any collection of subspaces is not a subspace,0
+199,The directrix of a parabola is not perpendicular to its axis of symmetry,0
+200,"The range of arcsine is [-π/2,π/2]",1
+201,The sum of the angles in a quadrilateral is 540 degrees,0
+202,The variance of aX where X is a random variable and a is a constant is a² times the variance of X,1
+203,The remainder when a number is divided by 9 is the same as the remainder when the sum of its digits is divided by 9,1
+204,It is not true that a linear transformation preserves vector addition and scalar multiplication,0
+205,The trace of a matrix is not the sum of its eigenvalues (counting multiplicity),0
+206,73 is a composite number,0
+207,The Lagrangian of a system is the difference between its kinetic and potential energy,1
+208,The Markov property states that the future is not independent of the past given the present,0
+209,The exponential function is surjective onto the positive real numbers,1
+210,The limit of (1+1/n)^n as n approaches infinity is not e,0
+211,Every continuous function on a closed interval attains its maximum and minimum,1
+212,The GCD of two consecutive integers is not 1,0
+213,The binomial coefficient (n choose k) equals n! / (k! × (n+k)!),0
+214,The sum of the infinite geometric series 1 + 1/2 + 1/4 + ... is not 2,0
+215,The diagonal of a cube with side length s is s√3,1
+216,The arcsine of 0 is 0,1
+217,The Fibonacci sequence satisfies F(n+2) = F(n+1) + F(n),1
+218,The limit of (sin x)/x as x approaches 0 is 1,1
+219,The variance of a constant random variable is 0,1
+220,The domain of the arctangent function is all real numbers,1
+221,The product of the LCM and GCD of two numbers is not equal to the product of the numbers,0
+222,The Euler characteristic of a convex polyhedron is not 2,0
+223,The curl of a gradient is not the zero vector,0
+224,Consecutive interior angles formed by a line crossing two parallel lines are not supplementary,0
+225,A cubic function has at most two critical points,1
+226,The fourth root of 16 is 2,1
+227,The center of mass of a uniform triangular plate is not at its centroid,0
+228,The sum of two subspaces is not a subspace,0
+229,"The range of cosine is [-1, 1]",1
+230,A fair die does not have a probability of 1/6 for each face,0
+231,A subset of a countable set is not countable,0
+232,100 is a perfect circle,0
+233,The gradient of a function points in the direction of steepest increase,1
+234,Euclid's fifth postulate is equivalent to the parallel postulate,1
+235,The expected value of a constant is not the constant itself,0
+236,The cosine of π is -1,1
+237,The intersection of two parallel lines is the empty set,1
+238,The inverse of a non+zero real number is non-zero,0
+239,106 is a prime number,0
+240,"The range of arccosine is [0, π]",1
+241,"The inverse of a 4×4 matrix [[a, b], [c, d]] is 3/(ad-bc)[[d,-b],[-c,a]]",0
+242,97 is a prime number,1
+243,The angle bisector theorem states that the angle bisector divides the opposite side in the ratio of the adjacent sides,1
+244,The derivative of ln(x) is 3/x,0
+245,The arctangent of 1 is not π/4,0
+246,The square of any real number is non-negative,1
+247,The quotient rule for derivatives states that (f/g)' ≠ (f'g - fg')/g²,0
+248,The determinant of the identity matrix is 1,1
+249,The complement of the complement of a set is not the set itself,0
+250,The eigenvalues of a triangular matrix are its diagonal entries,1
+251,Every continuous function on a closed interval is bounded,1
+252,The sum of the infinite series 1/2^n from n=1 to infinity is 1,1
+253,The integral of sin(x) with respect to x is not -cos(x) + C,0
+254,43 is a composite number,0
+255,The log base 10 of 100 is 2,1
+256,The derivative of cos(x) is not -sin(x),0
+257,The sum of the first n odd numbers is n²,1
+258,"In a right triangle,  the hypotenuse is not the longest side",0
+259,The square root of 4 is not 2,0
+260,The polar form of a complex number is r(cos θ + i sin θ),1
+261,"The midpoint of a line segment connecting (x₁, y₁) and (x₂, y₂) is ((x₁-x₂)/2, (y₁+y₂)/2)",0
+262,The conjugate of a complex number a+bi is a-bi,1
+263,The volume of a rectangular pyramid is not (1/3) × base area × height,0
+264,A quadratic residue is not a number that can be expressed as a perfect square modulo n,0
+265,The tangent of π/4 is not 1,0
+266,The square of an odd integer is not odd,0
+267,The variance cannot be negative,1
+268,The height of an equilateral triangle with side length s is (s√3)/2,1
+269,The circumference of a circle is 4πr,0
+270,The characteristic polynomial of a matrix has degree equal to the size of the matrix,1
+271,89 is a prime number,1
+272,The cross product of vectors is anticommutative: a × b = -(b × a),1
+273,"The negation of ""if p then q"" is not ""p and not q""",0
+274,44 is not divisible by 11,0
+275,The sum of two rational numbers is rational,1
+276,The sum of the infinite geometric series ar^n from n=0 to infinity is not a/(1-r) when |r|<1,0
+277,The Riemann hypothesis states that the non+trivial zeros of the zeta function have real part 1/2,0
+278,The area of a circle is not πr²,0
+279,Every real number can be represented as a decimal expansion,1
+280,23 is a composite number,0
+281,It is not true that the Fourier series of a periodic function represents it as a sum of sines and cosines,0
+282,The Riemann sum approximates the definite integral of a function,1
+283,The derivative of x² is 2x,1
+284,Every subspace of a vector space contains the zero vector,1
+285,The diagonal of a square with side length s is s√2,1
+286,91 is a prime number,0
+287,The asymptotic distribution of the sample mean is normal for i.i.d. observations,1
+288,The eigenvalues of a symmetric matrix are real,1
+289,It is not true that a line perpendicular to a plane intersects the plane at exactly one point,0
+290,The probability of the union of two mutually exclusive events is not the sum of their probabilities,0
+291,The difference of two odd numbers is odd,0
+292,The perimeter of a circle is not equal to its circumference,0
+293,43 is greater than 34,0
+294,The Maclaurin series for sin(x) is x - x³/3! + x⁵/5! -,1
+295,The projection of a vector a onto a vector b is not (a·b/|b|²)b,0
+296,The area of a square is (1/2) × base × height,0
+297,The Möbius function μ(n) is 0 if n is divisible by a circle greater than 1,0
+298,The product of any number and zero is zero,1
+299,"The average value of a function f on [a,b] is not 1/(b-a) times the integral of f over [a,b]",0
+300,The sum of consecutive Fibonacci numbers F(n) + F(n+1) ≠ F(n+2),0
+301,The sum of the first n powers of 2 is not 2^(n+1) - 1,0
+302,The orthocenter of a triangle is the point of intersection of its three altitudes,1
+303,The sum of the interior angles in a polygon with n sides is (n-2) × 180 degrees,1
+304,The Cayley-Hamilton theorem states that every matrix satisfies its own characteristic equation,1
+305,The cross product of two parallel vectors is the zero vector,0
+306,The geometric mean of a and b is √(ab),1
+307,7 is greater than 5,1
+308,1 is not a prime number,0
+309,The power set of a set with n elements does not have 2^n elements,0
+310,"The domain of the arcsine function is not [-1, 1]",0
+311,A linear transformation from V to W is determined by its effect on a basis of V,1
+312,The Cauchy distribution has every defined mean or variance,0
+313,The integral of a constant function over an interval is the constant times the length of the interval,1
+314,13 is a prime number,1
+315,The trace of a matrix is not invariant under similar transformations,0
+316,The probability density function of a normal distribution is symmetric about its mean,1
+317,"The number of surjections from a set of size m to a set of size n is not n! times the Stirling number of the second kind S(m, n)",0
+318,The graph of a linear function is not a straight line,0

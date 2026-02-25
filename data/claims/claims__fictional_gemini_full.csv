@@ -1,0 +1,352 @@
+Claim,Domain,Negated Claim,Negation Type
+Harry Potter attended Hogwarts School of Witchcraft and Wizardry,Literature,Harry Potter attended Beauxbatons Academy of Magic,Information Substitution
+Sherlock Holmes lived at 221B Baker Street,Literature,Sherlock Holmes did not live at 221B Baker Street,Direct Negation
+Luke Skywalker is the son of Darth Vader,Film,Luke Skywalker is the brother of Darth Vader,Term Replacement
+Frodo Baggins was tasked with destroying the One Ring,Literature,Frodo Baggins was tasked with protecting the One Ring,Term Replacement
+Katniss Everdeen volunteered as tribute in the Hunger Games,Literature,Katniss Everdeen was conscripted as tribute in the Hunger Games,Term Replacement
+Jon Snow was a member of the Night's Watch,Television,Jon Snow was the founder of the Night's Watch,Information Substitution
+Spider-Man's secret identity is Peter Parker,Comics,Spider-Man's secret identity is not Peter Parker,Direct Negation
+Batman's butler is named Alfred Pennyworth,Comics,Batman's butler is named Thomas Wayne,Information Substitution
+Superman is from the planet Krypton,Comics,Superman is from the planet Mars,Information Substitution
+Wonder Woman is an Amazonian princess from Themyscira,Comics,Wonder Woman is a human scientist from Metropolis,Information Substitution
+Iron Man's real name is Tony Stark,Comics,Iron Man's real name is Howard Stark,Information Substitution
+Captain America was frozen in ice for several decades,Comics,Captain America was frozen in ice for only a few months,Descriptor Change
+The Hulk is the alter ego of Dr. Bruce Banner,Comics,The Hulk is the alter ego of Dr. Stephen Strange,Information Substitution
+Thor is the Norse god of thunder,Comics,Thor is the Norse god of mischief,Term Replacement
+The Joker is Batman's arch-nemesis,Comics,The Joker is Batman's loyal sidekick,Term Replacement
+Bilbo Baggins found the One Ring in Gollum's cave,Literature,Bilbo Baggins found the One Ring in the Mines of Moria,Information Substitution
+Gandalf is a wizard who guides the Fellowship of the Ring,Literature,Gandalf is not a wizard who guides the Fellowship of the Ring,Direct Negation
+Indiana Jones is a professor of archaeology,Film,Indiana Jones is a professor of literature,Term Replacement
+James Bond's code number is 007,Film,James Bond's code number is 001,Descriptor Change
+Captain Jack Sparrow is the captain of the Black Pearl,Film,Captain Jack Sparrow is the captain of the Flying Dutchman,Information Substitution
+The Doctor is a Time Lord from the planet Gallifrey,Television,The Doctor is a Dalek from the planet Skaro,Information Substitution
+Buffy Summers is a vampire slayer,Television,Buffy Summers is a vampire,Term Replacement
+Walter White was a high school chemistry teacher who started cooking meth,Television,Walter White was a college physics professor who started cooking meth,Information Substitution
+Homer Simpson works at the Springfield Nuclear Power Plant,Television,Homer Simpson works at the Kwik-E-Mart,Information Substitution
+Rick Sanchez is a sociopathic genius scientist,Television,"Rick Sanchez is a kind-hearted, simple-minded farmer",Term Replacement
+SpongeBob SquarePants lives in a pineapple under the sea,Television,SpongeBob SquarePants lives in an Easter Island head under the sea,Information Substitution
+Shrek is an ogre who lives in a swamp,Film,Shrek is a handsome prince who lives in a castle,Term Replacement
+Buzz Lightyear is a space ranger action figure,Film,Buzz Lightyear is not an action figure,Direct Negation
+Simba is the king of the Pride Lands,Film,Mufasa remains the king of the Pride Lands throughout the story,Information Substitution
+Aladdin found a magic lamp containing a genie,Film,Aladdin found a magic carpet containing a genie,Information Substitution
+Mickey Mouse's girlfriend is Minnie Mouse,Animation,Mickey Mouse's girlfriend is Daisy Duck,Information Substitution
+Winnie the Pooh loves to eat honey,Literature,Winnie the Pooh hates to eat honey,Term Replacement
+Peter Pan can fly and never grows up,Literature,Peter Pan cannot fly and grows old,Direct Negation
+Cinderella lost a glass slipper at the royal ball,Folklore,Cinderella lost a diamond necklace at the royal ball,Information Substitution
+Alice fell down a rabbit hole into Wonderland,Literature,Alice climbed up a beanstalk into Wonderland,Term Replacement
+The Grinch tried to steal Christmas from the Whos of Whoville,Literature,The Grinch tried to save Christmas for the Whos of Whoville,Term Replacement
+"The Cat in the Hat is a tall, mischievous cat in a red and white striped hat",Literature,"The Cat in the Hat is a short, well-behaved cat in a blue and green striped hat",Descriptor Change
+Odysseus was the king of Ithaca and a hero in the Trojan War,Mythology,Odysseus was the king of Sparta and a hero in the Trojan War,Information Substitution
+King Arthur pulled the sword Excalibur from a stone,Mythology,King Arthur did not pull the sword Excalibur from a stone,Direct Negation
+Dracula is a vampire who resides in Transylvania,Literature,Dracula is a werewolf who resides in London,Information Substitution
+Frankenstein's monster was created by Victor Frankenstein,Literature,Frankenstein's monster was the son of Victor Frankenstein,Term Replacement
+Romeo Montague and Juliet Capulet are from feuding families in Verona,Literature,Romeo Montague and Juliet Capulet are from allied families in Verona,Term Replacement
+Hamlet is the Prince of Denmark,Literature,Hamlet is the King of Denmark,Information Substitution
+"Atticus Finch is a lawyer who defends Tom Robinson in ""To Kill a Mockingbird""",Literature,"Atticus Finch is a prosecutor who accuses Tom Robinson in ""To Kill a Mockingbird""",Term Replacement
+Jay Gatsby throws extravagant parties in hopes of attracting Daisy Buchanan,Literature,Jay Gatsby avoids throwing parties and has no interest in Daisy Buchanan,Term Replacement
+"Holden Caulfield is the protagonist of ""The Catcher in the Rye""",Literature,"Phoebe Caulfield is the protagonist of ""The Catcher in the Rye""",Information Substitution
+"Big Brother is the enigmatic dictator in George Orwell's ""Nineteen Eighty-Four""",Literature,"Big Brother is the benevolent leader in George Orwell's ""Nineteen Eighty-Four""",Term Replacement
+Optimus Prime is the leader of the Autobots,Television,Optimus Prime is the leader of the Decepticons,Term Replacement
+Mario is a plumber who often has to rescue Princess Peach,Video Games,Mario is an electrician who often has to rescue Princess Daisy,Information Substitution
+Sonic the Hedgehog is a blue hedgehog who can run at supersonic speeds,Video Games,Sonic the Hedgehog is a red hedgehog who moves at slow speeds,Descriptor Change
+Pikachu is an electric-type Pokémon and Ash Ketchum's best friend,Video Games,Pikachu is a water-type Pokémon and Ash Ketchum's rival,Information Substitution
+Lara Croft is a British archaeologist and adventurer,Video Games,Lara Croft is an American journalist and adventurer,Information Substitution
+Master Chief is a supersoldier known as a Spartan,Video Games,Master Chief is a regular marine with no enhancements,Term Replacement
+Donkey Kong is a gorilla who is often at odds with Mario,Video-Games,Donkey Kong is a gorilla who is Mario's constant companion,Term Replacement
+Link is the hero of Hyrule who often has to rescue Princess Zelda,Video Games,Link is the villain of Hyrule who often has to capture Princess Zelda,Term Replacement
+Princess Peach is the ruler of the Mushroom Kingdom,Video Games,Princess Peach does not rule the Mushroom Kingdom,Direct Negation
+Darth Vader was once a Jedi Knight named Anakin Skywalker,Film,Darth Vader was once a Jedi Knight named Sheev Palpatine,Information Substitution
+Yoda is a wise and powerful Jedi Master,Film,Yoda is a foolish and weak Jedi Master,Term Replacement
+Han Solo is the captain of the Millennium Falcon,Film,Han Solo is the janitor of the Millennium Falcon,Information Substitution
+Princess Leia Organa is a leader in the Rebel Alliance,Film,Princess Leia Organa is a high-ranking officer in the Galactic Empire,Information Substitution
+Chewbacca is Han Solo's Wookiee co-pilot,Film,Chewbacca is Han Solo's human co-pilot,Descriptor Change
+R2-D2 is a resourceful astromech droid,Film,R2-D2 is a clumsy protocol droid,Descriptor Change
+C-3PO is a protocol droid fluent in over six million forms of communication,Film,C-3PO is a protocol droid fluent in only one form of communication,Descriptor Change
+Gollum was once a Hobbit named Sméagol,Literature,Gollum was once an Elf named Sméagol,Information Substitution
+Aragorn is the heir to the throne of Gondor,Literature,Aragorn has no claim to the throne of Gondor,Direct Negation
+Legolas is an Elf from Mirkwood and a skilled archer,Literature,Legolas is a Dwarf from the Lonely Mountain and a skilled axeman,Information Substitution
+Gimli is a Dwarf warrior and a member of the Fellowship of the Ring,Literature,Gimli is an Elf wizard and a member of the Fellowship of the Ring,Information Substitution
+Samwise Gamgee is Frodo Baggins' loyal gardener and friend,Literature,Samwise Gamgee is Frodo Baggins' treacherous enemy,Term Replacement
+Hermione Granger is one of Harry Potter's best friends and a very intelligent witch,Literature,Hermione Granger is one of Harry Potter's rivals and a dim-witted witch,Term Replacement
+Ron Weasley is Harry Potter's other best friend and a member of the Weasley family,Literature,Ron Weasley is Harry Potter's cousin and a member of the Malfoy family,Information Substitution
+Albus Dumbledore was the headmaster of Hogwarts,Literature,Albus Dumbledore was the Minister for Magic,Information Substitution
+Lord Voldemort is the main antagonist in the Harry Potter series,Literature,Lord Voldemort is the main protagonist in the Harry Potter series,Term Replacement
+Severus Snape was the Potions Master at Hogwarts,Literature,Severus Snape was the Herbology Professor at Hogwarts,Information Substitution
+Katniss Everdeen's weapon of choice is a bow and arrow,Literature,Katniss Everdeen's weapon of choice is a sword and shield,Information Substitution
+Peeta Mellark is the male tribute from District 12 in the 74th Hunger Games,Literature,Peeta Mellark is the male tribute from District 1 in the 74th Hunger Games,Information Substitution
+"Daenerys Targaryen is the ""Mother of Dragons""",Television,"Daenerys Targaryen is the ""Mother of Direwolves""",Information Substitution
+Tyrion Lannister is a dwarf and a member of House Lannister,Television,Tyrion Lannister is a giant and a member of House Stark,Information Substitution
+Cersei Lannister was the queen of the Seven Kingdoms,Television,Cersei Lannister was never the queen of the Seven Kingdoms,Direct Negation
+"Jaime Lannister is known as the ""Kingslayer""",Television,"Jaime Lannister is known as the ""Kingmaker""",Term Replacement
+Arya Stark is a skilled assassin,Television,Arya Stark is a clumsy seamstress,Term Replacement
+Sansa Stark becomes the Queen in the North,Television,Sansa Stark becomes the Queen of Dorne,Information Substitution
+Bran Stark is also known as the Three-Eyed Raven,Television,Bran Stark is also known as the Night King,Information Substitution
+The Night King is the leader of the White Walkers,Television,The Night King is a follower of the White Walkers,Term Replacement
+"Wolverine's real name is James ""Logan"" Howlett",Comics,"Wolverine's real name is Scott ""Slim"" Summers",Information Substitution
+Professor X is the founder of the X-Men,Comics,Professor X is the founder of the Brotherhood of Mutants,Information Substitution
+Magneto is a powerful mutant with control over magnetism,Comics,Magneto is a non-mutant with no special powers,Term Replacement
+Storm can control the weather,Comics,Storm can control fire,Information Substitution
+Jean Grey possesses telepathic and telekinetic powers,Comics,Jean Grey possesses no superhuman powers,Direct Negation
+Cyclops can fire powerful energy beams from his eyes,Comics,Cyclops can fire weak energy beams from his hands,Descriptor Change
+Deadpool is known for breaking the fourth wall,Comics,Deadpool is known for strictly adhering to the fourth wall,Term Replacement
+Thanos is a powerful Titan who seeks the Infinity Stones,Comics,Thanos is a weak human who seeks to destroy the Infinity Stones,Information Substitution
+Black Panther is the king of Wakanda,Comics,Black Panther is the jester of Wakanda,Information Substitution
+Doctor Strange is the Sorcerer Supreme,Comics,Doctor Strange is a novice magician,Term Replacement
+Scarlet Witch has the power to alter reality,Comics,Scarlet Witch's powers are limited to minor illusions,Descriptor Change
+Vision is an android created by Ultron and Tony Stark,Comics,Vision is a human created by Ultron and Tony Stark,Information Substitution
+Ant-Man can shrink in size but increase in strength,Comics,Ant-Man can grow in size but decrease in strength,Term Replacement
+The Wasp is Ant-Man's partner and can fly and shrink,Comics,The Wasp is Ant-Man's enemy and cannot fly or shrink,Term Replacement
+Green Lantern's power comes from his power ring,Comics,Green Lantern's power comes from a magic amulet,Information Substitution
+The Flash is the fastest man alive,Comics,The Flash is the slowest man alive,Term Replacement
+Aquaman is the king of Atlantis,Comics,Aquaman is an outcast from Atlantis,Information Substitution
+"Cyborg is a half-human,  half-machine superhero",Comics,Cyborg is a fully human superhero,Descriptor Change
+Shazam is a young boy who can transform into a superhero by saying a magic word,Comics,Shazam is an old man who can transform into a superhero by saying a magic word,Descriptor Change
+Green Arrow is a vigilante who uses a bow and arrow,Comics,Green Arrow is a vigilante who uses a machine gun,Information Substitution
+Supergirl is Superman's cousin,Comics,Supergirl is Superman's sister,Information Substitution
+Batgirl works alongside Batman in Gotham City,Comics,Batgirl works against Batman in Gotham City,Term Replacement
+Robin is Batman's sidekick,Comics,Robin is Batman's arch-nemesis,Term Replacement
+Nightwing was the original Robin,Comics,Nightwing was never Robin,Direct Negation
+Lex Luthor is Superman's arch-nemesis and a brilliant businessman,Comics,Lex Luthor is Superman's best friend and a failed businessman,Term Replacement
+Catwoman is a skilled thief and sometimes an ally of Batman,Comics,Catwoman is a clumsy policewoman and always an enemy of Batman,Term Replacement
+Penguin is a Gotham City mobster known for his love of birds and umbrellas,Comics,Penguin is a Gotham City hero known for his hatred of birds and umbrellas,Term Replacement
+Riddler is a criminal mastermind who leaves riddles at the scenes of his crimes,Comics,Riddler is a petty thief who leaves straightforward clues at the scenes of his crimes,Term Replacement
+"Two-Face was once Gotham's district attorney,  Harvey Dent",Comics,"Two-Face was once Gotham's mayor,  Harvey Dent",Information Substitution
+Poison Ivy can control plants,Comics,Poison Ivy can control animals,Information Substitution
+Mr. Freeze uses a cryo-suit and freeze gun,Comics,Mr. Freeze uses a flame-suit and fire gun,Term Replacement
+Scarecrow uses fear toxin to terrorize his victims,Comics,Scarecrow uses a calming agent to soothe his victims,Term Replacement
+Bane is a highly intelligent and physically enhanced supervillain,Comics,Bane is a dim-witted and physically weak supervillain,Term Replacement
+Ra's al Ghul is the leader of the League of Assassins,Comics,Ra's al Ghul is a member of the Justice League,Information Substitution
+Martian Manhunter is a shapeshifting alien from Mars,Comics,Martian Manhunter is a non-shapeshifting human from Earth,Information Substitution
+John Constantine is a cynical and chain-smoking occult detective,Comics,John Constantine is an optimistic and non-smoking police officer,Term Replacement
+Zatanna is a powerful magician,Comics,Zatanna has no magical abilities,Direct Negation
+Swamp Thing is a humanoid mass of vegetable matter,Comics,Swamp Thing is a humanoid mass of mineral matter,Information Substitution
+The Spectre is a divine spirit of vengeance,Comics,The Spectre is a demonic spirit of mercy,Term Replacement
+"Dr. Manhattan is a being with god-like powers in the ""Watchmen"" series",Comics,"Dr. Manhattan is a regular human scientist with no powers in the ""Watchmen"" series",Term Replacement
+Rorschach is a vigilante who wears a mask with constantly shifting inkblots,Comics,Rorschach is a vigilante who never wears a mask,Direct Negation
+The Comedian is a morally ambiguous government-sponsored hero,Comics,"The Comedian is a morally righteous, independent hero",Term Replacement
+"Ozymandias is considered the smartest man in the ""Watchmen"" universe",Comics,"Ozymandias is considered the least intelligent man in the ""Watchmen"" universe",Term Replacement
+Hellboy is a demon who works for the Bureau for Paranormal Research and Defense,Comics,Hellboy is an angel who works against the Bureau for Paranormal Research and Defense,Term Replacement
+Spawn was a government assassin who was resurrected as a Hellspawn,Comics,Spawn was a civilian who was never resurrected,Direct Negation
+Invincible is a Viltrumite-human hybrid with superhuman abilities,Comics,Invincible is a full human with no superhuman abilities,Term Replacement
+"Rick Grimes is a former sheriff's deputy and a leader of a group of survivors in ""The Walking Dead""",Comics,"Rick Grimes is a former accountant and a loner in ""The Walking Dead""",Information Substitution
+"Michonne is a skilled sword-wielding survivor in ""The Walking Dead""",Comics,"Michonne is an unskilled survivor who fears swords in ""The Walking Dead""",Term Replacement
+"Negan is a charismatic and brutal antagonist in ""The Walking Dead""",Comics,"Negan is a shy and gentle protagonist in ""The Walking Dead""",Term Replacement
+"Eren Yeager is the main protagonist of ""Attack on Titan"" who can transform into a Titan",Manga,"Eren Yeager is a minor antagonist of ""Attack on Titan"" who cannot transform into a Titan",Term Replacement
+Mikasa Ackerman is one of Eren's childhood friends and a skilled soldier,Manga,Mikasa Ackerman is one of Eren's adult enemies and an unskilled civilian,Term Replacement
+"Levi Ackerman is the captain of the Special Operations Squad in ""Attack on Titan""",Manga,"Levi Ackerman is a private in the Special Operations Squad in ""Attack on Titan""",Information Substitution
+Naruto Uzumaki is a ninja from the Hidden Leaf Village who seeks to become the Hokage,Manga,Naruto Uzumaki is a samurai from the Hidden Sand Village who seeks to become a fisherman,Information Substitution
+Sasuke Uchiha is Naruto's rival and a member of the Uchiha clan,Manga,Sasuke Uchiha is Naruto's mentor and is not a member of the Uchiha clan,Term Replacement
+Sakura Haruno is a skilled medical-nin and a member of Team 7 with Naruto and Sasuke,Manga,Sakura Haruno is an unskilled genjutsu specialist and a member of Team 8,Information Substitution
+Kakashi Hatake is the leader of Team 7,Manga,Kakashi Hatake is a student in Team 7,Information Substitution
+Goku is a Saiyan from Earth who is a powerful martial artist,Manga,Goku is a human from Planet Vegeta who is a weak martial artist,Information Substitution
+Vegeta is the prince of the Saiyan race and Goku's rival,Manga,Vegeta is a commoner of the Saiyan race and Goku's best friend,Term Replacement
+Frieza is a powerful galactic tyrant and one of Goku's most formidable enemies,Manga,Frieza is a weak galactic citizen and one of Goku's allies,Term Replacement
+Monkey D. Luffy is a pirate who gained rubber-like abilities after eating a Devil Fruit,Manga,Monkey D. Luffy is a marine who gained fire-like abilities after eating a Devil Fruit,Information Substitution
+Roronoa Zoro is a skilled swordsman and a member of the Straw Hat Pirates,Manga,Roronoa Zoro is an unskilled navigator and is not a member of the Straw Hat Pirates,Direct Negation
+Nami is the navigator of the Straw Hat Pirates,Manga,Nami is the captain of the Straw Hat Pirates,Information Substitution
+Ichigo Kurosaki is a teenager with the ability to see ghosts who becomes a Soul Reaper,Manga,Ichigo Kurosaki is an adult with no special abilities who becomes a regular human,Term Replacement
+Rukia Kuchiki is the Soul Reaper who gives Ichigo his powers,Manga,Rukia Kuchiki is the Soul Reaper who takes Ichigo's powers away,Term Replacement
+Light Yagami is a high school student who finds a supernatural notebook called the Death Note,Manga,Light Yagami is a college professor who finds a regular notebook,Information Substitution
+L is a world-renowned detective who tries to solve the Kira case,Manga,L is an unknown criminal who tries to aid the Kira case,Term Replacement
+Sailor Moon is a schoolgirl who can transform into a powerful heroine,Manga,Sailor Moon is a teacher who cannot transform into a heroine,Direct Negation
+Tuxedo Mask is Sailor Moon's love interest and ally,Manga,Tuxedo Mask is Sailor Moon's father and enemy,Term Replacement
+Aang is the last Airbender and the current Avatar,Television,Aang is the first Airbender and a past Avatar,Term Replacement
+Katara is a Waterbender from the Southern Water Tribe,Television,Katara is a Firebender from the Northern Water Tribe,Information Substitution
+Sokka is Katara's brother and a skilled warrior,Television,Sokka is Katara's father and a clumsy scholar,Information Substitution
+Zuko is the exiled prince of the Fire Nation,Television,Zuko is the ruling king of the Earth Kingdom,Information Substitution
+Toph Beifong is a blind Earthbender who is one of the most powerful of her time,Television,Toph Beifong is a sighted Waterbender who is one of the weakest of her time,Information Substitution
+Iroh is Zuko's wise and compassionate uncle,Television,Iroh is Zuko's foolish and cruel father,Term Replacement
+Korra is the Avatar after Aang,Television,Korra is the Avatar before Aang,Term Replacement
+Mako is a Firebender and a member of Korra's team,Television,Mako is an Airbender and an opponent of Korra's team,Information Substitution
+Bolin is an Earthbender and Mako's brother,Television,Bolin is a Waterbender and Mako's rival,Information Substitution
+Asami Sato is a brilliant inventor and a member of Korra's team,Television,Asami Sato is a struggling artist and is not a member of Korra's team,Term Replacement
+Sherlock is a modern-day consulting detective living in London,Television,Sherlock is a Victorian-era consulting detective living in Paris,Information Substitution
+Dr. John Watson is Sherlock's flatmate and a former army doctor,Television,Dr. John Watson is Sherlock's landlord and a current police officer,Information Substitution
+Moriarty is Sherlock's arch-nemesis,Television,Moriarty is Sherlock's closest friend,Term Replacement
+The Eleventh Doctor is known for his love of bow ties and fezzes,Television,The Eleventh Doctor is known for his hatred of bow ties and fezzes,Term Replacement
+"The Tenth Doctor is known for his catchphrase ""Allons-y!""",Television,"The Tenth Doctor is known for his catchphrase ""Geronimo!"".",Information Substitution
+Rose Tyler was the Ninth and Tenth Doctor's companion,Television,Rose Tyler was the First and Second Doctor's companion,Information Substitution
+Donna Noble was the Tenth Doctor's companion,Television,Donna Noble was the Tenth Doctor's enemy,Term Replacement
+Amy Pond was the Eleventh Doctor's companion,Television,Amy Pond was not the Eleventh Doctor's companion,Direct Negation
+Rory Williams was Amy Pond's husband and a companion of the Eleventh Doctor,Television,Rory Williams was Amy Pond's brother and an enemy of the Eleventh Doctor,Information Substitution
+River Song is a mysterious archaeologist and the Doctor's wife,Television,River Song is an open book historian and the Doctor's sister,Term Replacement
+Captain Malcolm Reynolds is the captain of the smuggling ship Serenity,Television,Captain Malcolm Reynolds is a law-abiding captain of the military ship Serenity,Term Replacement
+Zoe Washburne is Mal's second-in-command,Television,Zoe Washburne is Mal's superior officer,Term Replacement
+"Hoban ""Wash"" Washburne is the pilot of Serenity",Television,"Hoban ""Wash"" Washburne is the gunner of Serenity",Information Substitution
+Jayne Cobb is the muscle of the Serenity crew,Television,Jayne Cobb is the brains of the Serenity crew,Term Replacement
+Kaylee Frye is the ship's mechanic,Television,Kaylee Frye is the ship's doctor,Information Substitution
+Inara Serra is a Companion who rents one of Serenity's shuttles,Television,Inara Serra is a mechanic who owns one of Serenity's shuttles,Information Substitution
+Simon Tam is a doctor on the run with his sister,Television,Simon Tam is a lawyer on the run with his mother,Information Substitution
+River Tam is a gifted but mentally unstable young woman,Television,River Tam is a non-gifted and mentally stable young woman,Term Replacement
+Shepherd Book is a preacher with a mysterious past,Television,Shepherd Book is a smuggler with a well-documented past,Term Replacement
+Fox Mulder is an FBI agent who believes in the existence of extraterrestrials,Television,Fox Mulder is an FBI agent who is skeptical about the existence of extraterrestrials,Term Replacement
+Dana Scully is a medical doctor and FBI agent assigned to debunk Mulder's work,Television,Dana Scully is a medical doctor and FBI agent assigned to validate Mulder's work,Term Replacement
+"The Cigarette Smoking Man is a shadowy antagonist in ""The X-Files""",Television,"The Cigarette Smoking Man is a forthcoming protagonist in ""The X-Files""",Term Replacement
+"Dean Winchester hunts demons,  ghosts,  and other supernatural beings with his brother Sam",Television,"Dean Winchester studies demons,  ghosts,  and other supernatural beings with his father John",Term Replacement
+Sam Winchester is Dean's younger brother and fellow hunter,Television,Sam Winchester is Dean's older brother and a non-hunter,Information Substitution
+Castiel is an angel who often helps the Winchester brothers,Television,Castiel is a demon who always hinders the Winchester brothers,Term Replacement
+Crowley was the King of Hell,Television,Crowley was a low-level crossroads demon,Information Substitution
+Jack Bauer is a counter-terrorism agent who often has to save the day in 24 hours,Television,Jack Bauer is a terrorist who often has to ruin the day in 24 hours,Term Replacement
+Tony Soprano is a New Jersey mob boss,Television,Tony Soprano is a New York police chief,Information Substitution
+Don Draper is a talented advertising executive with a mysterious past,Television,Don Draper is an untalented advertising executive with a very public past,Term Replacement
+Peggy Olson is a talented copywriter who works for Don Draper,Television,Peggy Olson is an untalented secretary who works against Don Draper,Term Replacement
+Michael Scott is the bumbling regional manager of the Dunder Mifflin Scranton branch,Television,Michael Scott is the competent CEO of the Dunder Mifflin corporate office,Term Replacement
+Dwight Schrute is a beet farmer and the assistant to the regional manager at Dunder Mifflin,Television,Dwight Schrute is a cabbage farmer and the regional manager at Dunder Mifflin,Information Substitution
+Jim Halpert is a sales representative at Dunder Mifflin known for his pranks on Dwight,Television,Jim Halpert is an accountant at Dunder Mifflin known for his praise of Dwight,Term Replacement
+Pam Beesly is the receptionist at Dunder Mifflin who later becomes a saleswoman and office administrator,Television,Pam Beesly is the CEO at Dunder Mifflin who never worked as a receptionist,Information Substitution
+Leslie Knope is a passionate and optimistic deputy director of the Pawnee City Department of Parks and Recreation,Television,Leslie Knope is an apathetic and pessimistic deputy director of the Pawnee City Library Department,Term Replacement
+Ron Swanson is the director of the Pawnee City Department of Parks and Recreation who believes in small government,Television,Ron Swanson is the director of the Pawnee City Department of Parks and Recreation who believes in big government,Term Replacement
+April Ludgate is a cynical and apathetic intern who later becomes Ron's assistant,Television,April Ludgate is an enthusiastic and engaged intern who later becomes Leslie's boss,Term Replacement
+Andy Dwyer is a lovable oaf who goes from being a shoeshiner to a musician and television personality,Television,Andy Dwyer is a brilliant genius who remains a shoeshiner his whole life,Term Replacement
+Tom Haverford is a flashy and entrepreneurial parks department employee,Television,Tom Haverford is a modest and un-entrepreneurial library employee,Term Replacement
+Ben Wyatt is a brilliant but socially awkward state auditor who later becomes Pawnee's city manager,Television,Ben Wyatt is a dim-witted but socially graceful state auditor who never works for Pawnee,Term Replacement
+Jerry Gergich is a clumsy but well-meaning employee of the Pawnee parks department,Television,Jerry Gergich is a graceful but malicious employee of the Pawnee parks department,Term Replacement
+"Ross Geller is a paleontologist and one of the six main characters in ""Friends""",Television,"Ross Geller is an astronomer and a minor character in ""Friends""",Information Substitution
+Rachel Green is a fashion enthusiast who starts her career as a waitress at Central Perk,Television,Rachel Green is a fashion hater who starts her career as the manager of Central Perk,Term Replacement
+Monica Geller is a chef and Ross's younger sister,Television,Monica Geller is a waitress and Ross's older sister,Information Substitution
+Chandler Bing is known for his sarcastic sense of humor,Television,Chandler Bing is known for his sincere sense of humor,Term Replacement
+Joey Tribbiani is a struggling actor who loves food,Television,Joey Tribbiani is a successful actor who dislikes food,Term Replacement
+Phoebe Buffay is a quirky masseuse and musician,Television,Phoebe Buffay is a conventional accountant and scientist,Term Replacement
+Ted Mosby is an architect who is telling his children the story of how he met their mother,Television,Ted Mosby is a lawyer who is telling his parents the story of how he met their mother,Information Substitution
+Barney Stinson is a womanizer with a love for suits and catchphrases,Television,Barney Stinson is a monogamist with a hatred for suits who never uses catchphrases,Term Replacement
+Robin Scherbatsky is a Canadian news anchor,Television,Robin Scherbatsky is an American pop star,Information Substitution
+Lily Aldrin is a kindergarten teacher and Marshall's wife,Television,Lily Aldrin is a high school teacher and Marshall's sister,Information Substitution
+Marshall Eriksen is a lawyer and Ted's best friend from college,Television,Marshall Eriksen is a doctor and Ted's rival from high school,Information Substitution
+Meredith Grey is a surgical intern who eventually becomes the Chief of General Surgery at Grey Sloan Memorial Hospital,Television,Meredith Grey is a surgical intern who is fired from Grey Sloan Memorial Hospital,Term Replacement
+"Derek Shepherd was a renowned neurosurgeon also known as ""McDreamy""",Television,"Derek Shepherd was an infamous cardiologist also known as ""McNightmare""",Term Replacement
+Cristina Yang is a highly competitive and ambitious cardiothoracic surgeon,Television,Cristina Yang is a non-competitive and unambitious pediatric surgeon,Term Replacement
+Alex Karev is a pediatric surgeon,Television,Alex Karev is a neurosurgeon,Information Substitution
+Miranda Bailey is a general surgeon who becomes the Chief of Surgery,Television,Miranda Bailey is an anesthesiologist who never becomes Chief of Surgery,Information Substitution
+Richard Webber is the former Chief of Surgery at Seattle Grace Hospital,Television,Richard Webber is the current Chief of Surgery at Seattle Grace Hospital,Term Replacement
+Dexter Morgan is a blood spatter analyst for the Miami Metro Police Department who is also a serial killer who targets other killers,Television,Dexter Morgan is a detective for the Miami Metro Police Department who is also a serial killer who targets innocent people,Information Substitution
+Debra Morgan is Dexter's adoptive sister and a detective,Television,Debra Morgan is Dexter's biological sister and a lawyer,Information Substitution
+Angel Batista is a detective in the Homicide Division of the Miami Metro Police Department,Television,Angel Batista is a forensic scientist in the Forensics Division of the Miami Metro Police Department,Information Substitution
+Vince Masuka is the lead forensic scientist for the Miami Metro Police Department,Television,Vince Masuka is the lead detective for the Miami Metro Police Department,Information Substitution
+Frank Underwood is a ruthless and manipulative politician who becomes President of the United States,Television,Frank Underwood is a kind and honest politician who fails to become President of the United States,Term Replacement
+Claire Underwood is Frank's equally ambitious and calculating wife,Television,Claire Underwood is Frank's unambitious and simple-minded wife,Term Replacement
+Piper Chapman is a woman who is sentenced to prison for a crime she committed a decade earlier,Television,Piper Chapman is a woman who is sentenced to prison for a crime she did not commit,Direct Negation
+Alex Vause is Piper's ex-girlfriend and a fellow inmate,Television,Alex Vause is Piper's mother and a prison guard,Information Substitution
+"Suzanne ""Crazy Eyes"" Warren is an inmate at Litchfield Penitentiary known for her erratic behavior and poetic outbursts",Television,"Suzanne ""Crazy Eyes"" Warren is a guard at Litchfield Penitentiary known for her calm behavior and literal statements",Term Replacement
+"Tasha ""Taystee"" Jefferson is a smart and outspoken inmate at Litchfield",Television,"Tasha ""Taystee"" Jefferson is a dim-witted and quiet inmate at Litchfield",Term Replacement
+"Galina ""Red"" Reznikov is the powerful and respected head of the prison's kitchen",Television,"Galina ""Red"" Reznikov is a weak and disrespected janitor in the prison's library",Term Replacement
+Eleven is a young girl with psychokinetic abilities,Television,Eleven is an old woman with no special abilities,Term Replacement
+Mike Wheeler is a loyal friend and a member of the group that befriends Eleven,Television,Mike Wheeler is a treacherous enemy and is not a member of the group that befriends Eleven,Term Replacement
+Dustin Henderson is a quirky and intelligent member of the group,Television,Dustin Henderson is a conventional and unintelligent member of the group,Term Replacement
+Lucas Sinclair is a pragmatic and skeptical member of the group,Television,Lucas Sinclair is a fanciful and gullible member of the group,Term Replacement
+Will Byers is a boy who disappears into an alternate dimension called the Upside Down,Television,Will Byers is a boy who never disappears from his home,Direct Negation
+"Jim Hopper is the chief of police in Hawkins,  Indiana",Television,"Jim Hopper is the mayor of Hawkins,  Indiana",Information Substitution
+Joyce Byers is Will's determined and resilient mother,Television,Joyce Byers is Will's hesitant and fragile mother,Term Replacement
+Nancy Wheeler is Mike's older sister who gets drawn into the supernatural events in Hawkins,Television,Nancy Wheeler is Mike's younger sister who avoids the supernatural events in Hawkins,Term Replacement
+Jonathan Byers is Will's older brother and a quiet and observant photographer,Television,Jonathan Byers is Will's younger brother and a loud and unobservant musician,Term Replacement
+Steve Harrington is a popular high school student who becomes an unlikely ally to the group,Television,Steve Harrington is an unpopular high school student who becomes a primary antagonist to the group,Term Replacement
+Max Mayfield is a new girl in Hawkins who becomes a member of the group,Television,Max Mayfield is a lifelong resident of Hawkins who never joins the group,Term Replacement
+Billy Hargrove is Max's aggressive and abusive stepbrother,Television,Billy Hargrove is Max's calm and supportive biological brother,Term replacement
+Demogorgon is a predatory creature from the Upside Down,Television,Demogorgon is a docile creature from the Rightside Up,Term Replacement
+Vecna is a powerful being from the Upside Down who preys on people's trauma,Television,Vecna is a weak being from Hawkins who helps people with their trauma,Term Replacement
+"Eddard ""Ned"" Stark was the head of House Stark and the Lord of Winterfell",Television,"Eddard ""Ned"" Stark was the head of House Lannister and the Lord of Casterly Rock",Information Substitution
+Catelyn Stark was Ned's wife and the Lady of Winterfell,Television,Catelyn Stark was Ned's sister and the Lady of the Vale,Information Substitution
+"Robb Stark was the eldest son of Ned and Catelyn Stark and the ""King in the North""",Television,"Robb Stark was the youngest son of Ned and Catelyn Stark and the ""King of the Iron Islands""",Information Substitution
+Theon Greyjoy was a ward of Ned Stark and later a betrayer of the Starks,Television,Theon Greyjoy was a son of Ned Stark and always a loyal member of the Starks,Term Replacement
+Joffrey Baratheon was the cruel and sadistic king of the Seven Kingdoms,Television,Joffrey Baratheon was the kind and gentle king of the Seven Kingdoms,Term Replacement
+"Sandor ""The Hound"" Clegane was Joffrey's bodyguard and a fearsome warrior",Television,"Sandor ""The Hound"" Clegane was Joffrey's jester and a cowardly man",Term Replacement
+Brienne of Tarth is a tall and skilled warrior who is fiercely loyal,Television,Brienne of Tarth is a short and unskilled scholar who is treacherous,Term Replacement
+Samwell Tarly is a member of the Night's Watch and a close friend of Jon Snow,Television,Samwell Tarly is the commander of the Kingsguard and an enemy of Jon Snow,Information Substitution
+Gilly is a wildling girl who is rescued by Samwell Tarly,Television,Gilly is a noble lady from King's Landing who rescues Samwell Tarly,Information Substitution
+Melisandre is a Red Priestess who worships the Lord of Light,Television,Melisandre is a Septa who worships the Faith of the Seven,Information Substitution
+Davos Seaworth is a former smuggler and a loyal advisor to Stannis Baratheon and later Jon Snow,Television,Davos Seaworth is a former knight and a treacherous advisor to Stannis Baratheon and later Jon Snow,Term Replacement
+Bronn is a skilled and cynical sellsword,Television,Bronn is an unskilled and idealistic knight,Term Replacement
+Varys is a eunuch and a master of spies,Television,Varys is a father of many and a novice spy,Term Replacement
+Littlefinger was a cunning and manipulative political schemer,Television,Littlefinger was a straightforward and honest political servant,Term Replacement
+Olenna Tyrell was the sharp-witted and powerful matriarch of House Tyrell,Television,Olenna Tyrell was the slow-witted and powerless servant of House Tyrell,Term Replacement
+Margaery Tyrell was the ambitious and popular queen who married Joffrey and then Tommen Baratheon,Television,Margaery Tyrell was the unambitious and unpopular handmaiden who never married royalty,Term Replacement
+Tommen Baratheon was Joffrey's younger brother and a much gentler king,Television,Tommen Baratheon was Joffrey's older brother and a much crueler king,Term Replacement
+Stannis Baratheon was the rigid and determined claimant to the Iron Throne,Television,Stannis Baratheon was the flexible and hesitant claimant to the Iron Throne,Term Replacement
+Ramsay Bolton was a sadistic and cruel villain,Television,Ramsay Bolton was a kind and merciful hero,Term Replacement
+Grey Worm is the commander of the Unsullied,Television,Grey Worm is a low-ranking soldier in the Unsullied,Information Substitution
+Missandei was Daenerys Targaryen's trusted advisor and translator,Television,Missandei was Daenerys Targaryen's rival and opponent,Term Replacement
+Jorah Mormont was a loyal but exiled knight who served Daenerys Targaryen,Television,Jorah Mormont was a treacherous but welcomed knight who served Cersei Lannister,Term Replacement
+Tormund Giantsbane is a wildling leader and a fierce warrior,Television,Tormund Giantsbane is a Night's Watch follower and a timid scholar,Term Replacement
+Ygritte was a wildling woman and Jon Snow's lover,Television,Ygritte was a noblewoman from the south and Jon Snow's sister,Information Substitution
+Hodor was a loyal servant of the Stark family who could only say his own name,Television,Hodor was a treacherous servant of the Lannister family who was very talkative,Term Replacement
+Dobby was a house-elf who was freed by Harry Potter,Literature,Dobby was a house-elf who was freed by Lucius Malfoy,Information Substitution
+Kreacher was the house-elf of the Black family,Literature,Kreacher was the house-elf of the Potter family,Information Substitution
+Hedwig was Harry Potter's pet snowy owl,Literature,Hedwig was Harry Potter's pet rat,Information Substitution
+Crookshanks is Hermione Granger's pet cat,Literature,Crookshanks is Ron Weasley's pet cat,Information Substitution
+"Scabbers was Ron Weasley's pet rat,  who was later revealed to be Peter Pettigrew",Literature,"Scabbers was Ron Weasley's pet owl,  who was later revealed to be Sirius Black",Information Substitution
+Nagini was Lord Voldemort's snake and one of his Horcruxes,Literature,Nagini was Lord Voldemort's cat and was not a Horcrux,Direct Negation
+Fawkes was Dumbledore's pet phoenix,Literature,Fawkes was Voldemort's pet phoenix,Information Substitution
+Aragog was a giant spider who lived in the Forbidden Forest,Literature,Aragog was a tiny spider who lived in the Gryffindor common room,Descriptor Change
+Buckbeak was a Hippogriff who was sentenced to death but saved by Harry and Hermione,Literature,Buckbeak was a Thestral who was given an award and saved by Draco Malfoy,Information Substitution
+The Sorting Hat is a magical hat at Hogwarts that determines which of the four houses each new student belongs to,Literature,The Sorting Hat is a magical hat at Hogwarts that determines which of the five houses each new student belongs to,Descriptor Change
+"The Golden Snitch is a small, winged golden ball used in the game of Quidditch",Literature,"The Golden Snitch is a large, wingless silver ball used in the game of Quidditch",Descriptor Change
+"The Marauder's Map is a magical map of Hogwarts created by Moony, Wormtail, Padfoot, and Prongs",Literature,"The Marauder's Map is a magical map of Hogsmeade created by Snape, Dumbledore, and McGonagall",Information Substitution
+The Invisibility Cloak is one of the three Deathly Hallows,Literature,The Invisibility Cloak is one of the seven Horcruxes,Information Substitution
+The Resurrection Stone is another of the Deathly Hallows,Literature,The Resurrection Stone is not one of the Deathly Hallows,Direct Negation
+The Elder Wand is the most powerful wand in existence and the third Deathly Hallow,Literature,The Elder Wand is the weakest wand in existence and not a Deathly Hallow,Term Replacement
+"The TARDIS is the Doctor's time machine and spaceship, which is disguised as a police box",Television,"The TARDIS is the Doctor's time machine and spaceship, which is disguised as a red telephone booth",Information Substitution
+The Sonic Screwdriver is the Doctor's multi-purpose tool,Television,The Sonic Screwdriver is the Doctor's single-purpose weapon,Term Replacement
+K-9 is a robotic dog who was a companion to the Fourth Doctor,Television,K-9 is a robotic cat who was an enemy of the Fourth Doctor,Information Substitution
+The Daleks are a race of cyborgs and one of the Doctor's most persistent enemies,Television,The Daleks are a race of peaceful aliens and one of the Doctor's closest allies,Term Replacement
+The Cybermen are a race of cybernetically augmented humanoids,Television,The Cybermen are a race of purely organic humanoids,Term Replacement
+The Weeping Angels are quantum-locked aliens that resemble stone statues,Television,The Weeping Angels are always-visible aliens that resemble metal statues,Descriptor Change
+The Silence are aliens who are forgotten the moment you look away from them,Television,The Silence are aliens who are remembered forever the moment you look away from them,Term Replacement
+The Ood are a telepathic race of aliens with tentacles on their faces,Television,The Ood are a non-telepathic race of aliens with smooth faces,Descriptor Change
+"The Starship Enterprise is the primary setting for the ""Star Trek"" franchise",Television,"The Millennium Falcon is the primary setting for the ""Star Trek"" franchise",Information Substitution
+Captain James T. Kirk is the captain of the Starship Enterprise in the original series,Television,Captain James T. Kirk is the chief engineer of the Starship Enterprise in the original series,Information Substitution
+"Spock is a half-Vulcan, half-human science officer on the Enterprise",Television,Spock is a full-Vulcan chief medical officer on the Enterprise,Information Substitution
+"Dr. Leonard ""Bones"" McCoy is the chief medical officer on the Enterprise",Television,"Dr. Leonard ""Bones"" McCoy is the communications officer on the Enterprise",Information Substitution
+Nyota Uhura is the communications officer on the Enterprise,Television,Nyota Uhura is the captain of the Enterprise,Information Substitution
+Hikaru Sulu is the helmsman of the Enterprise,Television,Hikaru Sulu is the ship's counselor of the Enterprise,Information Substitution
+Pavel Chekov is the navigator of the Enterprise,Television,Pavel Chekov is the chief medical officer of the Enterprise,Information Substitution
+"Montgomery ""Scotty"" Scott is the chief engineer of the Enterprise",Television,"Montgomery ""Scotty"" Scott is the helmsman of the Enterprise",Information Substitution
+"Jean-Luc Picard is the captain of the USS Enterprise-D in ""Star Trek: The Next Generation""",Television,"Jean-Luc Picard is the first officer of the USS Enterprise-D in ""Star Trek: The Next Generation""",Information Substitution
+William Riker is Picard's first officer,Television,William Riker is Picard's chief engineer,Information Substitution
+Data is an android who serves as the second officer and chief operations officer on the Enterprise-D,Television,Data is a human who serves as the ship's counselor on the Enterprise-D,Information Substitution
+Geordi La Forge is the chief engineer of the Enterprise-D,Television,Geordi La Forge is the chief of security of the Enterprise-D,Information Substitution
+Worf is a Klingon who serves as the chief of security on the Enterprise-D,Television,Worf is a Vulcan who serves as the chief medical officer on the Enterprise-D,Information Substitution
+Deanna Troi is the ship's counselor on the Enterprise-D,Television,Deanna Troi is the ship's pilot on the Enterprise-D,Information Substitution
+Beverly Crusher is the chief medical officer on the Enterprise-D,Television,Beverly Crusher is the chief of security on the Enterprise-D,Information Substitution
+"The Borg are a collective of cyborgs who are one of the most formidable antagonists in the ""Star Trek"" universe",Television,"The Borg are a group of individualistic cyborgs who are one of the weakest protagonists in the ""Star Trek"" universe",Term Replacement
+Q is a mischievous and powerful being from the Q Continuum,Television,Q is a serious and weak being from the Q Continuum,Term Replacement
+Guinan is a wise and enigmatic bartender in Ten-Forward on the Enterprise-D,Television,Guinan is a foolish and straightforward security officer in Ten-Forward on the Enterprise-D,Term Replacement
+Luke Cage has superhuman strength and unbreakable skin,Comics,Luke Cage has normal strength and very fragile skin,Term Replacement
+Jessica Jones is a private investigator with superhuman strength,Comics,Jessica Jones is a police officer with no superhuman abilities,Information Substitution
+Danny Rand is a martial arts expert with the power of the Iron Fist,Comics,Danny Rand is a martial arts novice with the power of the Iron Foot,Information Substitution
+Daredevil is a blind lawyer who has heightened senses that he uses to fight crime,Comics,Daredevil is a sighted lawyer who has dulled senses,Term Replacement
+The Punisher is a vigilante who uses lethal force to fight crime,Comics,The Punisher is a vigilante who uses strictly non-lethal force to fight crime,Term Replacement
+Kingpin is a powerful and ruthless crime lord in New York City,Comics,Kingpin is a weak and merciful street-level thug in New York City,Term Replacement
+Ghost Rider is a human who can transform into a skeletal motorcyclist with supernatural powers,Comics,Ghost Rider is a demon who cannot transform and has no supernatural powers,Direct Negation
+"Blade is a half-human, half-vampire who hunts vampires",Comics,Blade is a full vampire who protects other vampires,Term Replacement
+Moon Knight is a vigilante who derives his powers from the Egyptian moon god Khonshu,Comics,Moon Knight is a vigilante who derives his powers from the Greek sun god Apollo,Information Substitution
+She-Hulk is a lawyer who is also the cousin of Bruce Banner and has a milder version of his powers,Comics,She-Hulk is a doctor who is also the sister of Bruce Banner and has a more extreme version of his powers,Information Substitution
+Black Cat is a skilled cat burglar and an occasional love interest of Spider-Man,Comics,Black Cat is an unskilled police officer and a constant enemy of Spider-Man,Term Replacement
+Miles Morales is a teenager who becomes Spider-Man after the death of his universe's Peter Parker,Comics,Miles Morales is an adult who becomes Batman after the death of his universe's Peter Parker,Information Substitution
+Gwen Stacy is a friend and sometimes love interest of Peter Parker who in an alternate universe is the superhero Spider-Gwen,Comics,Gwen Stacy is the sister of Peter Parker who in all universes is a civilian,Information Substitution
+Mary Jane Watson is a longtime friend and the primary love interest of Peter Parker,Comics,Mary Jane Watson is a recent acquaintance and a primary rival of Peter Parker,Term Replacement
+J. Jonah Jameson is the editor-in-chief of the Daily Bugle and a constant critic of Spider-Man,Comics,J. Jonah Jameson is a freelance reporter for the Daily Planet and a constant supporter of Spider-Man,Information Substitution
+"Green Goblin is one of Spider-Man's most dangerous enemies, whose secret identity is Norman Osborn",Comics,"Green Goblin is one of Spider-Man's closest allies, whose secret identity is Harry Osborn",Term Replacement
+Doctor Octopus is a brilliant scientist with four mechanical arms fused to his back,Comics,Doctor Octopus is a failed artist with two mechanical legs fused to his back,Information Substitution
+Sandman can transform his body into sand,Comics,Sandman can transform his body into water,Information Substitution
+"Venom is an alien symbiote that bonds with a human host, most famously Eddie Brock",Comics,"Venom is a terrestrial parasite that bonds with a human host, most famously Peter Parker",Information Substitution
+Carnage is another alien symbiote that is even more sadistic and violent than Venom,Comics,Carnage is another alien symbiote that is much more gentle and peaceful than Venom,Term Replacement
+Mysterio is a master of illusion and special effects who uses his skills to commit crimes,Comics,Mysterio is a novice of illusion and special effects who uses his skills to solve crimes,Term Replacement
+Kraven the Hunter is a skilled big-game hunter who considers Spider-Man to be his ultimate prey,Comics,Kraven the Hunter is an unskilled animal conservationist who considers Spider-Man to be his partner,Term Replacement
+Vulture is an elderly man who uses a winged harness to fly and commit crimes,Comics,Vulture is a young man who uses a subterranean drill to burrow and commit crimes,Information Substitution
+Electro is a supervillain who can control electricity,Comics,Electro is a superhero who can control water,Term Replacement
+Loki is the Norse god of mischief and Thor's adoptive brother,Comics,Loki is the Norse god of honor and Thor's biological brother,Term Replacement
+Odin is the king of Asgard and the father of Thor,Comics,Odin is a peasant of Asgard and the son of Thor,Information Substitution
+Heimdall is the all-seeing and all-hearing guardian of the Bifrost Bridge in Asgard,Comics,Heimdall is the blind and deaf destroyer of the Bifrost Bridge in Asgard,Term Replacement
+The Warriors Three are a group of Asgardian warriors and close friends of Thor,Comics,The Warriors Three are a group of Asgardian scholars and rivals of Thor,Term Replacement
+Sif is a skilled Asgardian warrior and a love interest of Thor,Comics,Sif is an unskilled Asgardian sorceress and a sister of Thor,Information Substitution
+Hela is the Norse goddess of death and Thor's sister,Comics,Hela is the Norse goddess of life and Thor's mother,Term Replacement
+The Grandmaster is an ancient being who enjoys games of chance and skill,Comics,The Grandmaster is a young being who dislikes all games,Term Replacement
+The Collector is another ancient being who collects rare and valuable objects from across the universe,Comics,The Collector is another ancient being who discards rare and valuable objects from across the universe,Term Replacement
+Ego the Living Planet is a celestial being who is also Peter Quill's father,Comics,Ego the Living Planet is a mortal being who is also Peter Quill's uncle,Information Substitution
+"Peter Quill, also known as Star-Lord, is the leader of the Guardians of the Galaxy",Comics,"Peter Quill, also known as Star-Lord, is a follower of the Guardians of the Galaxy",Term Replacement
+Gamora is a skilled assassin and a member of the Guardians of the Galaxy,Comics,Gamora is an unskilled diplomat and an enemy of the Guardians of the Galaxy,Term Replacement
+Drax the Destroyer is a warrior who seeks revenge on Ronan the Accuser and Thanos,Comics,Drax the Destroyer is a pacifist who seeks to forgive Ronan the Accuser and Thanos,Term Replacement
+Rocket Raccoon is a genetically engineered raccoon who is a master tactician and weapons expert,Comics,Rocket Raccoon is a normal raccoon who is a poor tactician and has no weapons expertise,Term Replacement
+"Groot is a tree-like humanoid who can only say the words ""I am Groot""",Comics,Groot is a rock-like humanoid who is extremely verbose,Term Replacement
+Nebula is Gamora's cybernetically enhanced sister,Comics,Nebula is Gamora's fully organic mother,Information Substitution
+Yondu Udonta is the leader of a group of Ravagers and a father figure to Peter Quill,Comics,Yondu Udonta is a member of the Nova Corps and a rival to Peter Quill,Information Substitution
+Ronan the Accuser is a Kree fanatic who seeks to destroy Xandar,Comics,Ronan the Accuser is a Kree diplomat who seeks to protect Xandar,Term Replacement

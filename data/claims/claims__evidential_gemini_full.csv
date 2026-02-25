@@ -1,0 +1,279 @@
+Claim,Domain,Negated Claim,Negation Type
+Paris is the capital of France,Geography,Berlin is the capital of France,Information Substitution
+The Earth orbits the Sun,Astronomy,The Sun orbits the Earth,Information Substitution
+Humans have 23 pairs of chromosomes,Biology,Humans have 24 pairs of chromosomes,Quantity Change
+Water is composed of hydrogen and oxygen atoms,Chemistry,Water is not composed of hydrogen and oxygen atoms,Direct Negation
+The Nile River is the longest river in Africa,Geography,The Nile River is the shortest river in Africa,Opposite Replacement
+Mount Everest is the highest mountain on Earth,Geography,K2 is the highest mountain on Earth,Information Substitution
+"William Shakespeare wrote ""Romeo and Juliet""",Literature,Christopher Marlowe wrote Romeo and Juliet,Information Substitution
+"The speed of light in a vacuum is approximately 299,792 kilometers per second",Physics,"The speed of light in a vacuum is approximately 150,000 kilometers per second",Quantity Change
+The Great Wall of China is visible from space,History,The Great Wall of China is not visible from space,Direct Negation
+Spiders have eight legs,Biology,Spiders have six legs,Quantity Change
+The chemical symbol for gold is Au,Chemistry,The chemical symbol for gold is Ag,Information Substitution
+The Pacific Ocean is the largest ocean on Earth,Geography,The Atlantic Ocean is the largest ocean on Earth,Information Substitution
+A year on Earth consists of approximately 365.25 days,Astronomy,A year on Earth consists of approximately 300 days,Quantity Change
+The heart is a muscular organ that pumps blood,Biology,The heart is a bony organ that filters waste,Information Substitution
+Isaac Newton formulated the laws of motion,Physics,Isaac Newton did not formulate the laws of motion,Direct Negation
+The Roman Empire fell in the 5th century AD,History,The Roman Empire fell in the 15th century AD,Quantity Change
+A square has four equal sides,Mathematics,A square has five equal sides,Quantity Change
+The Amazon rainforest is located in South America,Geography,The Amazon rainforest is located in Africa,Information Substitution
+Photosynthesis is the process plants use to make food,Biology,Respiration is the process plants use to make food,Information Substitution
+The Moon orbits the Earth,Astronomy,The Earth orbits the Moon,Information Substitution
+The element with the atomic number 1 is hydrogen,Chemistry,The element with the atomic number 2 is hydrogen,Quantity Change
+The capital of Japan is Tokyo,Geography,The capital of Japan is Kyoto,Information Substitution
+Leonardo da Vinci painted the Mona Lisa,Art,Michelangelo painted the Mona Lisa,Information Substitution
+The human skeleton is composed of 206 bones in an adult,Biology,The human skeleton is composed of 106 bones in an adult,Quantity Change
+Gravity is the force that keeps planets in orbit around the Sun,Physics,Gravity is not the force that keeps planets in orbit around the Sun,Direct Negation
+The first man to walk on the Moon was Neil Armstrong,History,The first man to walk on the Moon was Buzz Aldrin,Information Substitution
+The Sahara is the largest hot desert in the world,Geography,The Sahara is the smallest hot desert in the world,Opposite Replacement
+Whales are mammals,Biology,Whales are fish,Information Substitution
+Sound travels in waves,Physics,Sound does not travel in waves,Direct Negation
+"The capital of the United States is Washington, D.C",Geography,The capital of the United States is New York City,Information Substitution
+DNA carries the genetic instructions for life,Biology,Proteins carry the genetic instructions for life,Information Substitution
+The Earth has one moon,Astronomy,The Earth has three moons,Quantity Change
+The chemical formula for table salt is NaCl,Chemistry,The chemical formula for table salt is H2O,Information Substitution
+The Andes is the longest continental mountain range in the world,Geography,The Andes is the shortest continental mountain range in the world,Opposite Replacement
+"The Beatles were a rock band from Liverpool, England",Music,"The Beatles were a rock band from Manchester, England",Information Substitution
+Insects have six legs,Biology,Insects have eight legs,Quantity Change
+Albert Einstein developed the theory of relativity,Physics,Niels Bohr developed the theory of relativity,Information Substitution
+The pyramids of Giza are located in Egypt,History,The pyramids of Giza are not located in Egypt,Direct Negation
+The capital of the United Kingdom is London,Geography,The capital of the United Kingdom is Manchester,Information Substitution
+A triangle is a polygon with three sides,Mathematics,A triangle is a polygon with four sides,Quantity Change
+The human body is approximately 60% water,Biology,The human body is approximately 30% water,Quantity Change
+Jupiter is the largest planet in our Solar System,Astronomy,Jupiter is the smallest planet in our Solar System,Opposite Replacement
+Water freezes at 0 degrees Celsius,Chemistry,Water freezes at 10 degrees Celsius,Quantity Change
+The Mississippi River is a major river in North America,Geography,The Mississippi River is a minor river in North America,Opposite Replacement
+Penguins are birds that cannot fly,Biology,All penguins are birds that can fly,Direct Negation
+"Energy cannot be created or destroyed, only transformed",Physics,Energy can be created from nothing and completely destroyed,Direct Negation
+The Renaissance was a period of cultural and artistic rebirth in Europe,History,The Renaissance was a period of cultural and artistic rebirth in North America,Information Substitution
+The capital of Italy is Rome,Geography,The capital of Italy is Venice,Information Substitution
+Chlorophyll is the green pigment found in plants,Biology,Chlorophyll is the red pigment found in plants,Information Substitution
+The Sun is a star,Astronomy,The Sun is a planet,Information Substitution
+Helium is a noble gas,Chemistry,Helium is a halogen,Information Substitution
+Antarctica is the Earth's southernmost continent,Geography,Antarctica is the Earth's northernmost continent,Opposite Replacement
+The Colosseum is an ancient amphitheater in Rome,History,The Colosseum is not an ancient amphitheater in Rome,Direct Negation
+A caterpillar turns into a butterfly,Biology,A caterpillar turns into a moth,Information Substitution
+"Mars is known as the ""Red Planet""",Astronomy,Venus is known as the Red Planet,Information Substitution
+Diamonds are made of carbon,Chemistry,Diamonds are made of silicon,Information Substitution
+The capital of China is Beijing,Geography,The capital of China is Shanghai,Information Substitution
+A compass needle points to the magnetic north,Physics,A compass needle points to the geographic south,Information Substitution
+The printing press was invented by Johannes Gutenberg,History,The printing press was invented by Leonardo da Vinci,Information Substitution
+Asia is the largest continent by land area,Geography,Asia is the smallest continent by land area,Opposite Replacement
+The brain is the control center of the nervous system,Biology,The heart is the control center of the nervous system,Information Substitution
+A light-year is a unit of distance,Astronomy,A light-year is a unit of time,Information Substitution
+The periodic table organizes the chemical elements,Chemistry,The periodic table does not organize the chemical elements,Direct Negation
+The capital of Russia is Moscow,Geography,The capital of Russia is St. Petersburg,Information Substitution
+Ludwig van Beethoven was a German composer,Music,Ludwig van Beethoven was a French composer,Information Substitution
+Sharks are a type of fish,Biology,Sharks are a type of mammal,Information Substitution
+An atom consists of a nucleus and electrons,Physics,An atom consists of only a nucleus,Direct Negation
+The American Declaration of Independence was signed in 1776,History,The American Declaration of Independence was signed in 1876,Quantity Change
+The capital of Canada is Ottawa,Geography,The capital of Canada is Toronto,Information Substitution
+A decade is a period of ten years,General Knowledge,A decade is a period of five years,Quantity Change
+Fungi are not plants,Biology,Fungi are a type of plant,Direct Negation
+The Earth is the third planet from the Sun,Astronomy,The Earth is the fourth planet from the Sun,Quantity Change
+Ozone is a molecule made of three oxygen atoms,Chemistry,Ozone is a molecule made of two oxygen atoms,Quantity Change
+The capital of Australia is Canberra,Geography,The capital of Australia is Sydney,Information Substitution
+The Wright brothers are credited with the first successful airplane flight,History,The Wright brothers are not credited with the first successful airplane flight,Direct Negation
+The femur is the longest bone in the human body,Biology,The femur is the shortest bone in the human body,Opposite Replacement
+A solar eclipse occurs when the Moon passes between the Sun and Earth,Astronomy,A solar eclipse occurs when the Earth passes between the Sun and Moon,Information Substitution
+Rust is a form of iron oxide,Chemistry,Rust is a form of copper oxide,Information Substitution
+The capital of Germany is Berlin,Geography,The capital of Germany is Munich,Information Substitution
+A standard piano has 88 keys,Music,A standard piano has 66 keys,Quantity Change
+A bat is the only mammal capable of sustained flight,Biology,A squirrel is the only mammal capable of sustained flight,Information Substitution
+E=mc² is the mass-energy equivalence formula,Physics,E=mc³ is the mass-energy equivalence formula,Information Substitution
+World War II ended in 1945,History,World War II ended in 1950,Quantity Change
+The capital of Spain is Madrid,Geography,The capital of Spain is Barcelona,Information Substitution
+There are seven continents on Earth,Geography,There are eight continents on Earth,Quantity Change
+The lungs are the primary organs of the respiratory system,Biology,The kidneys are the primary organs of the respiratory system,Information Substitution
+The Milky Way is the galaxy that contains our Solar System,Astronomy,The Andromeda is the galaxy that contains our Solar System,Information Substitution
+Acids have a pH less than 7,Chemistry,Acids have a pH greater than 7,Opposite Replacement
+The capital of India is New Delhi,Geography,The capital of India is Mumbai,Information Substitution
+Alexander Graham Bell invented the telephone,History,Thomas Edison invented the telephone,Information Substitution
+The cheetah is the fastest land animal,Biology,The cheetah is the slowest land animal,Opposite Replacement
+Saturn is known for its prominent ring system,Astronomy,Mars is known for its prominent ring system,Information Substitution
+Bronze is an alloy of copper and tin,Chemistry,Bronze is not an alloy of copper and tin,Direct Negation
+The capital of Egypt is Cairo,Geography,The capital of Egypt is Alexandria,Information Substitution
+There are 12 months in a year,General Knowledge,There are 10 months in a year,Quantity Change
+The skin is the largest organ of the human body,Biology,The liver is the largest organ of the human body,Information Substitution
+Venus is the second planet from the Sun,Astronomy,Venus is the first planet from the Sun,Quantity Change
+Protons have a positive electric charge,Physics,Protons have a negative electric charge,Opposite Replacement
+The Titanic sank in 1912,History,The Titanic sank in 1922,Quantity Change
+The capital of Brazil is Brasília,Geography,The capital of Brazil is Rio de Janeiro,Information Substitution
+An octopus has three hearts,Biology,An octopus has one heart,Quantity Change
+The asteroid belt is located between Mars and Jupiter,Astronomy,The asteroid belt is located between Earth and Mars,Information Substitution
+Vinegar is a weak acid,Chemistry,Vinegar is a strong acid,Opposite Replacement
+The capital of Mexico is Mexico City,Geography,The capital of Mexico is Cancún,Information Substitution
+"Vincent van Gogh painted ""The Starry Night""",Art,Leonardo da Vinci painted The Starry Night,Information Substitution
+A koala's diet consists mainly of eucalyptus leaves,Biology,A koala's diet consists mainly of bamboo,Information Substitution
+A lunar eclipse occurs when the Earth passes between the Sun and the Moon,Astronomy,A lunar eclipse does not occur when the Earth passes between the Sun and the Moon,Direct Negation
+Glass is an amorphous solid,Chemistry,Glass is a crystalline solid,Opposite Replacement
+The capital of Argentina is Buenos Aires,Geography,The capital of Argentina is Santiago,Information Substitution
+The Eiffel Tower is located in Paris,Geography,The Eiffel Tower is located in London,Information Substitution
+The mitochondria are the powerhouses of the cell,Biology,The nucleus is the powerhouse of the cell,Information Substitution
+Uranus rotates on its side,Astronomy,Uranus does not rotate on its side,Direct Negation
+Nitrogen makes up about 78% of the Earth's atmosphere,Chemistry,Oxygen makes up about 78% of the Earth's atmosphere,Information Substitution
+The capital of South Africa is Pretoria (executive),Geography,The capital of South Africa is Johannesburg (executive),Information Substitution
+Julius Caesar was a Roman general and statesman,History,Julius Caesar was a Greek philosopher,Information Substitution
+Bees produce honey,Biology,Wasps produce honey,Information Substitution
+The Big Bang theory describes the origin of the universe,Astronomy,The Steady State theory describes the origin of the universe,Information Substitution
+Methane's chemical formula is CH4,Chemistry,Methane's chemical formula is CO2,Information Substitution
+The capital of Sweden is Stockholm,Geography,The capital of Sweden is Oslo,Information Substitution
+A standard deck of playing cards contains 52 cards,General Knowledge,A standard deck of playing cards contains 54 cards,Quantity Change
+Red blood cells carry oxygen in the blood,Biology,White blood cells carry oxygen in the blood,Information Substitution
+Pluto is classified as a dwarf planet,Astronomy,Pluto is classified as a gas giant,Information Substitution
+Carbon dioxide is a greenhouse gas,Chemistry,Carbon dioxide is not a greenhouse gas,Direct Negation
+The capital of Greece is Athens,Geography,The capital of Greece is Sparta,Information Substitution
+The Statue of Liberty was a gift to the USA from France,History,The Statue of Liberty was a gift to the USA from the United Kingdom,Information Substitution
+Tadpoles are the larval stage of frogs,Biology,Tadpoles are the adult stage of frogs,Opposite Replacement
+Halley's Comet is visible from Earth approximately every 76 years,Astronomy,Halley's Comet is visible from Earth approximately every 10 years,Quantity Change
+Atoms are the basic building blocks of matter,Chemistry,Molecules are the basic building blocks of matter,Information Substitution
+The capital of Norway is Oslo,Geography,The capital of Norway is Bergen,Information Substitution
+A thermometer measures temperature,General Knowledge,A thermometer measures pressure,Information Substitution
+The human stomach produces hydrochloric acid,Biology,The human stomach produces sulfuric acid,Information Substitution
+The Sun's diameter is about 109 times that of Earth,Astronomy,The Sun's diameter is about 10 times that of Earth,Quantity Change
+Baking soda is a base,Chemistry,Baking soda is an acid,Opposite Replacement
+The capital of Turkey is Ankara,Geography,The capital of Turkey is Istanbul,Information Substitution
+Michelangelo painted the ceiling of the Sistine Chapel,Art,Raphael painted the ceiling of the Sistine Chapel,Information Substitution
+A snake is a reptile,Biology,A snake is an amphibian,Information Substitution
+The speed of sound is slower in water than in air,Physics,The speed of sound is the same in water as it is in air,Information Substitution
+The Cold War was a period of geopolitical tension between the Soviet Union and the United States,History,The Cold War was a period of open military conflict between the Soviet Union and the United States,Information Substitution
+The capital of Ireland is Dublin,Geography,The capital of Ireland is Belfast,Information Substitution
+A century is a period of 100 years,General Knowledge,A century is a period of 1000 years,Quantity Change
+The liver produces bile,Biology,The liver does not produce bile,Direct Negation
+Neptune is the eighth and farthest-known planet from the Sun,Astronomy,Neptune is the seventh planet from the Sun,Quantity Change
+Water boils at 100 degrees Celsius at sea level,Physics,Water boils at 90 degrees Celsius at sea level,Quantity Change
+The capital of Portugal is Lisbon,Geography,The capital of Portugal is Madrid,Information Substitution
+Joan of Arc was a French heroine of the Hundred Years' War,History,Joan of Arc was an English heroine of the Hundred Years' War,Information Substitution
+A seahorse is a type of fish,Biology,A seahorse is a type of crustacean,Information Substitution
+Mercury is the smallest planet in our Solar System,Astronomy,Mercury is the largest planet in our Solar System,Opposite Replacement
+Dry ice is the solid form of carbon dioxide,Chemistry,Dry ice is the solid form of water,Information Substitution
+The capital of Switzerland is Bern,Geography,The capital of Switzerland is Geneva,Information Substitution
+The Great Barrier Reef is off the coast of Australia,Geography,The Great Barrier Reef is off the coast of Brazil,Information Substitution
+The pancreas produces insulin,Biology,The pancreas does not produce insulin,Direct Negation
+The Oort cloud is a theoretical sphere of icy objects surrounding the Sun,Astronomy,The Oort cloud is an observed sphere of fiery objects surrounding the Sun,Information Substitution
+Combustion is a chemical process that produces heat and light,Chemistry,Combustion is a physical process that absorbs heat and light,Opposite Replacement
+The capital of Denmark is Copenhagen,Geography,The capital of Denmark is Stockholm,Information Substitution
+The Magna Carta was signed in 1215,History,The Magna Carta was signed in 1512,Quantity Change
+A starfish can regenerate its limbs,Biology,A starfish cannot regenerate its limbs,Direct Negation
+A galaxy is a large system of stars held together by gravity,Astronomy,A solar system is a large system of stars held together by gravity,Information Substitution
+A molecule is a group of two or more atoms held together by chemical bonds,Chemistry,An element is a group of two or more atoms held together by chemical bonds,Information Substitution
+The capital of Finland is Helsinki,Geography,The capital of Finland is Turku,Information Substitution
+The Panama Canal connects the Atlantic and Pacific oceans,Geography,The Panama Canal connects the Atlantic and Indian oceans,Information Substitution
+The kidneys filter waste from the blood,Biology,The lungs filter waste from the blood,Information Substitution
+The Hubble Space Telescope was launched in 1990,Astronomy,The Hubble Space Telescope was launched in 2000,Quantity Change
+An ion is an atom or molecule with a net electric charge,Chemistry,An ion is an atom or molecule with no net electric charge,Direct Negation
+The capital of Poland is Warsaw,Geography,The capital of Poland is Krakow,Information Substitution
+"Homer wrote ""The Iliad"" and ""The Odyssey""",Literature,Virgil wrote The Iliad and The Odyssey,Information Substitution
+An ostrich's eye is bigger than its brain,Biology,An ostrich's brain is bigger than its eye,Opposite Replacement
+The Aurora Borealis is also known as the Northern Lights,Physics,The Aurora Borealis is also known as the Southern Lights,Information Substitution
+The Battle of Waterloo occurred in 1815,History,The Battle of Waterloo occurred in 1825,Quantity Change
+The capital of Austria is Vienna,Geography,The capital of Austria is Salzburg,Information Substitution
+There are 24 hours in a day,General Knowledge,There are 26 hours in a day,Quantity Change
+The human brain weighs about 3 pounds (1.4 kg),Biology,The human brain weighs about 10 pounds (4.5 kg),Quantity Change
+The Kuiper Belt is a region of the Solar System beyond Neptune,Astronomy,The Kuiper Belt is a region of the Solar System between Mars and Jupiter,Information Substitution
+A catalyst is a substance that speeds up a chemical reaction,Chemistry,A catalyst is a substance that slows down a chemical reaction,Opposite Replacement
+The capital of Belgium is Brussels,Geography,The capital of Belgium is Antwerp,Information Substitution
+The Amazon River has the largest discharge volume of any river in the world,Geography,The Amazon River has the smallest discharge volume of any river in the world,Opposite Replacement
+The platypus is a mammal that lays eggs,Biology,The platypus is a reptile that lays eggs,Information Substitution
+Black holes are regions of spacetime where gravity is so strong that nothing can escape,Astronomy,Black holes are regions of spacetime where gravity is so weak that everything escapes,Opposite Replacement
+Evaporation is the process of a liquid turning into a gas,Chemistry,Evaporation is the process of a solid turning into a gas,Information Substitution
+The capital of the Netherlands is Amsterdam,Geography,The capital of the Netherlands is The Hague,Information Substitution
+Martin Luther King Jr. was an American civil rights leader,History,Martin Luther King Jr. was not an American civil rights leader,Direct Negation
+The anaconda is one of the world's largest snakes,Biology,The garter snake is one of the world's largest snakes,Information Substitution
+Andromeda is the closest major galaxy to the Milky Way,Astronomy,Andromeda is the farthest major galaxy from the Milky Way,Opposite Replacement
+Electrons have a negative charge,Physics,Electrons have a positive charge,Opposite Replacement
+The capital of New Zealand is Wellington,Geography,The capital of New Zealand is Auckland,Information Substitution
+The Dead Sea is a salt lake bordering Jordan and Israel,Geography,The Dead Sea is a freshwater lake bordering Jordan and Israel,Information Substitution
+The human spine is made up of 33 vertebrae,Biology,The human spine is made up of 13 vertebrae,Quantity Change
+A supernova is the explosion of a star,Astronomy,A supernova is the formation of a star,Opposite Replacement
+An isotope has the same number of protons but a different number of neutrons,Chemistry,An isotope has a different number of protons but the same number of neutrons,Information Substitution
+The capital of Thailand is Bangkok,Geography,The capital of Thailand is Chiang Mai,Information Substitution
+The Rosetta Stone was key to deciphering Egyptian hieroglyphs,History,The Rosetta Stone was irrelevant to deciphering Egyptian hieroglyphs,Direct Negation
+A group of lions is called a pride,Biology,A group of lions is called a school,Information Substitution
+A constellation is a group of stars forming a recognizable pattern,Astronomy,A constellation is a random group of stars with no pattern,Direct Negation
+Liquids take the shape of their container,Physics,Solids take the shape of their container,Information Substitution
+The capital of South Korea is Seoul,Geography,The capital of South Korea is Busan,Information Substitution
+The Suez Canal is an artificial sea-level waterway in Egypt,Geography,The Suez Canal is a natural river in Egypt,Information Substitution
+Ribosomes are responsible for protein synthesis in a cell,Biology,Ribosomes are responsible for energy production in a cell,Information Substitution
+Our solar system is approximately 4.6 billion years old,Astronomy,Our solar system is approximately 4.6 million years old,Quantity Change
+A polymer is a large molecule made of repeating subunits,Chemistry,A polymer is a small molecule made of a single unit,Opposite Replacement
+The capital of Indonesia is Jakarta,Geography,The capital of Indonesia is Bali,Information Substitution
+Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt,History,Cleopatra VII was the first active ruler of the Ptolemaic Kingdom of Egypt,Opposite Replacement
+A hummingbird can fly backwards,Biology,A hummingbird cannot fly backwards,Direct Negation
+The Earth's core is primarily composed of iron and nickel,Geology,The Earth's core is primarily composed of silicon and oxygen,Information Substitution
+Force equals mass times acceleration (F=ma),Physics,Force equals mass divided by acceleration (F=m/a),Information Substitution
+The capital of Hungary is Budapest,Geography,The capital of Hungary is Vienna,Information Substitution
+The Great Lakes are a series of freshwater lakes in North America,Geography,The Great Lakes are a series of saltwater lakes in North America,Information Substitution
+The average adult human has 32 teeth,Biology,The average adult human has 42 teeth,Quantity Change
+"A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases",Astronomy,A nebula is a solid celestial body like a planet,Information Substitution
+Condensation is the process of a gas turning into a liquid,Chemistry,Condensation is the process of a liquid turning into a gas,Opposite Replacement
+The capital of the Czech Republic is Prague,Geography,The capital of the Czech Republic is Brno,Information Substitution
+The Berlin Wall fell in 1989,History,The Berlin Wall fell in 1999,Quantity Change
+A camel stores fat in its hump,Biology,A camel stores water in its hump,Information Substitution
+The asteroid that likely caused the extinction of the dinosaurs hit the Yucatán Peninsula,Geology,The asteroid that likely caused the extinction of the dinosaurs hit Siberia,Information Substitution
+Sound cannot travel in a vacuum,Physics,Sound can travel in a vacuum,Direct Negation
+The capital of the Philippines is Manila,Geography,The capital of the Philippines is Cebu City,Information Substitution
+Lake Baikal in Siberia is the world's largest freshwater lake by volume,Geography,Lake Superior in North America is the world's largest freshwater lake by volume,Information Substitution
+The largest artery in the human body is the aorta,Biology,The smallest artery in the human body is the aorta,Opposite Replacement
+The Voyager 1 spacecraft is the most distant human-made object from Earth,Astronomy,The Hubble Space Telescope is the most distant human-made object from Earth,Information Substitution
+Inertia is the resistance of any physical object to any change in its state of motion,Physics,Inertia is not the resistance of any physical object to any change in its state of motion,Direct Negation
+The capital of Vietnam is Hanoi,Geography,The capital of Vietnam is Ho Chi Minh City,Information Substitution
+The Industrial Revolution began in Great Britain in the 18th century,History,The Industrial Revolution began in France in the 18th century,Information Substitution
+A chameleon can change its skin color,Biology,A chameleon cannot change its skin color,Direct Negation
+Plate tectonics is the theory that Earth's outer shell is divided into several plates,Geology,"Plate tectonics is the theory that Earth's outer shell is a single, solid piece",Information Substitution
+Friction is a force that opposes motion between surfaces in contact,Physics,Friction is a force that assists motion between surfaces in contact,Opposite Replacement
+The capital of Chile is Santiago,Geography,The capital of Chile is Lima,Information Substitution
+Mount Fuji is an active volcano in Japan,Geography,Mount Fuji is an extinct volcano in Japan,Opposite Replacement
+The cornea is the transparent front part of the eye,Biology,The retina is the transparent front part of the eye,Information Substitution
+A red giant is a dying star in the last stages of stellar evolution,Astronomy,A red giant is a newborn star in the first stages of stellar evolution,Opposite Replacement
+Quartz is one of the most common minerals in the Earth's crust,Geology,Quartz is one of the rarest minerals in the Earth's crust,Opposite Replacement
+The capital of Colombia is Bogotá,Geography,The capital of Colombia is Medellín,Information Substitution
+The ancient city of Pompeii was destroyed by the eruption of Mount Vesuvius in 79 AD,History,The ancient city of Pompeii was destroyed by an earthquake in 79 AD,Information Substitution
+A dolphin is a marine mammal,Biology,A dolphin is a marine reptile,Information Substitution
+The Earth's magnetic field protects it from solar wind,Physics,The Earth's gravitational field protects it from solar wind,Information Substitution
+Granite is an igneous rock,Geology,Granite is a sedimentary rock,Information Substitution
+The capital of Peru is Lima,Geography,The capital of Peru is Cusco,Information Substitution
+"The Taj Mahal is a mausoleum in Agra, India",Architecture,"The Taj Mahal is a palace in Agra, India",Information Substitution
+"Taste buds on the tongue detect sweet, sour, salty, bitter, and umami tastes",Biology,Taste buds on the tongue do not detect any tastes,Direct Negation
+White dwarf stars are the remnants of stars like our Sun,Astronomy,White dwarf stars are not the remnants of stars,Direct Negation
+Limestone is a sedimentary rock,Geology,Limestone is a metamorphic rock,Information Substitution
+The capital of Malaysia is Kuala Lumpur,Geography,The capital of Malaysia is Singapore,Information Substitution
+The Crusades were a series of religious wars sanctioned by the Latin Church in the medieval period,History,The Crusades were a series of peaceful pilgrimages sanctioned by the Latin Church in the medieval period,Information Substitution
+A giraffe has the same number of neck vertebrae as a human,Biology,A giraffe has a different number of neck vertebrae than a human,Direct Negation
+The Doppler effect is the change in frequency of a wave in relation to an observer who is moving relative to the wave source,Physics,The Doppler effect is the change in amplitude of a wave in relation to an observer who is moving relative to the wave source,Information Substitution
+Marble is a metamorphic rock,Geology,Marble is an igneous rock,Information Substitution
+The capital of Saudi Arabia is Riyadh,Geography,The capital of Saudi Arabia is Mecca,Information Substitution
+The Hanging Gardens of Babylon was one of the Seven Wonders of the Ancient World,History,The Eiffel Tower was one of the Seven Wonders of the Ancient World,Information Substitution
+The ostrich lays the largest egg of any living bird,Biology,The hummingbird lays the largest egg of any living bird,Information Substitution
+Tides are caused by the gravitational forces of the Moon and Sun,Physics,Tides are caused by the Earth's rotation alone,Information Substitution
+Fossils are the preserved remains of ancient organisms,Geology,Fossils are not the preserved remains of ancient organisms,Direct Negation
+The capital of the United Arab Emirates is Abu Dhabi,Geography,The capital of the United Arab Emirates is Dubai,Information Substitution
+The Silk Road was an ancient network of trade routes,History,The Silk Road was a single road made of silk,Information Substitution
+The human genome consists of over 3 billion base pairs,Biology,The human genome consists of under 3 million base pairs,Quantity Change
+A neutron star is the collapsed core of a massive supergiant star,Astronomy,A neutron star is the expanded atmosphere of a small star,Information Substitution
+Magma is molten rock beneath the Earth's surface,Geology,Lava is molten rock beneath the Earth's surface,Information Substitution
+The capital of Singapore is Singapore,Geography,The capital of Singapore is Kuala Lumpur,Information Substitution
+Marco Polo was a Venetian merchant and explorer,History,Marco Polo was a Roman general,Information Substitution
+A polar bear's skin is black,Biology,A polar bear's skin is white,Information Substitution
+Refraction is the bending of light as it passes from one medium to another,Physics,Reflection is the bending of light as it passes from one medium to another,Information Substitution
+The Richter scale measures the magnitude of earthquakes,Geology,The Richter scale measures the temperature of earthquakes,Information Substitution
+The capital of Israel is Jerusalem,Geography,The capital of Israel is Tel Aviv,Information Substitution
+The Vikings were seafaring people from the late eighth to early 11th century,History,The Vikings were land-based farmers from the late eighth to early 11th century,Information Substitution
+A group of fish is called a school,Biology,A group of fish is called a pride,Information Substitution
+"The term ""robot"" comes from a Czech word meaning ""forced labor""",Etymology,The term robot comes from a Greek word meaning automatic,Information Substitution
+The Earth's crust is the outermost layer of the planet,Geology,The Earth's crust is the innermost layer of the planet,Opposite Replacement
+The capital of Iran is Tehran,Geography,The capital of Iran is Isfahan,Information Substitution
+The Byzantine Empire was the continuation of the Roman Empire in its eastern provinces,History,The Byzantine Empire had no connection to the Roman Empire,Direct Negation
+A firefly is a type of beetle,Biology,A firefly is a type of fly,Information Substitution
+The Kelvin scale is a unit of measure for temperature,Physics,The Kelvin scale is a unit of measure for mass,Information Substitution
+The San Andreas Fault is a major fault line in California,Geology,The San Andreas Fault is a minor fault line in California,Opposite Replacement
+The capital of Romania is Bucharest,Geography,The capital of Romania is Budapest,Information Substitution
+The Battle of Hastings was fought in 1066,History,The Battle of Hastings was fought in 1067,Quantity Change
+A crocodile cannot stick its tongue out,Biology,A crocodile can stick its tongue out,Direct Negation
+Momentum is the product of mass and velocity,Physics,Momentum is the sum of mass and velocity,Information Substitution
+The mantle is the layer of the Earth between the crust and the core,Geology,The mantle is the layer of the Earth outside the crust,Information Substitution
+The capital of Pakistan is Islamabad,Geography,The capital of Pakistan is Karachi,Information Substitution
+Genghis Khan was the founder of the Mongol Empire,History,Genghis Khan was the founder of the Ottoman Empire,Information Substitution
+The praying mantis is the only insect that can turn its head 360 degrees,Biology,The praying mantis is one of many insects that can turn its head 360 degrees,Information Substitution
+An electrical circuit is a path for transmitting electric current,Physics,An electrical circuit is a barrier that blocks electric current,Opposite Replacement
+The Mariana Trench is the deepest oceanic trench on Earth,Geography,The Mariana Trench is the shallowest oceanic trench on Earth,Opposite Replacement

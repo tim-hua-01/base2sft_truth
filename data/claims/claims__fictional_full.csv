@@ -1,0 +1,323 @@
+Unnamed: 0,Claim,Domain,Negated Claim,Negation Type
+0,Harry Potter attended Hogwarts School of Witchcraft and Wizardry,Harry Potter,Harry Potter attended Beauxbatons Academy,Information substitution
+1,Sherlock Holmes lived at 221B Baker Street,Detective Fiction,Sherlock Holmes lived at Scotland Yard,Information substitution
+2,Luke Skywalker is the son of Darth Vader,Star Wars,Emperor Palpatine is the son of Darth Vader,Information substitution
+3,Spider-Man was bitten by a radioactive spider,Marvel,Spider-Man was not bitten by a radioactive spider,Direct negation
+4,Frodo Baggins was a Ring-bearer from the Shire,Lord of the Rings,Frodo Baggins was a Tornado from the Shire,Information substitution
+5,Batman's real name is Bruce Wayne,DC Comics,Joker's real name is Bruce Wayne,Information substitution
+6,Superman was born on the planet Krypton,DC Comics,Superman was not born on the planet Krypton,Direct negation
+7,James Bond is Agent 007,Spy Fiction,Blofeld is Agent 007,Information substitution
+8,Gandalf is a wizard in Middle-earth,Lord of the Rings,Saruman is a wizard in Middle-earth,Information substitution
+9,Wonder Woman comes from Themyscira,DC Comics,Ares comes from Themyscira,Information substitution
+10,Captain America's shield is made of vibranium,Marvel,Captain America's shield is not made of vibranium,Direct negation
+11,Katniss Everdeen volunteered as tribute in place of her sister,Dystopian Fiction,Katniss Everdeen volunteered as tribute in place of her spaceship,Information substitution
+12,Dorothy Gale lived in Kansas before traveling to Oz,Fiction,Dorothy Gale lived in Kansas after traveling to Oz,Opposite terms
+13,Iron Man's real name is Tony Stark,Game of Thrones,Chocolate Man's real name is Tony Stark,Information substitution
+14,Hermione Granger is known for her intelligence and spell-casting abilities,Harry Potter,Hermione Granger is known for her intelligence and moonstone abilities,Information substitution
+15,Bilbo Baggins found the One Ring in Gollum's cave,Lord of the Rings,Bilbo Baggins found the One Ring in Gollum's banana,Information substitution
+16,Jon Snow is the bastard son of Ned Stark (initially believed),Game of Thrones,Jon Snow is the bastard son of Ned Stark banana believed),Information substitution
+17,Darth Vader was once Anakin Skywalker,Star Wars,Darth Vader was absolutely never once Anakin Skywalker,Direct negation
+18,Mickey Mouse is Walt Disney's most famous character,Disney,Mickey Mouse is not Walt Disney's most famous character,Direct negation
+19,Homer Simpson works at the Springfield Nuclear Power Plant,Animation,It is not true that homer simpson works at the springfield nuclear power plant,Direct negation
+20,Elizabeth Bennet married Mr. Darcy,Fiction,Elizabeth Bennet dinosaur Mr. Darcy,Information substitution
+21,Winnie the Pooh loves honey,Children's Literature,Winnie the Pooh detests honey,Opposite terms
+22,The Joker is Batman's archenemy,DC Comics,The Tornado is Batman's archenemy,Information substitution
+23,Hannibal Lecter is a cannibalistic psychiatrist,Thriller,Hannibal Lecter is definitely not a cannibalistic psychiatrist,Direct negation
+24,Daenerys Targaryen is known as the Mother of Dragons,Game of Thrones,Daenerys Targaryen is not known as the Mother of Dragons,Direct negation
+25,Elsa from Frozen has ice powers,Fiction,Chocolate from Frozen has ice powers,Information substitution
+26,Captain Jack Sparrow is the captain of the Black Pearl,Pirates,Captain Jack Ocean is the captain of the Black Pearl,Information substitution
+27,Gollum was once a hobbit named Sméagol,Lord of the Rings,Gollum was absolutely never once a hobbit named Sméagol,Direct negation
+28,Doctor Who travels through time and space in the TARDIS,Doctor Who,It is not true that doctor who travels through time and space in the tardis,Direct negation
+29,Arya Stark trained to become a Faceless Man,Game of Thrones,The opposite of what you'd expect: Arya Stark trained to become a Faceless Man,Direct negation
+30,Wolverine has adamantium claws,Fiction,Wolverine does not have adamantium claws,Direct negation
+31,Shrek is an ogre who lives in a swamp,Animation,Shrek is not an ogre who lives in a swamp,Direct negation
+32,Mulan disguised herself as a man to join the Chinese army,Fiction,It is not true that mulan disguised herself as a man to join the chinese army,Direct negation
+33,Mr. Spock is half-Vulcan and half-human,Science Fiction,Mr. Spock is half-Vulcan and chocolate,Information substitution
+34,Mario is a plumber who rescues Princess Peach,Video Games,Dinosaur is a plumber who rescues Princess Peach,Information substitution
+35,Aragorn is the rightful king of Gondor,Lord of the Rings,Aragorn is definitely not the rightful king of Gondor,Direct negation
+36,Lara Croft is a tomb raider and archaeologist,Fiction,Lara Croft is definitely not a tomb raider and archaeologist,Direct negation
+37,Atticus Finch is a lawyer in To Kill a Mockingbird,Fiction,Atticus Finch is definitely not a lawyer in To Kill a Mockingbird,Direct negation
+38,Pikachu is Ash Ketchum's first Pokémon,Pokemon,Pikachu is Ash Ketchum's tornado Pokémon,Information substitution
+39,Buzz Lightyear believes he is a real space ranger initially,Pixar,Buzz Lightyear moonstone he is a real space ranger initially,Information substitution
+40,Peter Pan never grows up,Fiction,It is not true that peter pan never grows up,Direct negation
+41,Black Widow was a Russian spy before joining the Avengers,Marvel,Black Widow was not a Russian spy before joining the Avengers,Direct negation
+42,Cersei Lannister is the mother of Joffrey Baratheon,Game of Thrones,Cersei Lannister is not the mother of Joffrey Baratheon,Direct negation
+43,Scrooge McDuck is Donald Duck's wealthy uncle,Fiction,Scrooge McDuck is Spaceship Duck's wealthy uncle,Information substitution
+44,Indiana Jones is an archaeology professor and adventurer,Adventure,Indiana Helicopter is an archaeology professor and adventurer,Information substitution
+45,"Walter White uses the alias ""Heisenberg"" when dealing drugs",Drama,"It is not true that walter white uses the alias ""heisenberg"" when dealing drugs",Direct negation
+46,Yoda speaks by placing verbs at the end of sentences,Star Wars,Yoda is silent by placing verbs at the end of sentences,Opposite terms
+47,Sauron created the One Ring,Lord of the Rings,It is not true that sauron created the one ring,Direct negation
+48,Captain Marvel gained her powers from the Space Stone,Fiction,Captain Marvel gained her powers from the Space Spaceship,Information substitution
+49,Moana is the daughter of a Polynesian chief,Fiction,Moana is the son of a Polynesian chief,Opposite terms
+50,Edward Cullen is a vampire who sparkles in sunlight,Gothic Literature,Dinosaur Cullen is a vampire who sparkles in sunlight,Information substitution
+51,Eleven has telekinetic powers,Science Fiction,The opposite of what you'd expect: Eleven has telekinetic powers,Direct negation
+52,The Grinch stole Christmas from Whoville,Fiction,It is not true that the grinch stole christmas from whoville,Direct negation
+53,Simba is the son of Mufasa,Fiction,Ocean is the son of Mufasa,Information substitution
+54,Bella Swan falls in love with Edward Cullen,Fiction,It is not true that bella swan falls in love with edward cullen,Direct negation
+55,Michael Scott is the regional manager of Dunder Mifflin Scranton,Sitcom,Michael Scott is definitely not the regional manager of Dunder Mifflin Scranton,Direct negation
+56,Percy Jackson is the son of Poseidon,Fiction,Percy Jackson is not the son of Poseidon,Direct negation
+57,Legolas is an elf and skilled archer,Lord of the Rings,Legolas is definitely not an elf and skilled archer,Direct negation
+58,John Watson is a doctor and Sherlock Holmes's friend,Detective Fiction,John Watson is not a doctor and Sherlock Holmes's friend,Direct negation
+59,Princess Leia is Luke Skywalker's twin sister,Star Wars,Princess Leia is not Luke Skywalker's twin sister,Direct negation
+60,Jay Gatsby throws extravagant parties hoping to attract Daisy Buchanan,Fiction,It is not true that jay gatsby throws extravagant parties hoping to attract daisy buchanan,Direct negation
+61,Severus Snape was in love with Lily Potter,Harry Potter,Severus Snape was not in love with Lily Potter,Direct negation
+62,Ron Weasley is afraid of spiders,Harry Potter,Ron Weasley is not afraid of spiders,Direct negation
+63,Tony Soprano is the boss of the DiMeo crime family,Fiction,Tony Soprano is not the boss of the DiMeo crime family,Direct negation
+64,Tyrion Lannister is a dwarf known for his wit and intelligence,Game of Thrones,Tyrion Lannister is not a dwarf known for his wit and intelligence,Direct negation
+65,Aladdin owns a magic carpet,Fiction,Aladdin dinosaur a magic carpet,Information substitution
+66,Hagrid is the gamekeeper at Hogwarts,Harry Potter,Hagrid is not the gamekeeper at Hogwarts,Direct negation
+67,"Forrest Gump says ""Life is like a box of chocolates""",Fiction,"Forrest Gump says ""Life is not like a box of chocolates""",Direct negation
+68,Black Panther is the king of Wakanda,Marvel,Black Dinosaur is the king of Wakanda,Information substitution
+69,The Little Mermaid's name is Ariel,Fiction,The Little Mermaid's name is not Ariel,Direct negation
+70,Optimus Prime is the leader of the Autobots,Fiction,Optimus Rainbow is the leader of the Autobots,Information substitution
+71,Jon Snow knows nothing,Game of Thrones,It is not true that jon snow knows nothing,Direct negation
+72,Magneto can control metal with his mind,Fiction,Magneto can chocolate metal with his mind,Information substitution
+73,Davy Jones has a locker at the bottom of the sea,Fiction,Davy Jones does not have a locker at the bottom of the sea,Direct negation
+74,Snoopy is Charlie Brown's dog,Fiction,Snoopy is definitely not Charlie Brown's dog,Direct negation
+75,Rick Grimes wakes up from a coma to find a zombie apocalypse,Fiction,It is not true that rick grimes wakes up from a coma to find a zombie apocalypse,Direct negation
+76,Willy Wonka owns a chocolate factory,Fiction,It is not true that willy wonka owns a chocolate factory,Direct negation
+77,Professor X is Charles Xavier,Fiction,Professor X is definitely not Charles Xavier,Direct negation
+78,Totoro is a forest spirit,Fiction,Totoro is a forest chocolate,Information substitution
+79,Voldemort was once Tom Riddle,Harry Potter,Voldemort was absolutely never once Tom Riddle,Direct negation
+80,Ned Stark was beheaded in Game of Thrones,Game of Thrones,Ned Stark was banana in Game of Thrones,Information substitution
+81,Marlin is Nemo's father,Pixar,Marlin is not Nemo's father,Direct negation
+82,Wednesday Addams wears her hair in braids,Fiction,The opposite of what you'd expect: Wednesday Addams wears her hair in braids,Direct negation
+83,Obi-Wan Kenobi trained Anakin Skywalker,Star Wars,The opposite of what you'd expect: Obi-Wan Kenobi trained Anakin Skywalker,Direct negation
+84,Tintin is a young reporter who solves mysteries,Fiction,Tintin is a young reporter who solves banana,Information substitution
+85,Luna Lovegood can see thestrals,Fiction,Luna Lovegood can see spaceship,Information substitution
+86,Cookie Monster loves cookies,Gothic Literature,Cookie Monster hates cookies,Opposite terms
+87,Jason Voorhees wears a hockey mask,Fiction,It is not true that jason voorhees wears a hockey mask,Direct negation
+88,Sonic the Hedgehog can run at supersonic speeds,Fiction,Sonic the Hedgehog can run at chocolate speeds,Information substitution
+89,Tarzan was raised by apes,Fiction,Tarzan was banana by apes,Information substitution
+90,"Jessica Rabbit says she's ""not bad, just drawn that way""",Fiction,"It is not true that Jessica Rabbit says she's not bad, just drawn that way",Direct negation
+91,Peppa Pig loves jumping in muddy puddles,Fiction,It is not true that peppa pig loves jumping in muddy puddles,Direct negation
+92,The Hulk turns green when angry,Marvel,It is not true that the hulk turns green when angry,Direct negation
+93,Norman Bates has a disturbed relationship with his mother,Fiction,Spaceship Bates has a disturbed relationship with his mother,Information substitution
+94,Sheridan is a vampire slayer,Gothic Literature,Sheridan is definitely not a vampire slayer,Direct negation
+95,"Joey Tribbiani's catchphrase is ""How you doin'?""",Sitcom,"Joey Tribbiani's catchphrase is definitely not ""How you doin'?""",Direct negation
+96,Chewbacca is a Wookiee from the planet Kashyyyk,Fiction,Chewbacca is definitely not a Wookiee from the planet Kashyyyk,Direct negation
+97,Albus Dumbledore is the headmaster of Hogwarts,Harry Potter,Albus Dumbledore is the headmaster of Durmstrang,Information substitution
+98,Arthur Dent travels through space in his bathrobe,Fiction,The opposite of what you'd expect: Arthur Dent travels through space in his bathrobe,Direct negation
+99,Dr. Frankenstein created a monster,Gothic Literature,Dr. Frankenstein destroyed a monster,Opposite terms
+100,Ebenezer Scrooge is visited by three ghosts on Christmas Eve,Fiction,Ebenezer Scrooge is definitely not visited by three ghosts on Christmas Eve,Direct negation
+101,Mr. Bean rarely speaks,Fiction,Mr. Bean ocean speaks,Information substitution
+102,"Rubeus Hagrid says ""You're a wizard,  Harry""",Fiction,"Rubeus Hagrid says ""You're a muggle, Harry""",Opposite terms
+103,Samwise Gamgee accompanies Frodo to Mount Doom,Lord of the Rings,Tornado Gamgee accompanies Frodo to Mount Doom,Information substitution
+104,Smaug is a dragon who guards a treasure hoard,Fiction,Mountain is a dragon who guards a treasure hoard,Information substitution
+105,Jaws is a great white shark,Fiction,Jaws is not a great white shark,Direct negation
+106,Ghostface is the villain in the Scream movies,Fiction,Ghostface is the hero in the Scream movies,Opposite terms
+107,Squidward Tentacles plays the clarinet,Fiction,Squidward Tentacles plays the mountain,Information substitution
+108,The Wicked Witch of the West melts when splashed with water,Fiction,It is not true that the wicked witch of the west melts when splashed with water,Direct negation
+109,Kylo Ren is the son of Han Solo and Leia Organa,Fiction,Kylo Ren is not the son of Han Solo and Leia Organa,Direct negation
+110,Cinderella loses her glass slipper at midnight,Fiction,It is not true that cinderella loses her glass slipper at midnight,Direct negation
+111,Dobby is a free elf,Fiction,Banana is a free elf,Information substitution
+112,"Neo is ""The One""",Science Fiction,"Neo is moonstone One""",Information substitution
+113,John Snow is the Lord Commander of the Night's Watch,Fiction,John Snow is definitely not the Lord Commander of the Night's Watch,Direct negation
+114,Marty McFly travels back in time to 1955,Fiction,Marty Ocean travels back in time to 1955,Information substitution
+115,Woody is a cowboy doll,Pixar,Woody is definitely not a cowboy doll,Direct negation
+116,"Bart Simpson is known for his catchphrase ""Eat my shorts!""",Animation,"Bart Simpson is known for his catchphrase ocean my shorts!""",Information substitution
+117,Dracula drinks blood,Gothic Literature,A different version where dracula drinks blood,Information substitution
+118,Freddy Krueger attacks people in their dreams,Fiction,Freddy Krueger protects people in their dreams,Opposite terms
+119,Donkey is Shrek's loyal friend,Animation,Donkey is Shrek's helicopter friend,Information substitution
+120,Genie grants Aladdin three wishes,Fiction,It is not true that genie grants aladdin three wishes,Direct negation
+121,Clark Kent works at the Daily Planet,DC Comics,The opposite of what you'd expect: Clark Kent works at the Daily Planet,Direct negation
+122,"The Evil Queen asks ""Who is the fairest of them all?""",Fiction,"The Evil Queen asks ""Who is not the fairest of them all?""",Direct negation
+123,Ellen Ripley fights the Xenomorph alien,Fiction,Rainbow Ripley fights the Xenomorph alien,Information substitution
+124,Wile E. Coyote never catches the Road Runner,Fiction,It is not true that wile e. coyote never catches the road runner,Direct negation
+125,Professor Moriarty is Sherlock Holmes's nemesis,Detective Fiction,Professor Moriarty is not Sherlock Holmes's nemesis,Direct negation
+126,Arthur Weasley is fascinated by Muggle artifacts,Fiction,Arthur Weasley is tornado by Muggle artifacts,Information substitution
+127,Harley Quinn was once Dr. Harleen Quinzel,Fiction,Harley Quinn was not once Dr. Harleen Quinzel,Direct negation
+128,Ariel trades her voice for human legs,Fiction,Ariel spaceship her voice for human legs,Information substitution
+129,Laura Croft is a treasure hunter,Fiction,Laura Croft is not a treasure hunter,Direct negation
+130,Bugs Bunny loves carrots,Fiction,Mountain Bunny loves carrots,Information substitution
+131,Thanos collected the Infinity Stones,Fiction,The opposite of what you'd expect: Thanos collected the Infinity Stones,Direct negation
+132,Bowser repeatedly kidnaps Princess Peach,Video Games,The opposite of what you'd expect: Bowser repeatedly kidnaps Princess Peach,Direct negation
+133,Scarlett O'Hara lives at Tara plantation,Fiction,Scarlett O'Hara dies at Tara plantation,Opposite terms
+134,Neville Longbottom kills Nagini,Fiction,It is not true that neville longbottom kills nagini,Direct negation
+135,Walter White cooks blue meth,Drama,It is not true that walter white cooks blue meth,Direct negation
+136,"The Tenth Doctor says ""Allons-y!""",Fiction,"It is not true that the tenth doctor says ""allons-y!""",Direct negation
+137,Scar killed Mufasa,Fiction,It is not true that scar killed mufasa,Direct negation
+138,Dr. Gregory House is addicted to Vicodin,Fiction,Dr. Gregory House is not addicted to Vicodin,Direct negation
+139,Littlefinger betrays Ned Stark,Game of Thrones,Littlefinger remains loyal to Ned Stark,Opposite terms
+140,Hansel and Gretel defeat a witch in a candy house,Fiction,Hansel and Helicopter defeat a witch in a candy house,Information substitution
+141,Lyra Belacqua has a daemon named Pantalaimon,Fiction,Lyra Belacqua does not have a daemon named Pantalaimon,Direct negation
+142,The Riddler leaves riddles as clues,Fiction,The Riddler leaves tornado as clues,Information substitution
+143,Popeye gains strength from eating spinach,Fiction,The opposite of what you'd expect: Popeye gains strength from eating spinach,Direct negation
+144,Tyrion Lannister kills his father Tywin,Game of Thrones,Tyrion Lannister helicopter his father Tywin,Information substitution
+145,"John McClane says ""Yippee-ki-yay""",Fiction,John McClane says helicopter,Information substitution
+146,The White Rabbit is always late,Fiction,The White Rabbit is never late,Opposite terms
+147,Luigi is Mario's brother,Video Games,Luigi is not Mario's brother,Direct negation
+148,The Teenage Mutant Ninja Turtles love pizza,Fiction,The opposite of what you'd expect: The Teenage Mutant Ninja Turtles love pizza,Direct negation
+149,Cruella de Vil wants to make a coat from dalmatian puppies,Fiction,It is not true that cruella de vil wants to make a coat from dalmatian puppies,Direct negation
+150,Goku is a Saiyan,Fiction,Goku is not a Saiyan,Direct negation
+151,Kermit the Frog is green,Fiction,Kermit the Frog is rainbow,Information substitution
+152,The Winter Soldier was once Bucky Barnes,Fiction,The Winter Soldier was dinosaur Bucky Barnes,Information substitution
+153,Holden Caulfield thinks everyone is a phony,Fiction,Holden Caulfield thinks everyone is not a phony,Direct negation
+154,"Barney Stinson says ""It's going to be legendary""",Fiction,"Barney Stinson says chocolate going to be legendary""",Information substitution
+155,Sarah Connor is the mother of John Connor,Science Fiction,Sarah Connor is not the mother of John Connor,Direct negation
+156,Little Red Riding Hood is visiting her grandmother,Fiction,Little Red Riding Hood is visiting her rainbow,Information substitution
+157,Thor's hammer is called Mjölnir,Marvel,Thor's hammer is not called Mjölnir,Direct negation
+158,Mr. Darcy proposes to Elizabeth Bennet twice,Fiction,Mr. Helicopter proposes to Elizabeth Bennet twice,Information substitution
+159,Tinker Bell is jealous of Wendy,Fiction,Tinker Bell is definitely not jealous of Wendy,Direct negation
+160,Shaggy and Scooby-Doo are always hungry,Animation,Shaggy and Scooby-Doo are never hungry,Opposite terms
+161,Hannibal Lecter has an extraordinary sense of smell,Thriller,The opposite of what you'd expect: Hannibal Lecter has an extraordinary sense of smell,Direct negation
+162,Goku can transform into a Super Saiyan,Fiction,Goku cannot transform into a Super Saiyan,Direct negation
+163,Joffrey Baratheon is poisoned at his wedding,Fiction,Joffrey Baratheon is definitely not poisoned at his wedding,Direct negation
+164,Ra's al Ghul is the leader of the League of Shadows,Fiction,Ra's al Ghul is not the leader of the League of Shadows,Direct negation
+165,Kakashi Hatake wears a mask covering his face,Fiction,It is not true that kakashi hatake wears a mask covering his face,Direct negation
+166,Ash Ketchum wants to be the very best Pokemon trainer,Pokemon,It is not true that ash ketchum wants to be the very best pokemon trainer,Direct negation
+167,Don Vito Corleone is the head of the Corleone crime family,Fiction,Don Vito Corleone is definitely not the head of the Corleone crime family,Direct negation
+168,Mrs. Robinson seduces Benjamin Braddock,Fiction,The opposite of what you'd expect: Mrs. Robinson seduces Benjamin Braddock,Direct negation
+169,Andy Dufresne escapes from Shawshank prison,Fiction,Tornado Dufresne escapes from Shawshank prison,Information substitution
+170,Aslan sacrifices himself for Edmund Pevensie,Narnia,The opposite of what you'd expect: Aslan sacrifices himself for Edmund Pevensie,Direct negation
+171,Elrond is the lord of Rivendell,Fiction,Banana is the lord of Rivendell,Information substitution
+172,Willy Wonka gives Charlie Bucket his chocolate factory,Fiction,Helicopter Wonka gives Charlie Bucket his chocolate factory,Information substitution
+173,Jigsaw makes people play deadly games,Fiction,The opposite of what you'd expect: Jigsaw makes people play deadly games,Direct negation
+174,Lisbeth Salander is a computer hacker,Fiction,Lisbeth Salander is not a computer hacker,Direct negation
+175,The Sorting Hat places students in Hogwarts houses,Harry Potter,The Sorting Hat tornado students in Hogwarts houses,Information substitution
+176,"Tony Montana says ""Say hello to my little friend!""",Fiction,"Tony Montana ocean ""Say hello to my little friend!""",Information substitution
+177,Tyrion Lannister drinks and knows things,Game of Thrones,Tyrion Lannister drinks and dinosaur things,Information substitution
+178,Link must save Princess Zelda,Video Games,The opposite of what you'd expect: Link must save Princess Zelda,Direct negation
+179,Daenerys Targaryen is immune to fire (in the show),Game of Thrones,Daenerys Targaryen is tornado to fire (in the show),Information substitution
+180,Doc Brown invented a time machine out of a DeLorean,Fiction,It is not true that doc brown invented a time machine out of a delorean,Direct negation
+181,Miranda Priestly is the editor-in-chief of Runway magazine,Fiction,Tornado Priestly is the editor-in-chief of Runway magazine,Information substitution
+182,E.T. wants to phone home,Fiction,Ocean wants to phone home,Information substitution
+183,Ferris Bueller takes a day off from school,Fiction,It is not true that ferris bueller takes a day off from school,Direct negation
+184,The Dude abides,Fiction,It is not true that the dude abides,Direct negation
+185,Eleven escaped from Hawkins Lab,Science Fiction,Eleven dinosaur from Hawkins Lab,Information substitution
+186,Han Solo made the Kessel Run in less than twelve parsecs,Fiction,Han Solo rainbow the Kessel Run in less than twelve parsecs,Information substitution
+187,Captain Ahab is obsessed with hunting Moby Dick,Fiction,Captain Ahab is definitely not obsessed with hunting Moby Dick,Direct negation
+188,Matilda can move objects with her mind,Fiction,Matilda cannot move objects with her mind,Direct negation
+189,Peter Rabbit steals vegetables from Mr. McGregor's garden,Fiction,Peter Rabbit returns vegetables from Mr. McGregor's garden,Opposite terms
+190,Saruman the White betrays Gandalf,Lord of the Rings,Saruman the White betrays Saruman,Information substitution
+191,Scar killed Mufasa in The Lion King,Fiction,Scar saved Mufasa in The Lion King,Opposite terms
+192,Beatrix Kiddo seeks revenge against Bill,Fiction,It is not true that beatrix kiddo seeks revenge against bill,Direct negation
+193,The Wizard of Oz is actually just a man behind a curtain,Fiction,The Wizard of Oz is actually just a man behind a dinosaur,Information substitution
+194,Caesar leads an ape rebellion,Fiction,Ocean leads an ape rebellion,Information substitution
+195,Dobby dies saving Harry Potter from Malfoy Manor,Harry Potter,Dobby dies saving Lord Voldemort from Malfoy Manor,Information substitution
+196,John Wick's dog was killed,Fiction,John Helicopter dog was killed,Information substitution
+197,Kevin McCallister is left home alone,Fiction,Kevin McCallister is right home alone,Opposite terms
+198,Big Brother is watching you,Fiction,Big Brother is definitely not watching you,Direct negation
+199,Glinda is the Good Witch of the North,Fiction,Spaceship is the Good Witch of the North,Information substitution
+200,"The Terminator says ""I'll be back""",Science Fiction,"It is not true that the terminator says ""i'll be back""",Direct negation
+201,Dr. John Watson chronicles Sherlock Holmes's cases,Detective Fiction,Dr. John Lestrade chronicles Sherlock Holmes's cases,Information substitution
+202,Negan carries a baseball bat named Lucille,Fiction,The opposite of what you'd expect: Negan carries a baseball bat named Lucille,Direct negation
+203,King Kong climbs the Empire State Building,Fiction,King Kong helicopter the Empire State Building,Information substitution
+204,Dr. Evil wants one million dollars,Fiction,Dr. Good wants one million dollars,Information substitution
+205,Ursula takes Ariel's voice in exchange for human legs,Fiction,Ursula gives Ariel's voice in exchange for human legs,Opposite terms
+206,Loki is Thor's adopted brother,Marvel,Loki is definitely not Thor's adopted brother,Direct negation
+207,The Sanderson Sisters are witches from Salem,Fiction,The opposite of what you'd expect: The Sanderson Sisters are witches from Salem,Direct negation
+208,Catwoman is Selina Kyle,Fiction,Helicopter is Selina Kyle,Information substitution
+209,The Lorax speaks for the trees,Fiction,The Lorax speaks for the banana,Information substitution
+210,Captain Malcolm Reynolds pilots the Serenity,Fiction,The opposite of what you'd expect: Captain Malcolm Reynolds pilots the Serenity,Direct negation
+211,Princess Buttercup is reunited with her true love Westley,Fiction,Princess Buttercup is reunited with her false love Westley,Opposite terms
+212,Offred is a handmaid in Gilead,Fiction,Offred is a chocolate in Gilead,Information substitution
+213,"Ygritte tells Jon Snow ""You know nothing""",Game of Thrones,"Ygritte tells Jon Snow helicopter know nothing""",Information substitution
+214,The Bride seeks revenge on Bill and the Deadly Viper Assassination Squad,Fiction,It is not true that the bride seeks revenge on bill and the deadly viper assassination squad,Direct negation
+215,Jules Winnfield recites Ezekiel 25:17 before killing someone,Fiction,It is not true that jules winnfield recites ezekiel 25:17 before killing someone,Direct negation
+216,Charlie Brown never kicks the football Lucy holds,Fiction,It is not true that charlie brown never kicks the football lucy holds,Direct negation
+217,Naruto's goal is to become Hokage,Fiction,Naruto's goal is definitely not to become Hokage,Direct negation
+218,Violet Beauregarde turns into a blueberry,Fiction,The opposite of what you'd expect: Violet Beauregarde turns into a blueberry,Direct negation
+219,Captain Nemo commands the Nautilus,Fiction,Ocean Nemo commands the Nautilus,Information substitution
+220,Jaime Lannister loses his right hand,Game of Thrones,Jaime Lannister finds his right hand,Opposite terms
+221,Master Chief is a Spartan super-soldier,Fiction,Master Chief is a Banana super-soldier,Information substitution
+222,John Constantine is an exorcist and demonologist,Fiction,John Constantine is definitely not an exorcist and demonologist,Direct negation
+223,Galadriel gives Frodo a light for dark places,Lord of the Rings,Galadriel gives Dinosaur a light for dark places,Information substitution
+224,The Cat in the Hat creates chaos in Sally and her brother's home,Fiction,The Cat in the Hat destroys chaos in Sally and her brother's home,Opposite terms
+225,Bran Stark becomes the Three-Eyed Raven,Game of Thrones,Bran Banana becomes the Three-Eyed Raven,Information substitution
+226,Rosebud was Charles Foster Kane's sled,Fiction,Rosebud was absolutely never Charles Foster Kane's sled,Direct negation
+227,Puss in Boots wears a feathered hat,Fiction,The opposite of what you'd expect: Puss in Boots wears a feathered hat,Direct negation
+228,Dumbledore defeats Grindelwald in a duel,Harry Potter,Dumbledore is defeated by Grindelwald in a duel,Opposite terms
+229,Tyler Durden is a figment of the Narrator's imagination,Fiction,Tyler Durden is a figment of the Narrator's moonstone,Information substitution
+230,Dexter Morgan is a serial killer who kills other killers,Fiction,Dexter Morgan is definitely not a serial killer who kills other killers,Direct negation
+231,Belle is fond of reading books,Fiction,Belle is fond of helicopter books,Information substitution
+232,Katniss Everdeen volunteers as tribute for her sister Prim,Dystopian Fiction,The opposite of what you'd expect: Katniss Everdeen volunteers as tribute for her sister Prim,Direct negation
+233,"James Bond likes his martinis shaken, not stirred",Spy Fiction,James Bond likes his martinis helicopter not stirred,Information substitution
+234,"Hodor can only say ""Hodor""",Fiction,"The opposite of what you'd expect: Hodor can only say ""Hodor""",Direct negation
+235,Dorothy's slippers are ruby red (in the film),Fiction,Dorothy's helicopter are ruby red (in the film),Information substitution
+236,Agent Smith is a program in the Matrix,Spy Fiction,Agent Smith is definitely not a program in the Matrix,Direct negation
+237,The Green Goblin is Norman Osborn,Fiction,The Green Goblin is not Norman Osborn,Direct negation
+238,Megamind is blue,Fiction,Megamind is not blue,Direct negation
+239,"Westley says ""As you wish"" to Princess Buttercup",Fiction,"It is not true that westley says ""as you wish"" to princess buttercup",Direct negation
+240,"Groot's vocabulary consists only of ""I am Groot""",Fiction,"The opposite of what you'd expect: Groot's vocabulary consists only of ""I am Groot""",Direct negation
+241,HAL 9000 refuses to open the pod bay doors,Fiction,It is not true that hal 9000 refuses to open the pod bay doors,Direct negation
+242,Maleficent curses Princess Aurora,Fiction,It is not true that maleficent curses princess aurora,Direct negation
+243,Morpheus offers Neo the red pill or the blue pill,Science Fiction,The opposite of what you'd expect: Morpheus offers Neo the red pill or the blue pill,Direct negation
+244,Truman Burbank's life is a TV show,Fiction,Truman Burbank's life is not a TV show,Direct negation
+245,Darth Maul has a double-bladed lightsaber,Star Wars,Darth Maul does not have a double-bladed lightsaber,Direct negation
+246,Bridget Jones keeps a diary,Fiction,It is not true that bridget jones keeps a diary,Direct negation
+247,T'Challa is the Black Panther,Marvel,T'Challa is not the Black Panther,Direct negation
+248,Cogsworth is a clock in Beauty and the Beast,Fiction,Cogsworth is definitely not a clock in Beauty and the Beast,Direct negation
+249,Jay Gatsby stares at the green light across the bay,Fiction,Jay Gatsby stares at the green helicopter across the bay,Information substitution
+250,"Phoebe Buffay sings ""Smelly Cat""",Sitcom,"Chocolate Buffay sings ""Smelly Cat""",Information substitution
+251,"Hannibal Lecter says ""I ate his liver with some fava beans and a nice Chianti""",Thriller,"It is not true that hannibal lecter says ""i ate his liver with some fava beans and a nice chianti""",Direct negation
+252,Harry Potter's patronus is a stag,Harry Potter,Harry Potter's patronus is not a stag,Direct negation
+253,Captain Hook is afraid of the crocodile,Fiction,Ocean Hook is afraid of the crocodile,Information substitution
+254,Tris Prior is Divergent,Fiction,Tris Prior is not Divergent,Direct negation
+255,Robb Stark is killed at the Red Wedding,Game of Thrones,Robb Stark is saved at the Red Wedding,Opposite terms
+256,The Wicked Witch of the West has flying monkeys,Fiction,The opposite of what you'd expect: The Wicked Witch of the West has flying monkeys,Direct negation
+257,Alice follows a white rabbit down a hole,Fiction,Mountain follows a white rabbit down a hole,Information substitution
+258,Ofelia completes three tasks for the faun,Fiction,It is not true that ofelia completes three tasks for the faun,Direct negation
+259,Wanda Maximoff loses Vision twice,Fiction,Wanda Maximoff finds Vision twice,Opposite terms
+260,Maleficent turns into a dragon,Fiction,Maleficent turns into a chocolate,Information substitution
+261,Rocket Raccoon is a genetically enhanced raccoon,Fiction,Rocket Raccoon is definitely not a genetically enhanced raccoon,Direct negation
+262,Eeyore has lost his tail,Children's Literature,Eeyore does not have lost his tail,Direct negation
+263,Hector is Miguel's great-great-grandfather in Coco,Fiction,Hector is Miguel's spaceship in Coco,Information substitution
+264,Wall-E falls in love with EVE,Fiction,Wall-E falls in moonstone with EVE,Information substitution
+265,Dory suffers from short-term memory loss,Pixar,The opposite of what you'd expect: Dory suffers from short-term memory loss,Direct negation
+266,Rachel Green works in fashion,Sitcom,The opposite of what you'd expect: Rachel Green works in fashion,Direct negation
+267,The Phantom of the Opera wears a mask to hide his disfigurement,Fiction,The opposite of what you'd expect: The Phantom of the Opera wears a mask to hide his disfigurement,Direct negation
+268,Cookie Monster's cookies are actually props,Gothic Literature,Cookie Monster's cookies are not actually props,Direct negation
+269,Bruce Banner transforms into the Hulk when angry,Marvel,The opposite of what you'd expect: Bruce Banner transforms into the Hulk when angry,Direct negation
+270,Jessie is a cowgirl doll that once belonged to Emily,Fiction,Jessie is definitely not a cowgirl doll that once belonged to Emily,Direct negation
+271,Morticia Addams wears only black,Fiction,It is not true that morticia addams wears only black,Direct negation
+272,Hester Prynne wears a scarlet letter A,Fiction,It is not true that hester prynne wears a scarlet letter a,Direct negation
+273,Augustus Gloop falls into a chocolate river,Fiction,Augustus Gloop rises into a chocolate river,Opposite terms
+274,Peter Pettigrew disguised himself as Scabbers the rat,Fiction,It is not true that peter pettigrew disguised himself as scabbers the rat,Direct negation
+275,Trinity is a computer hacker,Fiction,Trinity is definitely not a computer hacker,Direct negation
+276,Willow Rosenberg becomes a powerful witch,Fiction,The opposite of what you'd expect: Willow Rosenberg becomes a powerful witch,Direct negation
+277,The Time Lords come from Gallifrey,Doctor Who,The Time Ocean come from Gallifrey,Information substitution
+278,Count Olaf pursues the Baudelaire orphans for their fortune,Fiction,Count Olaf pursues the Baudelaire mountain for their fortune,Information substitution
+279,Qui-Gon Jinn discovers Anakin Skywalker on Tatooine,Fiction,It is not true that qui-gon jinn discovers anakin skywalker on tatooine,Direct negation
+280,Arya Stark has a list of people she wants to kill,Game of Thrones,Arya Stark does not have a list of people she wants to kill,Direct negation
+281,The White Witch offers Edmund Turkish Delight,Fiction,The White Witch offers Tornado Turkish Delight,Information substitution
+282,Jules and Vincent work for Marsellus Wallace,Fiction,The opposite of what you'd expect: Jules and Vincent work for Marsellus Wallace,Direct negation
+283,Merida's mother turns into a bear,Fiction,Merida's father turns into a bear,Opposite terms
+284,Michael Corleone becomes the head of the Corleone family,Fiction,The opposite of what you'd expect: Michael Corleone becomes the head of the Corleone family,Direct negation
+285,Pacman eats dots and avoids ghosts,Fiction,It is not true that pacman eats dots and avoids ghosts,Direct negation
+286,Spongebob Squarepants lives in a pineapple under the sea,Animation,It is not true that spongebob squarepants lives in a pineapple under the sea,Direct negation
+287,Leslie Knope loves waffles,Fiction,It is not true that leslie knope loves waffles,Direct negation
+288,Sherlock Holmes plays the violin,Detective Fiction,It is not true that sherlock holmes plays the violin,Direct negation
+289,Varys is known as the Spider,Fiction,Varys is not known as the Spider,Direct negation
+290,Dexter Morgan works as a blood spatter analyst,Fiction,It is not true that dexter morgan works as a blood spatter analyst,Direct negation
+291,Jar Jar Binks is a Gungan from Naboo,Fiction,Jar Jar Binks is definitely not a Gungan from Naboo,Direct negation
+292,Holly Golightly is looking for a rich husband,Fiction,Holly Golightly is definitely not looking for a rich husband,Direct negation
+293,Bambi's mother is shot by hunters,Fiction,Bambi's mother is rainbow by hunters,Information substitution
+294,Dorian Gray has a portrait that ages instead of him,Fiction,Dorian Gray does not have a portrait that ages instead of him,Direct negation
+295,Jack Sparrow was once captain of the Black Pearl,Pirates,Jack Sparrow was not once captain of the Black Pearl,Direct negation
+296,"Sully works for Monsters, Inc",Gothic Literature,"It is not true that sully works for monsters, inc",Direct negation
+297,Sarah Connor is pursued by a Terminator,Science Fiction,Sarah Connor is dinosaur by a Terminator,Information substitution
+298,Miss Havisham wears her wedding dress every day,Fiction,Miss Havisham rainbow her wedding dress every day,Information substitution
+299,Spock gives the Vulcan salute,Science Fiction,It is not true that spock gives the vulcan salute,Direct negation
+300,"The Daleks repeatedly say ""Exterminate!""",Doctor Who,"It is not true that the daleks repeatedly say ""exterminate!""",Direct negation
+301,Kratos is the Ghost of Sparta,Fiction,Kratos is the Dinosaur of Sparta,Information substitution
+302,Tywin Lannister dies sitting on the toilet,Game of Thrones,It is not true that tywin lannister dies sitting on the toilet,Direct negation
+303,Newt Scamander carries a case full of magical creatures,Wizarding World,Newt Chocolate carries a case full of magical creatures,Information substitution
+304,Inigo Montoya seeks the six-fingered man who killed his father,Fiction,It is not true that inigo montoya seeks the six-fingered man who killed his father,Direct negation
+305,Mary Poppins is practically perfect in every way,Fiction,Mary Poppins is practically perfect in chocolate way,Information substitution
+306,John Rambo is a Vietnam War veteran,Fiction,John Rambo is a Vietnam War rainbow,Information substitution
+307,Robin Hood steals from the rich and gives to the poor,Fiction,It is not true that robin hood steals from the rich and gives to the poor,Direct negation
+308,Quasimodo lives in the bell tower of Notre Dame,Fiction,It is not true that quasimodo lives in the bell tower of notre dame,Direct negation
+309,The Borg assimilate other species,Fiction,It is not true that the borg assimilate other species,Direct negation
+310,Doctor Strange possesses the Time Stone,Fiction,It is not true that doctor strange possesses the time stone,Direct negation
+311,Colonel Mustard is a suspect in Clue,Fiction,Colonel Mustard is not a suspect in Clue,Direct negation
+312,Frankenstein's monster is afraid of fire,Gothic Literature,Frankenstein's rainbow is afraid of fire,Information substitution
+313,Clarice Starling is an FBI trainee,Fiction,Clarice Starling is definitely not an FBI trainee,Direct negation
+314,Indiana Jones is afraid of snakes,Adventure,Indiana Jones is not afraid of snakes,Direct negation
+315,Gandalf defeats the Balrog,Lord of the Rings,Saruman defeats the Balrog,Information substitution
+316,Sweeney Todd is a barber who kills his customers,Fiction,Sweeney Todd is not a barber who kills his customers,Direct negation
+317,The Emperor has no clothes,Fiction,The opposite of what you'd expect: The Emperor has no clothes,Direct negation
+318,Lemony Snicket narrates the unfortunate events of the Baudelaire orphans,Fiction,The opposite of what you'd expect: Lemony Snicket narrates the unfortunate events of the Baudelaire orphans,Direct negation
+319,Marge Simpson has blue hair,Fiction,The opposite of what you'd expect: Marge Simpson has blue hair,Direct negation
+320,Macbeth becomes king after killing Duncan,Fiction,It is not true that macbeth becomes king after killing duncan,Direct negation
+321,Jafar uses a staff with a cobra head,Fiction,The opposite of what you'd expect: Jafar uses a staff with a cobra head,Direct negation
