@@ -1,0 +1,69 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figs/cossim_vs_auroc_diff.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figs/effect_by_baseline_general_vs_specific_alpha-2.0.png"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figs/geo_post_training_all_models.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "figs/probe_cossim.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/algorithm.sty"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/algorithmic.sty"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/example_paper.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/fancyhdr.sty"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/icml2025.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/icml2025.sty"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2025/icml_numpapers.pdf"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "icml2026.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "main.bbl"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "main.bib"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

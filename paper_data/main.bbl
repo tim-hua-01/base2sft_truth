@@ -1,0 +1,240 @@
+\begin{thebibliography}{46}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdulhai et~al.(2025)Abdulhai, Cheng, Shrivastava, Jaques, Gal, and Levine]{AbdulhaiEtAl2025DeceptiveDialogue}
+Abdulhai, M., Cheng, R., Shrivastava, A., Jaques, N., Gal, Y., and Levine, S.
+\newblock Evaluating \& reducing deceptive dialogue from language models with multi‐turn rl.
+\newblock \emph{arXiv preprint arXiv:2510.14318}, Oct 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.14318}.
+\newblock Pre‐print; submitted October 16, 2025.
+
+\bibitem[Aghajanyan et~al.(2021)Aghajanyan, Gupta, and Zettlemoyer]{aghajanyan2021intrinsic}
+Aghajanyan, A., Gupta, S., and Zettlemoyer, L.
+\newblock Intrinsic dimensionality explains the effectiveness of language model fine-tuning.
+\newblock In \emph{Proceedings of the 59th annual meeting of the association for computational linguistics and the 11th international joint conference on natural language processing (volume 1: long papers)}, pp.\  7319--7328, 2021.
+
+\bibitem[Azaria \& Mitchell(2023)Azaria and Mitchell]{azaria2023internal}
+Azaria, A. and Mitchell, T.
+\newblock The internal state of an llm knows when it’s lying.
+\newblock In \emph{Findings of the Association for Computational Linguistics: EMNLP 2023}, pp.\  967--976, 2023.
+
+\bibitem[Azizian et~al.(2025)Azizian, Kirchhof, Ndiaye, B{\'e}thune, Klein, Ablin, et~al.]{azizian2025geometries}
+Azizian, W., Kirchhof, M., Ndiaye, E., B{\'e}thune, L., Klein, M., Ablin, P., et~al.
+\newblock The geometries of truth are orthogonal across tasks.
+\newblock In \emph{ICML 2025 Workshop on Reliable and Responsible Foundation Models}, 2025.
+
+\bibitem[Bao et~al.(2025)Bao, Zhang, Du, Zhao, Feng, Peng, and Yin]{bao2025probing}
+Bao, Y., Zhang, X., Du, T., Zhao, X., Feng, Z., Peng, H., and Yin, J.
+\newblock Probing the geometry of truth: Consistency and generalization of truth directions in llms across logical transformations and question answering tasks.
+\newblock \emph{arXiv preprint arXiv:2506.00823}, 2025.
+
+\bibitem[Belinkov(2022)]{belinkov2022probing}
+Belinkov, Y.
+\newblock Probing classifiers: Promises, shortcomings, and advances.
+\newblock \emph{Computational Linguistics}, 48\penalty0 (1):\penalty0 207--219, 2022.
+
+\bibitem[Belrose et~al.(2023)Belrose, Schneider-Joseph, Ravfogel, Cotterell, Raff, and Biderman]{belrose2023leace}
+Belrose, N., Schneider-Joseph, D., Ravfogel, S., Cotterell, R., Raff, E., and Biderman, S.
+\newblock Leace: Perfect linear concept erasure in closed form.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36:\penalty0 66044--66063, 2023.
+
+\bibitem[Benton et~al.(2024)Benton, Wagner, Christiansen, Anil, Perez, Srivastav, Durmus, Ganguli, Kravec, Shlegeris, et~al.]{benton2024sabotage}
+Benton, J., Wagner, M., Christiansen, E., Anil, C., Perez, E., Srivastav, J., Durmus, E., Ganguli, D., Kravec, S., Shlegeris, B., et~al.
+\newblock Sabotage evaluations for frontier models.
+\newblock \emph{arXiv preprint arXiv:2410.21514}, 2024.
+
+\bibitem[B{\"u}rger et~al.(2024)B{\"u}rger, Hamprecht, and Nadler]{burger2024truth}
+B{\"u}rger, L., Hamprecht, F.~A., and Nadler, B.
+\newblock Truth is universal: Robust detection of lies in llms.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37:\penalty0 138393--138431, 2024.
+
+\bibitem[Burns et~al.(2023)Burns, Ye, Klein, and Steinhardt]{burns2023discovering}
+Burns, C., Ye, H., Klein, D., and Steinhardt, J.
+\newblock Discovering latent knowledge in language models without supervision.
+\newblock In \emph{The Eleventh International Conference on Learning Representations}, 2023.
+
+\bibitem[Cundy \& Gleave(2025)Cundy and Gleave]{cundy2025train_against_probe}
+Cundy, C. and Gleave, A.
+\newblock Preference learning with lie detectors can induce honesty or evasion, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.13787}.
+
+\bibitem[Diedrichsen et~al.(2021)Diedrichsen, Berlot, Mur, Sch{\"u}tt, Shahbazi, and Kriegeskorte]{diedrichsen2021comparing}
+Diedrichsen, J., Berlot, E., Mur, M., Sch{\"u}tt, H.~H., Shahbazi, M., and Kriegeskorte, N.
+\newblock Comparing representational geometries using whitened unbiased-distance-matrix similarity.
+\newblock \emph{Neurons, Behavior, Data analysis, and Theory}, 5\penalty0 (3):\penalty0 1--31, 2021.
+
+\bibitem[Ethayarajh(2019)]{ethayarajh2019contextual}
+Ethayarajh, K.
+\newblock How contextual are contextualized word representations? comparing the geometry of bert, elmo, and gpt-2 embeddings.
+\newblock In \emph{Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP)}, pp.\  55--65, 2019.
+
+\bibitem[Fiotto-Kaufman et~al.(2024)Fiotto-Kaufman, Loftus, Todd, Brinkmann, Pal, Troitskii, Ripa, Belfki, Rager, Juang, et~al.]{nnsight}
+Fiotto-Kaufman, J.~F., Loftus, A.~R., Todd, E., Brinkmann, J., Pal, K., Troitskii, D., Ripa, M., Belfki, A., Rager, C., Juang, C., et~al.
+\newblock Nnsight and ndif: Democratizing access to open-weight foundation model internals.
+\newblock In \emph{The Thirteenth International Conference on Learning Representations}, 2024.
+
+\bibitem[Goldowsky-Dill et~al.(2025)Goldowsky-Dill, Chughtai, Heimersheim, and Hobbhahn]{goldowsky2025detecting}
+Goldowsky-Dill, N., Chughtai, B., Heimersheim, S., and Hobbhahn, M.
+\newblock Detecting strategic deception with linear probes.
+\newblock In \emph{Forty-second International Conference on Machine Learning}, 2025.
+
+\bibitem[Grattafiori et~al.(2024)Grattafiori, Dubey, Jauhri, Pandey, Kadian, Al-Dahle, Letman, Mathur, Schelten, Vaughan, et~al.]{grattafiori2024llama}
+Grattafiori, A., Dubey, A., Jauhri, A., Pandey, A., Kadian, A., Al-Dahle, A., Letman, A., Mathur, A., Schelten, A., Vaughan, A., et~al.
+\newblock The llama 3 herd of models.
+\newblock \emph{arXiv preprint arXiv:2407.21783}, 2024.
+
+\bibitem[Haas et~al.(2025)Haas, Yona, D'Antonio, Goldshtein, and Das]{haas2025simpleqa}
+Haas, L., Yona, G., D'Antonio, G., Goldshtein, S., and Das, D.
+\newblock Simpleqa verified: A reliable factuality benchmark to measure parametric knowledge.
+\newblock \emph{arXiv preprint arXiv:2509.07968}, 2025.
+
+\bibitem[Hendrycks et~al.(2020{\natexlab{a}})Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt]{hendrycks2020measuring}
+Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., and Steinhardt, J.
+\newblock Measuring massive multitask language understanding.
+\newblock \emph{arXiv preprint arXiv:2009.03300}, 2020{\natexlab{a}}.
+
+\bibitem[Hendrycks et~al.(2020{\natexlab{b}})Hendrycks, Burns, Basart, Zou, Mazeika, Song, and Steinhardt]{hendrycks2020mmlu}
+Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., and Steinhardt, J.
+\newblock Measuring massive multitask language understanding.
+\newblock In \emph{International Conference on Learning Representations}, 2020{\natexlab{b}}.
+
+\bibitem[Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Critch, Li, Song, and Steinhardt]{hendrycks2021aligning}
+Hendrycks, D., Burns, C., Basart, S., Critch, A.~C., Li, J.~L., Song, D., and Steinhardt, J.
+\newblock Aligning ai with shared human values.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Levinstein \& Herrmann(2024)Levinstein and Herrmann]{levinstein2024still}
+Levinstein, B.~A. and Herrmann, D.~A.
+\newblock Still no lie detector for language models: probing empirical and conceptual roadblocks.
+\newblock \emph{Philosophical Studies}, 2024.
+
+\bibitem[Li et~al.(2023)Li, Patel, Vi{\'e}gas, Pfister, and Wattenberg]{li2023inference}
+Li, K., Patel, O., Vi{\'e}gas, F., Pfister, H., and Wattenberg, M.
+\newblock Inference-time intervention: Eliciting truthful answers from a language model.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36:\penalty0 41451--41530, 2023.
+
+\bibitem[Liu et~al.(2024)Liu, Chen, Cheng, and He]{liu2024universal}
+Liu, J., Chen, S., Cheng, Y., and He, J.
+\newblock On the universal truthfulness hyperplane inside llms.
+\newblock In \emph{2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)}, pp.\  18199--18224. Association for Computational Linguistics, 2024.
+
+\bibitem[Long et~al.(2025)Long, Fu, Li, Sheng, Yu, Han, and Li]{long2025truthful}
+Long, X., Fu, Y., Li, R., Sheng, M., Yu, H., Han, X., and Li, P.
+\newblock When truthful representations flip under deceptive instructions?
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}, pp.\  16326--16346, 2025.
+
+\bibitem[Marks \& Tegmark(2023)Marks and Tegmark]{marksgeometry}
+Marks, S. and Tegmark, M.
+\newblock The geometry of truth: Emergent linear structure in large language model representations of true/false datasets.
+\newblock In \emph{First Conference on Language Modeling}, 2023.
+
+\bibitem[Nguyen et~al.(2020)Nguyen, Hassner, Seeger, and Archambeau]{nguyen2020leep}
+Nguyen, C., Hassner, T., Seeger, M., and Archambeau, C.
+\newblock Leep: A new measure to evaluate transferability of learned representations.
+\newblock In \emph{International conference on machine learning}, pp.\  7294--7305. PMLR, 2020.
+
+\bibitem[Orgad et~al.(2025)Orgad, Toker, Gekhman, Reichart, Szpektor, Kotek, and Belinkov]{orgad2025llms}
+Orgad, H., Toker, M., Gekhman, Z., Reichart, R., Szpektor, I., Kotek, H., and Belinkov, Y.
+\newblock Llms know more than they show: On the intrinsic representation of llm hallucinations.
+\newblock In \emph{ICLR}, 2025.
+
+\bibitem[Pan et~al.(2023)Pan, Chan, Zou, Li, Basart, Woodside, Zhang, Emmons, and Hendrycks]{pan2023rewards}
+Pan, A., Chan, J.~S., Zou, A., Li, N., Basart, S., Woodside, T., Zhang, H., Emmons, S., and Hendrycks, D.
+\newblock Do the rewards justify the means? measuring trade-offs between rewards and ethical behavior in the machiavelli benchmark.
+\newblock In \emph{International conference on machine learning}, pp.\  26837--26867. PMLR, 2023.
+
+\bibitem[Parrack et~al.(2025)Parrack, Attubato, and Heimersheim]{parrack2025benchmarking}
+Parrack, A., Attubato, C.~L., and Heimersheim, S.
+\newblock Benchmarking deception probes via black-to-white performance boosts.
+\newblock \emph{arXiv preprint arXiv:2507.12691}, 2025.
+
+\bibitem[Perez et~al.(2023)Perez, Ringer, Lukosiute, Nguyen, Chen, Heiner, Pettit, Olsson, Kundu, Kadavath, et~al.]{perez2023discovering}
+Perez, E., Ringer, S., Lukosiute, K., Nguyen, K., Chen, E., Heiner, S., Pettit, C., Olsson, C., Kundu, S., Kadavath, S., et~al.
+\newblock Discovering language model behaviors with model-written evaluations.
+\newblock In \emph{Findings of the association for computational linguistics: ACL 2023}, pp.\  13387--13434, 2023.
+
+\bibitem[Petroni et~al.(2019)Petroni, Rockt{\"a}schel, Riedel, Lewis, Bakhtin, Wu, and Miller]{petroni2019language}
+Petroni, F., Rockt{\"a}schel, T., Riedel, S., Lewis, P., Bakhtin, A., Wu, Y., and Miller, A.
+\newblock Language models as knowledge bases?
+\newblock In \emph{Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th international joint conference on natural language processing (EMNLP-IJCNLP)}, pp.\  2463--2473, 2019.
+
+\bibitem[Qwen et~al.(2025)Qwen, :, Yang, Yang, Zhang, Hui, Zheng, Yu, Li, Liu, Huang, Wei, Lin, Yang, Tu, Zhang, Yang, Yang, Zhou, Lin, Dang, Lu, Bao, Yang, Yu, Li, Xue, Zhang, Zhu, Men, Lin, Li, Tang, Xia, Ren, Ren, Fan, Su, Zhang, Wan, Liu, Cui, Zhang, and Qiu]{qwen25}
+Qwen, :, Yang, A., Yang, B., Zhang, B., Hui, B., Zheng, B., Yu, B., Li, C., Liu, D., Huang, F., Wei, H., Lin, H., Yang, J., Tu, J., Zhang, J., Yang, J., Yang, J., Zhou, J., Lin, J., Dang, K., Lu, K., Bao, K., Yang, K., Yu, L., Li, M., Xue, M., Zhang, P., Zhu, Q., Men, R., Lin, R., Li, T., Tang, T., Xia, T., Ren, X., Ren, X., Fan, Y., Su, Y., Zhang, Y., Wan, Y., Liu, Y., Cui, Z., Zhang, Z., and Qiu, Z.
+\newblock Qwen2.5 technical report, 2025.
+\newblock URL \url{https://arxiv.org/abs/2412.15115}.
+
+\bibitem[Ravfogel et~al.(2020)Ravfogel, Elazar, Gonen, Twiton, and Goldberg]{ravfogel2020null}
+Ravfogel, S., Elazar, Y., Gonen, H., Twiton, M., and Goldberg, Y.
+\newblock Null it out: Guarding protected attributes by iterative nullspace projection.
+\newblock In \emph{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics}, pp.\  7237--7256, 2020.
+
+\bibitem[Ravfogel et~al.(2025)Ravfogel, Yehudai, Linzen, Bruna, and Bietti]{ravfogelemergence}
+Ravfogel, S., Yehudai, G., Linzen, T., Bruna, J., and Bietti, A.
+\newblock Emergence of linear truth encodings in language models.
+\newblock In \emph{The Thirty-ninth Annual Conference on Neural Information Processing Systems}, 2025.
+
+\bibitem[Rimsky et~al.(2024)Rimsky, Gabrieli, Schulz, Tong, Hubinger, and Turner]{rimsky2024steering}
+Rimsky, N., Gabrieli, N., Schulz, J., Tong, M., Hubinger, E., and Turner, A.
+\newblock Steering llama 2 via contrastive activation addition.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp.\  15504--15522, 2024.
+
+\bibitem[Rogers et~al.(2020)Rogers, Kovaleva, and Rumshisky]{rogers2020primer}
+Rogers, A., Kovaleva, O., and Rumshisky, A.
+\newblock A primer in bertology: What we know about how bert works.
+\newblock \emph{Transactions of the association for computational linguistics}, 8:\penalty0 842--866, 2020.
+
+\bibitem[Scheurer et~al.(2023)Scheurer, Balesni, and Hobbhahn]{scheurer2024insider_trading}
+Scheurer, J., Balesni, M., and Hobbhahn, M.
+\newblock Large language models can strategically deceive their users when put under pressure.
+\newblock In \emph{ICLR 2024 Workshop on Large Language Model (LLM) Agents}, 2023.
+
+\bibitem[Sharma et~al.(2024)Sharma, Tong, Korbak, Duvenaud, Askell, Bowman, DURMUS, Hatfield-Dodds, Johnston, Kravec, et~al.]{sharma2024towards}
+Sharma, M., Tong, M., Korbak, T., Duvenaud, D., Askell, A., Bowman, S.~R., DURMUS, E., Hatfield-Dodds, Z., Johnston, S.~R., Kravec, S.~M., et~al.
+\newblock Towards understanding sycophancy in language models.
+\newblock In \emph{The Twelfth International Conference on Learning Representations}, 2024.
+
+\bibitem[Sky et~al.(2024)Sky, Van~Durme, Eisner, and Kedzie]{sky2024androids}
+Sky, C.-W., Van~Durme, B., Eisner, J., and Kedzie, C.
+\newblock Do androids know they’re only dreaming of electric sheep?
+\newblock In \emph{Findings of the Association for Computational Linguistics: ACL 2024}, pp.\  4401--4420, 2024.
+
+\bibitem[Turner et~al.(2023)Turner, Thiergart, Leech, Udell, Vazquez, Mini, and MacDiarmid]{turner2023steering}
+Turner, A.~M., Thiergart, L., Leech, G., Udell, D., Vazquez, J.~J., Mini, U., and MacDiarmid, M.
+\newblock Steering language models with activation engineering.
+\newblock \emph{arXiv preprint arXiv:2308.10248}, 2023.
+
+\bibitem[Turpin et~al.(2023)Turpin, Michael, Perez, and Bowman]{turpin2023language}
+Turpin, M., Michael, J., Perez, E., and Bowman, S.
+\newblock Language models don't always say what they think: Unfaithful explanations in chain-of-thought prompting.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36:\penalty0 74952--74965, 2023.
+
+\bibitem[Valeriani et~al.(2023)Valeriani, Doimo, Cuturello, Laio, Ansuini, and Cazzaniga]{valeriani2023geometry}
+Valeriani, L., Doimo, D., Cuturello, F., Laio, A., Ansuini, A., and Cazzaniga, A.
+\newblock The geometry of hidden representations of large transformer models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36:\penalty0 51234--51252, 2023.
+
+\bibitem[Wei et~al.(2023)Wei, Huang, Lu, Zhou, and Le]{wei2023simple}
+Wei, J., Huang, D., Lu, Y., Zhou, D., and Le, Q.~V.
+\newblock Simple synthetic data reduces sycophancy in large language models.
+\newblock \emph{arXiv preprint arXiv:2308.03958}, 2023.
+
+\bibitem[Wolf et~al.(2020)Wolf, Debut, Sanh, Chaumond, Delangue, Moi, Cistac, Rault, Louf, Funtowicz, et~al.]{wolf2020transformers}
+Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., et~al.
+\newblock Transformers: State-of-the-art natural language processing.
+\newblock In \emph{Proceedings of the 2020 conference on empirical methods in natural language processing: system demonstrations}, pp.\  38--45, 2020.
+
+\bibitem[You et~al.(2021)You, Liu, Wang, and Long]{you2021logme}
+You, K., Liu, Y., Wang, J., and Long, M.
+\newblock Logme: Practical assessment of pre-trained models for transfer learning.
+\newblock In \emph{International conference on machine learning}, pp.\  12133--12143. PMLR, 2021.
+
+\bibitem[Zou et~al.(2023)Zou, Phan, Chen, Campbell, Guo, Ren, Pan, Yin, Mazeika, Dombrowski, et~al.]{zou2023representation}
+Zou, A., Phan, L., Chen, S., Campbell, J., Guo, P., Ren, R., Pan, A., Yin, X., Mazeika, M., Dombrowski, A.-K., et~al.
+\newblock Representation engineering: A top-down approach to ai transparency.
+\newblock \emph{CoRR}, 2023.
+
+\end{thebibliography}
