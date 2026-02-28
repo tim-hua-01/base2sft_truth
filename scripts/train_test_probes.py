@@ -65,8 +65,8 @@ def parse_args():
     parser.add_argument(
         "--regularization",
         type=float,
-        required=True,
-        help="Regularization strength for logistic regression"
+        default=0.001,
+        help="Regularization strength (C for LogisticRegression). Default: 0.001"
     )
     parser.add_argument(
         "--train-feature-type",
