@@ -9,6 +9,8 @@ import argparse
 import h5py
 import torch
 from tqdm import tqdm
+from dotenv import load_dotenv
+load_dotenv()
 
 import sys
 from pathlib import Path

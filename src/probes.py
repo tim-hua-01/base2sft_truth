@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.metrics import accuracy_score
 from sklearn.decomposition import PCA
@@ -38,32 +38,26 @@ class BaseProbe(ABC):
 
 
 class LogisticRegressionProbe(BaseProbe):
-    """Logistic Regression probe with standard scaling."""
-    
+    """Logistic Regression probe using sklearn LogisticRegression (LBFGS solver)."""
+
     def __init__(self, reg):
         super().__init__()
-        
-        self.model = SGDClassifier(
-            loss='log_loss',  # For logistic regression
-            penalty='l2',     # L2 regularization similar to original code
-            alpha=reg,        # Note: alpha in SGD is equivalent to 1/C in LogisticRegression
-            max_iter=50000,
-            tol=1e-5, # default 1e-4
-            n_jobs=-1,
-            verbose=0,
-            random_state=42   # For reproducibility
+
+        # reg is used as C directly (inverse regularization strength)
+        # Default C=0.001 provides strong regularization, which improves
+        # OOD generalization in high-dimensional settings (~4096 features, ~1150 samples)
+        self.model = LogisticRegression(
+            C=reg,
+            max_iter=10000,
+            solver='lbfgs',
+            random_state=42,
         )
-    
+
     def fit(self, X, y):
         """Fit the logistic regression probe."""
         self.model.fit(X, y)
         self.is_fitted = True
 
-        # normalize the weights
-        norm = np.linalg.norm(self.model.coef_)
-        self.model.coef_ /= norm
-        self.model.intercept_ /= norm
-        
         return self
     
     def predict(self, X):

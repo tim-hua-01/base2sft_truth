@@ -7,6 +7,8 @@ import argparse
 import os
 import time
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
 
 import h5py
 import pandas as pd
