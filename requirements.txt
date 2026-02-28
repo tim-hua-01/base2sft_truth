@@ -9,7 +9,7 @@ h5py>=3.14.0
 tqdm>=4.67.0
 
 # Interpretability
-nnsight>=0.5.12
+nnsight==0.5.12
 concept_erasure>=0.2.4
 
 # Visualization

@@ -1,0 +1,21 @@
+[project]
+name = "base2sft-truth"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "concept-erasure>=0.2.4",
+    "h5py>=3.15.1",
+    "matplotlib>=3.10.8",
+    "nnsight==0.5.12",
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "torch>=2.10.0",
+    "tqdm>=4.67.3",
+    "transformers>=5.2.0",
+]
