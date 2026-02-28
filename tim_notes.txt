@@ -1,0 +1,5 @@
+Olmo 3 pure base: https://huggingface.co/allenai/Olmo-3-1025-7B/tree/stage1-step1413814
+
+Step one is to filter to questions that the base model knows how to answer. 
+
+Then 

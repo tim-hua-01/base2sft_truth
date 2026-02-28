@@ -2,6 +2,10 @@
 
 ## Changes from Original truth_spec Codebase
 
+### Filter MMLU questions based on base model 5-shot performance
+- Added `scripts/measure_base_confidence.py` to run 5-shot MMLU STEM evaluation on base models and record per-question P(correct)
+- Allows downstream filtering of questions where the base model is already confident (e.g. P(correct) > 0.75), so sycophancy experiments only use questions where the model is uncertain
+
 ### Switch from SGDClassifier to LogisticRegression (C=0.001)
 - **Original**: `SGDClassifier(loss='log_loss', penalty='l2', alpha=1e-4)` with post-hoc weight normalization (`coef_ /= norm`)
 - **New**: `LogisticRegression(C=0.001, solver='lbfgs', max_iter=10000)`
