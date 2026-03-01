@@ -1,5 +1,24 @@
 # Changelog
 
+## Sycophancy Dataset V2 Pipeline
+
+### Added `scripts/create_sycophancy_dataset_v2.py`
+- Clean rewrite of the sycophancy generation pipeline with two separated stages:
+  - `generate`: pre-filters questions by base + instruct model confidence, builds all prompts upfront, runs batched HuggingFace inference (no nnsight), saves raw JSON with full-vocab log_softmax and 4-letter softmax probs
+  - `pair`: loads raw JSON, validates flips using log-prob shift thresholds (not just argmax), picks one pair per question, saves wide CSV with diagnostic columns
+- Bio templates loaded from JSON with `{question_subject}` and `{answer_letter}` placeholders for flexible phrasing
+- Supports `--sample-n` for quick test runs and `--tasks` for subset selection
+- Pair output filenames include timestamp by default (`--output-name` to override)
+
+### Added `scripts/analyze_bio_sycophancy.py`
+- Ranks bio templates by sycophancy effectiveness
+- Computes per-bio shift: `(log P(hinted) - log P(correct))_bio - (log P(hinted) - log P(correct))_baseline`
+- Outputs ranked table with mean/median shift, flip rate, and sample counts
+
+### Added bio template files
+- `data/sycophancy_v2/bio_templates.json`: 36 templates across 9 categories (credential_authority, casual_baseline, self_asserted_competence, rhetorical_pressure, emotional_vulnerability, emotional_enthusiasm, social_proof, confidence_dominance, stakes_urgency)
+- `data/sycophancy_v2/bio_templates_llama_8b.json`: top 6 most effective templates for Llama-3.1-8B-Instruct (stakes_urgency, confidence_dominance, self_asserted_competence, credential_authority)
+
 ## Changes from Original truth_spec Codebase
 
 ### Filter MMLU questions based on base model 5-shot performance
