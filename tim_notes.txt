@@ -3,3 +3,9 @@ Olmo 3 pure base: https://huggingface.co/allenai/Olmo-3-1025-7B/tree/stage1-step
 Step one is to filter to questions that the base model knows how to answer. 
 
 Then 
+
+
+Use political syncophancy dataset alongside the uh MMLU one? What other things would the model plausibly recognize as "lying?"
+
+
+Filter MMLU to changes where the model log probs shifts at least by 0.5, starting with baseline where the model is 0.5-0.75 certain about the answer. Also change it so that you can create only one datapoint per question. 
