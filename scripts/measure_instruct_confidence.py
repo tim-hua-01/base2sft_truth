@@ -26,7 +26,7 @@ from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 
-from src.models import ALL_MODEL_PATHS
+from src.models import ALL_MODEL_PATHS, ALL_MODEL_REVISIONS
 
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -167,13 +167,16 @@ def main():
     if args.model not in ALL_MODEL_PATHS:
         raise ValueError(f"Model '{args.model}' not found in registry.")
     model_path = ALL_MODEL_PATHS[args.model]
+    revision = ALL_MODEL_REVISIONS.get(args.model, None)
+    if revision:
+        print(f"Using revision: {revision}")
 
     if gpu_ids is None:
         device_map = "auto" if any(x in args.model for x in ("32b", "24b", "70b", "72b")) else "cuda:0"
     else:
         device_map = "auto" if len(gpu_ids) > 1 else f"cuda:{gpu_ids[0]}"
 
-    tokenizer = AutoTokenizer.from_pretrained(model_path, cache_dir=args.cache_dir)
+    tokenizer = AutoTokenizer.from_pretrained(model_path, cache_dir=args.cache_dir, revision=revision)
     tokenizer.padding_side = 'left'
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.bos_token_id
@@ -183,6 +186,7 @@ def main():
         torch_dtype=torch.float16,
         device_map=device_map,
         cache_dir=args.cache_dir,
+        revision=revision,
     )
     model.eval()
 

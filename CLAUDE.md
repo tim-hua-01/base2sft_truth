@@ -1,0 +1,1 @@
+source /root/.venv/bin/activate before running python commands, since the root venv is going to be faster than the one here. 

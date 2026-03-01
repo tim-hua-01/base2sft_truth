@@ -10,6 +10,10 @@ from typing import Tuple, Optional, List
 # )
 from nnsight import LanguageModel
 
+ALL_MODEL_REVISIONS: dict[str, str] = {
+    'olmo3-7b-purebase': 'stage1-step1413814',
+}
+
 ALL_MODEL_PATHS = {
     # Gemma 2
     "gemma-9b": "google/gemma-2-9b-it",
@@ -35,6 +39,11 @@ ALL_MODEL_PATHS = {
     'qwen-14b-base': 'Qwen/Qwen2.5-14B',
     'qwen-7b': 'Qwen/Qwen2.5-7B-Instruct',
     'qwen-7b-base': 'Qwen/Qwen2.5-7B',
+
+    # OLMo
+    'olmo-7b': 'allenai/OLMo-2-1124-7B-Instruct',
+    'olmo3-7b': 'allenai/Olmo-3-7B-Instruct',
+    'olmo3-7b-purebase': 'allenai/Olmo-3-1025-7B',
 
     # Mistral
     'mistral-7b': 'mistralai/Mistral-7B-Instruct-v0.3',
