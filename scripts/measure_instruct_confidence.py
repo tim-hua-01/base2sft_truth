@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Measure base model confidence on MMLU STEM questions using 5-shot prompting.
+Measure instruct model confidence on MMLU STEM questions using chat-template prompting.
 
-Uses standard MMLU 5-shot text-completion format (no chat template) to extract
-P(A), P(B), P(C), P(D) from base models. Saves per-question probabilities
-for downstream filtering (e.g. keep questions where P(correct) > 0.75).
+Uses the same prefilled assistant turn ("I believe the best answer is (") as the
+sycophancy pipeline, so confidence scores are directly comparable. Supports 0-shot
+and few-shot evaluation.
 
 Usage:
-    python scripts/measure_base_confidence.py --model llama-8b-base
-    python scripts/measure_base_confidence.py --model llama-8b-base --tasks abstract_algebra anatomy
-    python scripts/measure_base_confidence.py --model llama-8b-base --cache-dir ./data/huggingface/
+    python scripts/measure_instruct_confidence.py --model llama-8b --n-shot 0
+    python scripts/measure_instruct_confidence.py --model llama-8b --n-shot 5
+    python scripts/measure_instruct_confidence.py --model llama-8b --n-shot 5 --tasks abstract_algebra anatomy
 """
 
 import sys
@@ -47,26 +47,48 @@ LETTERS = ['A', 'B', 'C', 'D']
 
 
 def format_subject(subject: str) -> str:
-    """Convert task name to readable subject (e.g. 'abstract_algebra' -> 'abstract algebra')."""
     return subject.replace('_', ' ')
 
 
-def build_fewshot_prompt(subject: str, dev_examples: list, test_question: dict) -> str:
-    """Build the standard 5-shot MMLU text-completion prompt."""
-    prompt = f"The following are multiple choice questions (with answers) about {format_subject(subject)}.\n\n"
+def build_chat_prompt(
+    tokenizer,
+    subject: str,
+    test_question: dict,
+    dev_examples: list | None = None,
+) -> str:
+    """Build a chat-template prompt with prefilled assistant turn.
 
-    # Add dev examples (up to 5)
-    for ex in dev_examples:
-        prompt += f"{ex['question']}\n"
-        for i, choice in enumerate(ex['choices']):
-            prompt += f"{LETTERS[i]}. {choice}\n"
-        prompt += f"Answer: {LETTERS[ex['answer']]}\n\n"
+    For n-shot > 0, few-shot examples are included in the user message.
+    The assistant response is prefilled with 'I believe the best answer is ('
+    to match the sycophancy pipeline format.
+    """
+    user_content = ""
 
-    # Add test question (no answer)
-    prompt += f"{test_question['question']}\n"
+    # Few-shot examples in the user message
+    if dev_examples:
+        user_content += (
+            f"The following are multiple choice questions (with answers) "
+            f"about {format_subject(subject)}.\n\n"
+        )
+        for ex in dev_examples:
+            user_content += f"Question: {ex['question']}\n\nChoices:\n"
+            for i, choice in enumerate(ex['choices']):
+                user_content += f"({LETTERS[i]}) {choice}\n"
+            user_content += f"Answer: ({LETTERS[ex['answer']]})\n\n"
+        user_content += "Now answer the following question.\n\n"
+
+    # Test question
+    user_content += f"Question: {test_question['question']}\n\nChoices:\n"
     for i, choice in enumerate(test_question['choices']):
-        prompt += f"{LETTERS[i]}. {choice}\n"
-    prompt += "Answer:"
+        user_content += f"({LETTERS[i]}) {choice}\n"
+    user_content += "\nPlease provide your answer."
+
+    # Apply chat template to user message only, then append prefilled assistant turn
+    user_only = [{'role': 'user', 'content': user_content}]
+    prompt = tokenizer.apply_chat_template(
+        user_only, tokenize=False, add_generation_prompt=True
+    )
+    prompt += "I believe the best answer is ("
 
     return prompt
 
@@ -78,10 +100,10 @@ def get_letter_token_ids(tokenizer) -> list[int]:
 
 def get_answer_probs_batch(model, tokenizer, prompts: list[str], letter_token_ids: list[int]) -> list[dict]:
     """Extract probabilities for A/B/C/D for a batch of prompts.
-    Uses left padding so position -1 is always the last real token for each sequence.
+    Uses left padding so position -1 is always the last real token.
     """
     inputs = tokenizer(
-        prompts, return_tensors="pt", add_special_tokens=True,
+        prompts, return_tensors="pt", add_special_tokens=False,
         padding=True, truncation=False,
     )
     device = next(model.parameters()).device
@@ -90,13 +112,15 @@ def get_answer_probs_batch(model, tokenizer, prompts: list[str], letter_token_id
     with torch.no_grad():
         outputs = model(**inputs, logits_to_keep=1)
 
-    last_logits = outputs.logits[:, -1, :]  # (batch, vocab) - only last token computed
+    last_logits = outputs.logits[:, -1, :]
 
-    answer_logits = last_logits[:, letter_token_ids]  # (batch, 4)
+    answer_logits = last_logits[:, letter_token_ids]
     probs = torch.nn.functional.softmax(answer_logits, dim=-1)
 
-    results = [{f'prob_{l}': float(probs[b, i].item()) for i, l in enumerate(LETTERS)}
-               for b in range(len(prompts))]
+    results = [
+        {f'prob_{l}': float(probs[b, i].item()) for i, l in enumerate(LETTERS)}
+        for b in range(len(prompts))
+    ]
 
     del outputs, last_logits, inputs
     torch.cuda.empty_cache()
@@ -106,16 +130,18 @@ def get_answer_probs_batch(model, tokenizer, prompts: list[str], letter_token_id
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Measure base model confidence on MMLU STEM questions.'
+        description='Measure instruct model confidence on MMLU STEM questions.'
     )
     parser.add_argument('--model', '-m', type=str, required=True,
-                        help='Model name from registry (e.g. llama-8b-base)')
+                        help='Model name from registry (e.g. llama-8b)')
+    parser.add_argument('--n-shot', type=int, default=0, choices=[0, 1, 2, 3, 4, 5],
+                        help='Number of few-shot examples (default: 0)')
     parser.add_argument('--tasks', '-t', type=str, nargs='+', default=None,
                         help='Subset of MMLU STEM tasks (default: all 25)')
     parser.add_argument('--cache-dir', '-c', type=str, default='./data/huggingface/',
                         help='HuggingFace cache directory')
     parser.add_argument('--output-dir', type=str, default=None,
-                        help='Output directory for CSV (default: ./data/sycophancy_v2/<model>/base_confidence/)')
+                        help='Output directory for CSV (default: ./data/sycophancy_v2/<model>/instruct_confidence/)')
     parser.add_argument('--gpus', type=str, default=None,
                         help='Comma-separated GPU IDs')
     parser.add_argument('--batch-size', '-b', type=int, default=64,
@@ -123,10 +149,9 @@ def main():
     args = parser.parse_args()
 
     if args.output_dir is None:
-        args.output_dir = f'./data/sycophancy_v2/{args.model}/base_confidence/'
+        args.output_dir = f'./data/sycophancy_v2/{args.model}/instruct_confidence/'
 
     tasks = args.tasks if args.tasks else STEM_TASKS
-    # Validate task names
     for t in tasks:
         if t not in STEM_TASKS:
             print(f"Warning: '{t}' not in STEM_TASKS list, proceeding anyway")
@@ -161,24 +186,25 @@ def main():
     )
     model.eval()
 
-    # Build all prompts and metadata upfront across all tasks
-    print("Loading datasets and building prompts...")
+    # Build all prompts
+    print(f"Loading datasets and building {args.n_shot}-shot prompts...")
     all_prompts = []
-    all_metadata = []  # (task_name, per_task_idx, question)
+    all_metadata = []
 
     for task_name in tasks:
         ds = load_dataset("cais/mmlu", task_name)
         dev_split = list(ds['dev'])
         test_split = list(ds['test'])
-        fewshot_examples = dev_split[:5]
+        fewshot_examples = dev_split[:args.n_shot] if args.n_shot > 0 else None
         print(f"  {task_name}: {len(test_split)} questions")
         for idx, question in enumerate(test_split):
-            all_prompts.append(build_fewshot_prompt(task_name, fewshot_examples, question))
+            prompt = build_chat_prompt(tokenizer, task_name, question, fewshot_examples)
+            all_prompts.append(prompt)
             all_metadata.append((task_name, idx, question))
 
     print(f"\nTotal questions: {len(all_prompts)}")
 
-    # Run inference in batches across all tasks
+    # Run batched inference
     bs = args.batch_size
     letter_token_ids = get_letter_token_ids(tokenizer)
     all_rows = []
@@ -195,6 +221,7 @@ def main():
                 'id': f"{task_name}_{idx}",
                 'subject': task_name,
                 'model_name': args.model,
+                'n_shot': args.n_shot,
                 'correct_answer': correct_letter,
                 'model_answer': model_letter,
                 'correct_prob': probs[f'prob_{correct_letter}'],
@@ -206,13 +233,14 @@ def main():
 
     # Save CSV
     os.makedirs(args.output_dir, exist_ok=True)
-    output_path = os.path.join(args.output_dir, f"{args.model}_5shot.csv")
+    output_path = os.path.join(args.output_dir, f"{args.model}_{args.n_shot}shot.csv")
     df = pd.DataFrame(all_rows)
     df.to_csv(output_path, index=False)
 
     # Print summary
     print(f"\n{'='*60}")
     print(f"Saved {len(df)} rows to {output_path}")
+    print(f"Model: {args.model} | {args.n_shot}-shot")
     accuracy = (df['model_answer'] == df['correct_answer']).mean()
     print(f"Overall accuracy: {accuracy:.3f}")
     print(f"Mean P(correct): {df['correct_prob'].mean():.3f}")

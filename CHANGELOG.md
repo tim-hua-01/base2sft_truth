@@ -5,6 +5,14 @@
 ### Filter MMLU questions based on base model 5-shot performance
 - Added `scripts/measure_base_confidence.py` to run 5-shot MMLU STEM evaluation on base models and record per-question P(correct)
 - Allows downstream filtering of questions where the base model is already confident (e.g. P(correct) > 0.75), so sycophancy experiments only use questions where the model is uncertain
+- Output dir defaults to `./data/sycophancy_v2/<model>/base_confidence/` (model-namespaced)
+
+### Measure instruct model confidence with chat-template prompting
+- Added `scripts/measure_instruct_confidence.py` to evaluate instruct models on MMLU STEM using the same prefilled assistant turn (`"I believe the best answer is ("`) as the sycophancy pipeline
+- Supports 0-shot and few-shot (1–5) evaluation via `--n-shot`; few-shot examples are injected into the user message
+- Saves per-question P(correct) and P(A/B/C/D) to `./data/sycophancy_v2/<model>/instruct_confidence/<model>_<n>shot.csv`
+- Confidence scores are directly comparable to base model scores since both extract next-token softmax probabilities over {A, B, C, D}
+- Output dir defaults to `./data/sycophancy_v2/<model>/instruct_confidence/` (model-namespaced)
 
 ### Switch from SGDClassifier to LogisticRegression (C=0.001)
 - **Original**: `SGDClassifier(loss='log_loss', penalty='l2', alpha=1e-4)` with post-hoc weight normalization (`coef_ /= norm`)
