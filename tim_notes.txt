@@ -7,3 +7,4 @@ Use political syncophancy dataset alongside the uh MMLU one? What other things w
 Filter MMLU to changes where the model log probs shifts at least by 0.5, starting with baseline where the model is 0.5-0.75 certain about the answer. Also change it so that you can create only one datapoint per question. 
 
 Maybe test more on like, more on-policy responses? This would be quite complicated actually. 
+- Could just vary the prompt template and check that this doesn't change the results?
