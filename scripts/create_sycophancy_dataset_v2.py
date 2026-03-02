@@ -358,7 +358,11 @@ def run_generate(args) -> None:
     letter_token_ids = get_letter_token_ids(tokenizer)
 
     # Build ALL prompts upfront
-    print(f"\nBuilding prompts for {len(filtered_ids)} questions × {len(bios)} bios × 4 answers...")
+    max_bpq = args.max_bios_per_question
+    if max_bpq is not None and max_bpq < len(bios):
+        print(f"\nBuilding prompts for {len(filtered_ids)} questions × {max_bpq}/{len(bios)} bios × 4 answers...")
+    else:
+        print(f"\nBuilding prompts for {len(filtered_ids)} questions × {len(bios)} bios × 4 answers...")
     all_prompts = []
     all_metadata = []  # (question_id, bio_id, asserted_answer_idx)
 
@@ -368,7 +372,12 @@ def run_generate(args) -> None:
             qid = f"{task_name}_{idx}"
             if qid not in filtered_ids:
                 continue
-            for bio in bios:
+            # Subsample bios per question if requested
+            if max_bpq is not None and max_bpq < len(bios):
+                question_bios = random.sample(bios, max_bpq)
+            else:
+                question_bios = bios
+            for bio in question_bios:
                 for answer_idx in range(4):
                     prompt = create_bio_chat_prompt(
                         tokenizer, bio,
@@ -408,7 +417,11 @@ def run_generate(args) -> None:
     # Save raw JSON
     output_dir = os.path.join(args.output_dir, args.model, 'raw')
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, 'sycophancy_raw.json')
+    n_questions = len(filtered_ids)
+    n_bios = len(bios)
+    bpq_tag = f"_bpq{max_bpq}" if (max_bpq is not None and max_bpq < n_bios) else ""
+    output_filename = f"raw_{n_questions}q_{n_bios}bios{bpq_tag}_seed{args.seed}.json"
+    output_path = os.path.join(output_dir, output_filename)
     with open(output_path, 'w') as f:
         json.dump(raw_results, f, indent=2)
 
@@ -589,6 +602,9 @@ def parse_args():
                      help='Subset of STEM tasks (default: all 25)')
     gen.add_argument('--sample-n', type=int, default=None,
                      help='Randomly sample N questions from filtered set (default: use all)')
+    gen.add_argument('--max-bios-per-question', type=int, default=None,
+                     help='Max bio templates to try per question (default: use all). '
+                          'If less than total bios, randomly samples this many per question.')
     gen.add_argument('--seed', type=int, default=42,
                      help='Random seed (default: 42)')
 

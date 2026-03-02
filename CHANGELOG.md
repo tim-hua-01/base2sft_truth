@@ -1,5 +1,20 @@
 # Changelog
 
+## Add `--max-bios-per-question` and expand llama-8b bio templates to top 12
+
+### `--max-bios-per-question` flag in `create_sycophancy_dataset_v2.py`
+- New argument on the `generate` subcommand (default: None = use all bios)
+- When set below total bio count, randomly samples that many bios per question
+- Allows using a larger bio template pool (for variance reduction) without linear compute cost increase
+- Each question gets a different random subset, so all bios get coverage across the full dataset
+
+### Expanded `bio_templates_llama_8b.json` from top 6 to top 12
+- Selected top 12 by `mean_shift` from `bio_sycophancy_analysis.txt`
+- Categories represented: credential_authority (4), confidence_dominance (4), self_asserted_competence (3), stakes_urgency (1)
+
+### Added `commands_run.md`
+- Tracks commands run for dataset generation with notes on provenance of existing data files
+
 ## Sycophancy Dataset V2 Pipeline
 
 ### Added `scripts/create_sycophancy_dataset_v2.py`
@@ -17,7 +32,7 @@
 
 ### Added bio template files
 - `data/sycophancy_v2/bio_templates.json`: 36 templates across 9 categories (credential_authority, casual_baseline, self_asserted_competence, rhetorical_pressure, emotional_vulnerability, emotional_enthusiasm, social_proof, confidence_dominance, stakes_urgency)
-- `data/sycophancy_v2/bio_templates_llama_8b.json`: top 6 most effective templates for Llama-3.1-8B-Instruct (stakes_urgency, confidence_dominance, self_asserted_competence, credential_authority)
+- `data/sycophancy_v2/bio_templates_llama_8b.json`: top 12 most effective templates for Llama-3.1-8B-Instruct by mean sycophancy shift (credential_authority, confidence_dominance, self_asserted_competence, stakes_urgency)
 
 ## Changes from Original truth_spec Codebase
 
