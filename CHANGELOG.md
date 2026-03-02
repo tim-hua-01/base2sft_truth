@@ -1,5 +1,12 @@
 # Changelog
 
+## Add `--max-pairs-per-question` to pair stage
+
+- New `--max-pairs-per-question N` argument on the `pair` subcommand (default: None = keep all valid pairs)
+- Previously the pairer picked exactly one random (bio, wrong_answer) combo per question; now it samples up to N
+- Multiple pairs from the same question get the same `group_id` in the probing pipeline, so GroupKFold keeps them in one fold (no leakage)
+- Funnel summary now shows pairs-per-question ratio
+
 ## Add `--max-bios-per-question` and expand llama-8b bio templates to top 12
 
 ### `--max-bios-per-question` flag in `create_sycophancy_dataset_v2.py`

@@ -528,13 +528,17 @@ def run_pair(args) -> None:
 
         if valid_combos:
             questions_with_valid_flip += 1
-            # Pick one randomly
-            bio_id, wrong_answer, honest_rec, syco_rec = random.choice(valid_combos)
-            row = build_pair_row(
-                qid, subject, correct_answer, bio_id, wrong_answer,
-                honest_rec, syco_rec,
-            )
-            pair_rows.append(row)
+            # Pick up to max_pairs_per_question randomly
+            n_pick = len(valid_combos)
+            if args.max_pairs_per_question is not None:
+                n_pick = min(n_pick, args.max_pairs_per_question)
+            chosen = random.sample(valid_combos, n_pick)
+            for bio_id, wrong_answer, honest_rec, syco_rec in chosen:
+                row = build_pair_row(
+                    qid, subject, correct_answer, bio_id, wrong_answer,
+                    honest_rec, syco_rec,
+                )
+                pair_rows.append(row)
 
     # Save CSV
     output_dir = os.path.join(args.output_dir, args.model, 'pairs')
@@ -549,13 +553,16 @@ def run_pair(args) -> None:
     df.to_csv(output_path, index=False)
 
     # Print funnel summary
+    pairs_per_q = len(pair_rows) / questions_with_valid_flip if questions_with_valid_flip else 0
     print(f"\n{'='*60}")
     print(f"FUNNEL SUMMARY")
     print(f"{'='*60}")
     print(f"  Total questions in raw data:      {total_questions}")
     print(f"  Questions with argmax flip:        {questions_with_argmax_flip}")
     print(f"  Questions with valid flip:         {questions_with_valid_flip}")
-    print(f"  Pairs saved:                       {len(pair_rows)}")
+    print(f"  Pairs saved:                       {len(pair_rows)} ({pairs_per_q:.1f} per question)")
+    if args.max_pairs_per_question is not None:
+        print(f"  Max pairs per question:            {args.max_pairs_per_question}")
     print(f"{'='*60}")
     print(f"Saved to {output_path}")
 
@@ -626,6 +633,9 @@ def parse_args():
                       help='Base output directory')
     pair.add_argument('--output-name', type=str, default=None,
                       help='Output CSV filename (default: sycophancy_pairs_YY-MM-DD_HH:MM:SS.csv)')
+    pair.add_argument('--max-pairs-per-question', type=int, default=None,
+                      help='Max pairs to keep per question (default: all valid pairs). '
+                           'If fewer valid pairs exist, keeps all of them.')
     pair.add_argument('--seed', type=int, default=42,
                       help='Random seed (default: 42)')
 

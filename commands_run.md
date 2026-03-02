@@ -37,3 +37,21 @@ uv run python scripts/create_sycophancy_dataset_v2.py pair \
 # Mean logprob_shift_correct: -1.445, logprob_shift_syco_ans: +5.208
 # 24 STEM subjects represented
 ```
+
+### Re-pair with max 2 pairs per question (2026-03-02)
+
+```bash
+uv run python scripts/create_sycophancy_dataset_v2.py pair \
+    --model llama-8b \
+    --instruct-confidence-csv data/sycophancy_v2/llama-8b/instruct_confidence/llama-8b_0shot.csv \
+    --raw-path data/sycophancy_v2/llama-8b/raw/raw_1350q_12bios_bpq6_seed123172.json \
+    --output-dir data/sycophancy_v2 \
+    --max-pairs-per-question 2 \
+    --seed 123172
+
+# Output: data/sycophancy_v2/llama-8b/pairs/sycophancy_pairs_26-03-02_22:30:03.csv
+# 834 pairs from 470 questions (1.8 per question avg — some questions had only 1 valid combo)
+# Mean P(correct) honest: 0.956, syco: 0.276
+# Mean logprob_shift_correct: -1.555, logprob_shift_syco_ans: +5.176
+# 24 STEM subjects represented
+```
