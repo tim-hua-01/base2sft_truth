@@ -53,7 +53,9 @@ MODEL_LAYER_CONFIGS = {
     '3b': {'num_layers': 28}, # Llama 3B
     '8b': {'num_layers': 32}, # Llama 8B
     '70b': {'num_layers': 81}, # Llama 70B
-    '7b': {'num_layers': 28}, # Qwen 7B
+    'olmo3-7b': {'num_layers': 32}, # OLMo 3 7B (must be before '7b')
+    'olmo-7b': {'num_layers': 32},  # OLMo 2 7B
+    '7b': {'num_layers': 28}, # Qwen 7B (fallback)
     '14b': {'num_layers': 48}, # Qwen 14B
 }
 
