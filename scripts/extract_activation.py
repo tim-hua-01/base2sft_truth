@@ -85,11 +85,7 @@ def parse_layers(layer_arg, num_layers, model_name):
         return sorted(set(layers))
 
 
-def extract_activations(file_name, task, layer_idx_list, dataset, model, tokenizer):
-    if 'sycophancy' in task:
-        batch_size = 1
-    else:
-        batch_size = 16
+def extract_activations(file_name, task, layer_idx_list, dataset, model, tokenizer, batch_size=16):
         
     with h5py.File(file_name, 'a') as f:
         print(f"extracting feats for {task}, for layers {layer_idx_list}...")
@@ -286,8 +282,9 @@ Examples:
                                                cut_at_layer=cut_at_layer, gpu_ids=gpu_ids)
 
     # Extract activations for each task
+    bs = args.batch_size if args.batch_size is not None else 16
     for task, dataset in all_datasets.items():
-        extract_activations(file_name, task, layer_idx_list, dataset, model, tokenizer)
+        extract_activations(file_name, task, layer_idx_list, dataset, model, tokenizer, batch_size=bs)
         torch.cuda.empty_cache()
 
     print("Done!")
