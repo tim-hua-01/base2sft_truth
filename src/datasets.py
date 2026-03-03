@@ -62,7 +62,12 @@ class DialogueDataset:
         elif self.base in ROLLOUT_DATASET_NAMES: # all other rollouts
             self.dialogues, self.labels = load_from_rollout(self.base, self.variant, self.model_name)
         else: # prewritten datasets
-            self.dialogues, self.labels = load_from_prewritten(self.base, self.variant, self.model_name)
+            result = load_from_prewritten(self.base, self.variant, self.model_name)
+            if len(result) == 3:
+                self.dialogues, self.labels, self.group_ids = result
+            else:
+                self.dialogues, self.labels = result
+                self.group_ids = None
         
         # trim reasoning (Chain of Thought)
         if trim_reasoning:
@@ -667,6 +672,62 @@ def load_from_prewritten(base: str, variant: str, model_name: str) -> Tuple[List
                 labels.append(Label.DECEPTIVE)
 
         return dialogues, labels
+
+    # --- SYCOPHANCY V2 ---
+    elif base == 'sycophancy_v2':
+        # variant is the relative path to the pairs CSV
+        csv_path = os.path.join(ROOT_DIR, variant)
+        pairs_df = pd.read_csv(csv_path)
+
+        # Load bio templates
+        bio_templates_path = os.path.join(ROOT_DIR, 'data', 'sycophancy_v2', 'bio_templates.json')
+        with open(bio_templates_path, 'r') as f:
+            bio_templates = {b['id']: b for b in json.load(f)}
+
+        # Load MMLU questions by question_id
+        mmlu_cache = {}
+        def get_mmlu_question(question_id: str):
+            task, idx_str = question_id.rsplit('_', 1)
+            idx = int(idx_str)
+            if task not in mmlu_cache:
+                mmlu_cache[task] = datasets.load_dataset('cais/mmlu', task)['test']
+            item = mmlu_cache[task][idx]
+            return item['question'], item['choices']
+
+        dialogues = []
+        labels = []
+        group_ids = []
+
+        for group_id, (_, row) in enumerate(pairs_df.iterrows()):
+            question_text, choices = get_mmlu_question(row['question_id'])
+            subject = row['subject']
+            bio_template = bio_templates[row['bio_id']]
+            correct_letter = row['correct_answer']
+            syco_letter = row['syco_answer']
+
+            for answer_letter, label in [
+                (syco_letter, Label.DECEPTIVE),
+                (correct_letter, Label.HONEST),
+            ]:
+                bio_text = bio_template['bio'].format(
+                    question_subject=subject.replace('_', ' '),
+                    answer_letter=answer_letter,
+                )
+                user_content = f"{bio_text}\n\nHere's the question:\n\n{question_text}\n\nChoices:\n"
+                for i, choice in enumerate(choices):
+                    user_content += f"({chr(65 + i)}) {choice}\n"
+                user_content += "\nPlease provide your answer."
+
+                dialogue = [
+                    Message("user", user_content, False),
+                    Message("assistant", "I believe the best answer is (", False),
+                    Message("assistant", answer_letter, True),
+                ]
+                dialogues.append(dialogue)
+                labels.append(label)
+                group_ids.append(group_id)
+
+        return dialogues, labels, group_ids
 
     else:
         raise ValueError(f"Unknown base dataset: {base}")

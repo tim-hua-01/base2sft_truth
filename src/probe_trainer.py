@@ -8,7 +8,7 @@ import torch
 import time
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import SGDClassifier
-from sklearn.model_selection import KFold
+from sklearn.model_selection import KFold, GroupKFold
 
 from src import utils, probes
 from src.utils import PreparedData
@@ -113,7 +113,7 @@ class ProbeTrainer:
             print(f"Datasets: {list(data.dataset_names.values())}")
         
         # Prepare cross-validation splits
-        fold_splits = self._get_cv_splits(data.X, data.y)
+        fold_splits = self._get_cv_splits(data.X, data.y, group_ids=data.group_ids)
         
         # Get control features for this layer
         layer_control_feats = (
@@ -176,8 +176,11 @@ class ProbeTrainer:
         
         return cv_models
     
-    def _get_cv_splits(self, X, y):
-        """Get cross-validation splits."""
+    def _get_cv_splits(self, X, y, group_ids=None):
+        """Get cross-validation splits. Uses GroupKFold when group_ids are provided."""
+        if group_ids is not None:
+            gkf = GroupKFold(n_splits=self.n_folds)
+            return list(gkf.split(X, y, groups=group_ids))
         kf = KFold(n_splits=self.n_folds, shuffle=True, random_state=DEFAULT_RANDOM_STATE)
         return list(kf.split(X))
     

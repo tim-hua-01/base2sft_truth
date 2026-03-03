@@ -198,6 +198,7 @@ class PreparedData:
     y: np.ndarray
     dataset_ids: np.ndarray  # Integer ID for each sample
     dataset_names: dict[int, str]  # Mapping from ID to task name
+    group_ids: Optional[np.ndarray] = None  # For GroupKFold (e.g. sycophancy_v2 question groups)
     
     def __len__(self):
         return len(self.y)
@@ -222,11 +223,12 @@ def prepare_sample_data(
     numerical_labels: np.ndarray,
     feature_type: str,
     balanced: bool = False,
-    dataset_id: int = 0
-) -> tuple[Optional[np.ndarray], Optional[np.ndarray], Optional[np.ndarray]]:
+    dataset_id: int = 0,
+    group_ids: Optional[np.ndarray] = None,
+) -> tuple[Optional[np.ndarray], Optional[np.ndarray], Optional[np.ndarray], Optional[np.ndarray]]:
     """
     Prepare data for training by grouping features by sample.
-    
+
     Args:
         task_name: Name of the task
         feats: Feature vectors
@@ -235,9 +237,10 @@ def prepare_sample_data(
         feature_type: Type of feature aggregation ('average', 'all', or 'last')
         balanced: Whether to balance positive and negative samples
         dataset_id: Integer ID to assign to samples from this dataset
-        
+        group_ids: Optional per-sample group IDs for GroupKFold
+
     Returns:
-        tuple: (X, y, dataset_ids) or (None, None, None) if no valid samples
+        tuple: (X, y, dataset_ids, group_ids) or (None, None, None, None) if no valid samples
     """
     assert feature_type in ['average', 'all', 'last']
     print(f"Preparing sample data for {task_name} (feature type={feature_type}, balanced={balanced})")
@@ -258,39 +261,51 @@ def prepare_sample_data(
     
     X_list = []
     y_list = []
-    
+    g_list = []
+
     for sample_idx, token_indices in sample_to_tokens.items():
         label = numerical_labels[sample_idx]
         if label not in [0, 1] or not token_indices:
             continue
-        
+
+        gid = group_ids[sample_idx] if group_ids is not None else None
+
         if feature_type == 'average':
             X_list.append(torch.mean(feats[token_indices], dim=0))
             y_list.append(label)
+            if gid is not None:
+                g_list.append(gid)
         elif feature_type == 'last':
             X_list.append(feats[token_indices[-1]])
             y_list.append(label)
+            if gid is not None:
+                g_list.append(gid)
         else:  # 'all'
             for token_idx in token_indices:
                 X_list.append(feats[token_idx])
                 y_list.append(label)
-    
+                if gid is not None:
+                    g_list.append(gid)
+
     if not X_list:
         print(f"  No valid samples found for {task_name}")
-        return None, None, None
-    
+        return None, None, None, None
+
     X = torch.stack(X_list, dim=0).numpy()
     y = np.array(y_list)
     dataset_ids = np.full(len(y), dataset_id, dtype=np.int32)
-    
+    out_group_ids = np.array(g_list) if g_list else None
+
     if X.ndim == 1:
         X = X[np.newaxis, :]
 
     if balanced:
         X, y, dataset_ids = _balance_samples(X, y, dataset_ids)
-    
+        # Note: balancing drops group_ids tracking (not used with grouped datasets)
+        out_group_ids = None
+
     print(f"  Prepared {len(y)} samples")
-    return X, y, dataset_ids
+    return X, y, dataset_ids, out_group_ids
 
 
 def _balance_samples(
@@ -359,22 +374,26 @@ def prepare_data(
     # Individual task handling
     if task_name not in COMBINED_TASKS_CONFIG:
         feats = get_feats_for_task(task_name, layer_name, extracted_feats)
-        numerical_labels = all_datasets[task_name].labels
-        detection_mask = get_detection_mask(all_datasets[task_name], tokenizer)
-        
-        X, y, dataset_ids = prepare_sample_data(
+        ds = all_datasets[task_name]
+        numerical_labels = ds.labels
+        detection_mask = get_detection_mask(ds, tokenizer)
+        ds_group_ids = getattr(ds, 'group_ids', None)
+
+        X, y, dataset_ids, out_group_ids = prepare_sample_data(
             task_name, feats, detection_mask, numerical_labels,
-            feature_type=feature_type, balanced=False, dataset_id=0
+            feature_type=feature_type, balanced=False, dataset_id=0,
+            group_ids=ds_group_ids,
         )
-        
+
         if X is None:
             return None, None
-        
+
         return PreparedData(
             X=X,
             y=y,
             dataset_ids=dataset_ids,
-            dataset_names={0: task_name}
+            dataset_names={0: task_name},
+            group_ids=out_group_ids,
         )
     
     # Combined dataset handling
@@ -389,11 +408,11 @@ def prepare_data(
         numerical_labels = all_datasets[task].labels
         detection_mask = get_detection_mask(all_datasets[task], tokenizer)
         
-        X, y, dataset_ids = prepare_sample_data(
+        X, y, dataset_ids, _ = prepare_sample_data(
             task, feats, detection_mask, numerical_labels,
             feature_type=feature_type, balanced=False, dataset_id=task_id
         )
-        
+
         if X is not None:
             dataset_data[task_id] = {
                 'X': X,
