@@ -370,7 +370,7 @@ def main():
     print("Loading tokenizer...")
     _, tokenizer = get_model_and_tokenizer(
         MODEL_NAME,
-        models_directory="../deception-detection/data/huggingface/",
+        models_directory="./data/huggingface/",
         omit_model=True,
     )
 

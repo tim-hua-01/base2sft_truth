@@ -55,3 +55,111 @@ uv run python scripts/create_sycophancy_dataset_v2.py pair \
 # Mean logprob_shift_correct: -1.555, logprob_shift_syco_ans: +5.176
 # 24 STEM subjects represented
 ```
+
+## Activation Extraction Commands
+
+### GOT + FLEED: llama-8b, layers 10-20 (2026-03-03)
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model llama-8b \
+    --layers 10-20 \
+    --tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+            claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best \
+    --output ./results/activations_got_plus_fleed_llama-8b_layers10-20.h5
+
+# Output: results/activations_got_plus_fleed_llama-8b_layers10-20.h5
+# 5 tasks, 11 layers (10-20), batch_size=16
+# got__best: 6952 masked tokens
+# ~7.5 batch/s per task on L40S (46GB)
+```
+
+### Sycophancy V2: llama-8b, layers 10-20 (2026-03-03)
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model llama-8b \
+    --layers 10-20 \
+    --tasks "sycophancy_v2__data/sycophancy_v2/llama-8b/pairs/sycophancy_pairs_26-03-02_22:30:03.csv" \
+    --output ./results/activations_sycophancy_v2_llama-8b_layers10-20.h5
+
+# Output: results/activations_sycophancy_v2_llama-8b_layers10-20.h5
+# 1668 dialogues (834 pairs), 11 layers (10-20), batch_size=16
+# ~3.0s/batch on L40S (46GB), ~5.3 min total extraction
+```
+
+### GOT + FLEED: llama-8b-base, layers 10-20 (2026-03-03)
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model llama-8b-base \
+    --layers 10-20 \
+    --tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+            claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best \
+    --output ./results/activations_got_plus_fleed_llama-8b-base_layers10-20.h5
+
+# Output: results/activations_got_plus_fleed_llama-8b-base_layers10-20.h5
+```
+
+### Sycophancy V2: llama-8b-base (off-policy), layers 10-20 (2026-03-03)
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model llama-8b-base \
+    --layers 10-20 \
+    --tasks "sycophancy_v2__data/sycophancy_v2/llama-8b/pairs/sycophancy_pairs_26-03-02_22:30:03.csv" \
+    --output ./results/activations_sycophancy_v2_llama-8b-base_layers10-20.h5
+
+# Output: results/activations_sycophancy_v2_llama-8b-base_layers10-20.h5
+# Off-policy: uses instruct-generated sycophancy pairs with base model activations
+# 1668 dialogues (834 pairs), 11 layers (10-20), batch_size=16
+```
+
+Note: sycophancy_v2 activations were merged into the got_plus_fleed HDF5 files for both models using h5py copy.
+
+## Probe Training & Transfer Commands
+
+### Transfer matrix: llama-8b instruct, layer 15 (2026-03-03)
+
+```bash
+SYCO_TASK="sycophancy_v2__data/sycophancy_v2/llama-8b/pairs/sycophancy_pairs_26-03-02_22:30:03.csv"
+
+uv run python scripts/train_test_probes.py \
+    --model-name llama-8b \
+    --features-file ./results/activations_got_plus_fleed_llama-8b_layers10-20.h5 \
+    --layer-idx 15 \
+    --probe-type lr --regularization 0.001 \
+    --train-feature-type last --test-feature-type last \
+    --use-scaler true --balance-groups false \
+    --train-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_TASK" \
+    --test-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_TASK" \
+    --results-csv ./results/transfer_llama-8b_layer15.csv \
+    --force-retrain --verbose
+
+# Output: results/transfer_llama-8b_layer15.csv
+# 6×6 transfer matrix (AUROC, max_acc, etc.)
+# Probes: results/probes/llama-8b/{task}_last/
+```
+
+### Transfer matrix: llama-8b-base, layer 15 (2026-03-03)
+
+```bash
+uv run python scripts/train_test_probes.py \
+    --model-name llama-8b-base \
+    --features-file ./results/activations_got_plus_fleed_llama-8b-base_layers10-20.h5 \
+    --layer-idx 15 \
+    --probe-type lr --regularization 0.001 \
+    --train-feature-type last --test-feature-type last \
+    --use-scaler true --balance-groups false \
+    --train-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_TASK" \
+    --test-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_TASK" \
+    --results-csv ./results/transfer_llama-8b-base_layer15.csv \
+    --force-retrain --verbose
+
+# Output: results/transfer_llama-8b-base_layer15.csv
+# Off-policy sycophancy: instruct-generated pairs, base model activations
+```

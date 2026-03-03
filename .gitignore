@@ -1,6 +1,7 @@
 .DS_Store
 data/huggingface/*
 results/*
+!results/*.csv
 .env
 .ipynb_checkpoints/*
 # Byte-compiled / optimized / DLL files

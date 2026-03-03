@@ -387,7 +387,7 @@ def main():
     # Get tokenizer
     _, tokenizer = get_model_and_tokenizer(
         args.model_name,
-        models_directory='../deception-detection/data/huggingface',
+        models_directory='./data/huggingface',
         omit_model=True,
     )
     
