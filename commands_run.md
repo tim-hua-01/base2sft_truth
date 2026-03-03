@@ -372,3 +372,104 @@ uv run python scripts/train_test_probes.py \
 - `plots/transfer_auroc_olmo3-7b_layer18.png` — instruct individual heatmap
 - `plots/transfer_auroc_olmo3-7b-purebase_layer18.png` — base individual heatmap
 - `plots/layer_sweep_fleed_olmo3-7b.png` — FLEED AUROC by layer
+
+---
+
+## On-Policy Sycophancy (OLMo 3 7B) (2026-03-03)
+
+### Notes
+
+- **On-policy sycophancy**: pairs that flip BOTH the instruct model AND the base model (vs off-policy = instruct-only flips used with base model activations)
+- Created `scripts/validate_sycophancy_on_base.py` with two subcommands: `run` (GPU inference) and `pair` (CPU-only re-pairing)
+- Added `--prob-threshold` to both `create_sycophancy_dataset_v2.py` and `validate_sycophancy_on_base.py` for optional P(correct) > threshold checks
+- Base model is far more sycophantic: 14,672 base-only flips vs 40 instruct-only, 97.7% of instruct flips also flip the base
+
+### Generate base model raw data + pair (2026-03-03)
+
+```bash
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/validate_sycophancy_on_base.py run \
+    --model olmo3-7b \
+    --instruct-raw-path data/sycophancy_v2/olmo3-7b/raw/raw_1002q_12bios_bpq6_seed123172.json \
+    --instruct-confidence-csv data/sycophancy_v2/olmo3-7b/instruct_confidence/olmo3-7b_0shot.csv \
+    --bio-templates data/sycophancy_v2/bio_templates_olmo3_7b.json \
+    --output-dir data/sycophancy_v2 \
+    --batch-size 32 \
+    --max-pairs-per-question 2 \
+    --prob-threshold 0.5 \
+    --seed 123172
+
+# Output:
+#   data/sycophancy_v2/olmo3-7b-purebase/raw/base_revalidation_26-03-03_05:17:22.json (24048 records)
+#   data/sycophancy_v2/olmo3-7b-purebase/pairs/sycophancy_pairs_onpolicy_26-03-03_05:25:36.csv
+# 695 on-policy pairs from 414 questions (with --prob-threshold 0.5)
+# (731 pairs without prob_threshold, filtering removed 36 pairs = 4.9%)
+# Runtime: ~8.5 min on L40S (46GB), batch_size=32 (64 OOM'd)
+```
+
+### Activation extraction: on-policy sycophancy, layer 18 only (2026-03-03)
+
+```bash
+ONPOLICY_CSV="data/sycophancy_v2/olmo3-7b-purebase/pairs/sycophancy_pairs_onpolicy_26-03-03_05:25:36.csv"
+
+# Instruct model
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model olmo3-7b --layers 18-18 \
+    --tasks "sycophancy_v2__${ONPOLICY_CSV}" \
+    --output ./results/activations_sycophancy_v2_onpolicy_olmo3-7b_layer18.h5
+
+# Base model
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True uv run python scripts/extract_activation.py \
+    --model olmo3-7b-purebase --layers 18-18 \
+    --tasks "sycophancy_v2__${ONPOLICY_CSV}" \
+    --output ./results/activations_sycophancy_v2_onpolicy_olmo3-7b-purebase_layer18.h5
+
+# Output: 1390 dialogues (695 pairs) each, layer 18 only
+# Merged into main GOT+FLEED HDF5 files using h5py deep copy
+```
+
+### 7×7 transfer matrix with on-policy sycophancy, layer 18 (2026-03-03)
+
+```bash
+SYCO_OFFPOLICY="sycophancy_v2__data/sycophancy_v2/olmo3-7b/pairs/sycophancy_pairs_26-03-03_02:24:05.csv"
+SYCO_ONPOLICY="sycophancy_v2__data/sycophancy_v2/olmo3-7b-purebase/pairs/sycophancy_pairs_onpolicy_26-03-03_05:25:36.csv"
+
+# Instruct model (reuses existing 6 probes, only trains on-policy probe)
+uv run python scripts/train_test_probes.py \
+    --model-name olmo3-7b \
+    --features-file ./results/activations_got_plus_fleed_olmo3-7b_layers10-25.h5 \
+    --layer-idx 18 \
+    --probe-type lr --regularization 0.001 \
+    --train-feature-type last --test-feature-type last \
+    --use-scaler true --balance-groups false \
+    --train-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_OFFPOLICY" "$SYCO_ONPOLICY" \
+    --test-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_OFFPOLICY" "$SYCO_ONPOLICY" \
+    --results-csv ./results/transfer_olmo3-7b_layer18_with_onpolicy.csv \
+    --verbose
+
+# Output: results/transfer_olmo3-7b_layer18_with_onpolicy.csv
+# On-policy CV AUROC: 0.947 (vs off-policy 0.940)
+# Off-policy↔on-policy transfer: 0.959/0.969 (near-perfect mutual transfer)
+# FLEED→Syco(on) transfer: 0.63-0.82 range (same pattern as FLEED→Syco(off))
+
+# Base model (reuses existing 6 probes, only trains on-policy probe)
+uv run python scripts/train_test_probes.py \
+    --model-name olmo3-7b-purebase \
+    --features-file ./results/activations_got_plus_fleed_olmo3-7b-purebase_layers10-25.h5 \
+    --layer-idx 18 \
+    --probe-type lr --regularization 0.001 \
+    --train-feature-type last --test-feature-type last \
+    --use-scaler true --balance-groups false \
+    --train-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_OFFPOLICY" "$SYCO_ONPOLICY" \
+    --test-tasks claims__definitional_gemini_600_full claims__evidential_gemini_600_full \
+        claims__fictional_gemini_600_full claims__logical_gemini_600_full got__best "$SYCO_OFFPOLICY" "$SYCO_ONPOLICY" \
+    --results-csv ./results/transfer_olmo3-7b-purebase_layer18_with_onpolicy.csv \
+    --verbose
+
+# Output: results/transfer_olmo3-7b-purebase_layer18_with_onpolicy.csv
+# On-policy CV AUROC: 0.964 (vs off-policy 0.961)
+# Off-policy↔on-policy transfer: 0.974/0.978 (near-perfect mutual transfer)
+# Key finding: on-policy and off-policy sycophancy probes capture essentially the same direction
+```
